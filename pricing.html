@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/utility.css">
+    <link rel="stylesheet" href="/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container px-4 px-lg-0">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./assets/img/seamlessHR-logo.svg"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-md-4 mr-0">
+                            <input type="checkbox" name="platformDropdownMenuLink" id="platformDropdownMenuLink">
+                            <label class="nav-link dropdown-toggle" for="platformDropdownMenuLink"
+                                id="platformDropdownMenuLabel" aria-haspopup="true" aria-expanded="false"
+                                role="button">Platforms</label>
+                            <div class="platform-menu" aria-labelledby="platformDropdownMenuLink">
+                                <div class="container py-5">
+                                    <h5 class="mb-5 platform-menu__heading">Your end-to-end HR Platform</h5>
+                                    <div class="platform-grid mb-4">
+                                        <a class="platform-item" href="core-hr.html" id="exitManagement">
+                                            <div class="platform-item__badge">CORE</div>
+                                            <h6 class="blue-text platform-item__heading">Exit Management</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="payroll-management.html" id="payrollManagement">
+                                            <h6 class="blue-text platform-item__heading">Payroll Managment</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                        <a class="platform-item" href="performance-management.html"
+                                            id="performanceManagement">
+                                            <h6 class="blue-text platform-item__heading">Performance Management</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                        <a class="platform-item" href="recruitment-management.html"
+                                            id="recruitmentManagement">
+                                            <h6 class="blue-text platform-item__heading">Recruitment Management</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="onboarding">
+
+                                            <h6 class="blue-text platform-item__heading">Onboarding</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="leaveManagement">
+
+                                            <h6 class="blue-text platform-item__heading">Leave Management</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="employeeSelfService">
+
+                                            <h6 class="blue-text platform-item__heading">Employee Self Service</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="HRIS">
+
+                                            <h6 class="blue-text platform-item__heading">HRIS</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="disciplinary">
+
+                                            <h6 class="blue-text platform-item__heading">Disciplinary</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="requisitionTravelProcurements">
+
+                                            <h6 class="blue-text platform-item__heading">Requisition, Travel &
+                                                Procurements</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="advancedReportAnalytics">
+
+                                            <h6 class="blue-text platform-item__heading">Advanced Report & Analytics
+                                            </h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="timeAttendance">
+                                            <h6 class="blue-text platform-item__heading">Time & Attendance</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="platform-menu__link text-center">Looking for more? Contact us</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-item mr-md-4 mr-0">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown mr-md-4 mr-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="companyDropdownLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Company
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="companyDropdownLink">
+                                <a class="dropdown-item" href="about.html">About Us</a>
+                                <a class="dropdown-item" href="about.html">Why SeamlessHR</a>
+                                <a class="dropdown-item" href="customer-stories.html">Customer Stories</a>
+                                <a class="dropdown-item" href="careers.html">Careers</a>
+                                <a class="dropdown-item" href="about.html">Press</a>
+                                <a class="dropdown-item" href="about.html">Partners</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown mr-md-4 mr-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Resources
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="resourcesDropdownMenuLink">
+                                <a class="dropdown-item" href="blog.html">Blog</a>
+                                <a class="dropdown-item" href="#">E-books</a>
+                                <a class="dropdown-item" href="#">Guides & Tutorials</a>
+                                <a class="dropdown-item" href="#">Insights</a>
+                                <a class="dropdown-item" href="FAQ.html">FAQs</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-md-4 mr-0">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item ml-md-4">
+                            <a href="#" class="btn button btn-success my-2 my-sm-0">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero pricing-hero pt-5 pb-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-lg-5 hero__text pr-5 pt-5 mb-5">
+                    <h1 class="hero__title mt-5">Choose a plan that is right for your business.</h1>
+                    <p class="mt-4 lead hero__description">Quis ea aliquip labore magna labore sit. Voluptate nulla
+                        nostrud veniam consectetur commodo est elit.</p>
+                    <a href="#" class="hero__button btn btn-success btn-lg mt-4 mb-4">Get Started</a>
+                    <br>
+                    <a href="#">Compare SeamlessHR with other solutions</a>
+                </div>
+                <div class="col-lg-7 price px-4 px-lg-0">
+                    <div class="row">
+                        <div class="col-md-6 price__wrapper core-price mb-5 mb-md-0">
+                            <div class="header">
+                                <h2 class="text-lightblue">Core HR</h2>
+                                <p class="text-white">Get a hold of your HR Operations</p>
+                            </div>
+                            <div class="price__band d-flex">
+                                <h1 class="text-blueprimary mr-4">$5</h1>
+                                <p class="text-dark">per employee <br> monthly</p>
+                            </div>
+                            <ul class="price__features text-white">
+                                <li class="price__feature">HR information management</li>
+                                <li class="price__feature">Employee self-service</li>
+                                <li class="price__feature">Leave</li>
+                                <li class="price__feature">Requisition and Travel</li>
+                                <li class="price__feature">Report and
+                                    Analytics</li>
+                                <li class="price__feature">Payroll</li>
+                                <li class="price__feature">Mobile Apps</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 price__wrapper premium-price">
+                            <div class="header">
+                                <h2 class="text-lightgreen">Premium HR</h2>
+                                <p class="text-white text-18px">Do more than just HR</p>
+                            </div>
+                            <div class="price__band d-flex">
+                                <h1 class="text-green mr-4">$9</h1>
+                                <p class="text-dark">per employee <br> monthly</p>
+                            </div>
+                            <ul class="price__features text-white">
+                                <li class="price__feature">Everything in Core HR with</li>
+                                <li class="price__feature">Onboarding</li>
+                                <li class="price__feature">Advanced Reports and Analytics</li>
+                                <li class="price__feature">Time and Attendance</li>
+                                <li class="price__feature">Management</li>
+                                <li class="price__feature">Disciplinary Management</li>
+                                <li class="price__feature">Exit and Severance Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="padding-bottom-normal" id="doMoreWithHR">
+        <div class="container">
+            <h2>Do more with HR.</h2>
+            <p class="maxwidth-558px mb-5">Select any of these add-ons to boost your Core of Premium HR plan, or
+                purchase
+                them as a standalone.</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
+                    <article class="platform-box payroll">
+                        <h3 class="platform-box__title mb-3">Payroll</h3>
+                        <p class="text-16px">Manage your payroll, benefits, and remittances without stress.</p>
+                        <div class="platform-box__bottom d-flex justify-content-between align-items-center">
+                            <p class="mb-0">$4 / mo</p>
+                            <a href="#" class="text-lightgrey text-16px">Learn more</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
+                    <article class="platform-box recruitment-management">
+                        <h3 class="platform-box__title mb-3">Recruitment Management</h3>
+                        <p class="text-16px">You can choose to add more options to your core or premium plan. Or choose
+                            to
+                            purchase these add-ons as standalone</p>
+                        <div class="platform-box__bottom d-flex justify-content-between align-items-center">
+                            <p class="mb-0">$4 / mo</p>
+                            <a href="#" class="text-lightgrey text-16px">Learn more</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
+                    <article class="platform-box performance-management">
+                        <h3 class="platform-box__title mb-3">Performance Management</h3>
+                        <p class="text-16px">Enable a performance-driven culture.</p>
+                        <div class="platform-box__bottom d-flex justify-content-between align-items-center">
+                            <p class="mb-0">$4 / mo</p>
+                            <a href="#" class="text-lightgrey text-16px">Learn more</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-5 pr-5 padding-left-normal py-5 py-lg-0">
+                    <h2 class="text-darkblue mb-4 text-36px">
+                        Looking for a custom enterprise solution?
+                    </h2>
+                    <p class="mb-4">Contact sales if you have more than 500 staff, need major software integrations or
+                        have
+                        other peculiarities.</p>
+                    <a href="#" class="btn button btn-primary">Contact Sales</a>
+                </div>
+                <div class="col-lg-7 cta__image-wrapper">
+                    <img src="./assets/img/cta-bg.jpg" alt="" class="cta__image">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="product-comparison">
+        <span class="background"></span>
+        <div class="container padding-y-normal">
+            <h2 class="text-darkblue">Compare SeamlessHR</h2>
+            <p class="mb-5">Select a brand to compare.</p>
+
+            <div class="row">
+
+                <!-- the product selector -->
+                <div class="col-lg-2 product-comparison__selector-grid mb-5 pt-5">
+                    <input class="product-comparison__radio" type="radio" name="selector" id="sap">
+                    <label for="sap" class="product-comparison__selector" role="button">
+                        <img class="img-fluid" src="./assets/img/competition/sap.png" alt="sap logo">
+                    </label>
+                    <input checked class="product-comparison__radio" type="radio" name="selector" id="gusto">
+                    <label for="gusto" class="product-comparison__selector" role="button">
+                        <img class="img-fluid" src="./assets/img/competition/gusto.png" alt="gusto logo">
+                    </label>
+                    <input class="product-comparison__radio" type="radio" name="selector" id="sage">
+                    <label for="sage" class="product-comparison__selector" role="button">
+                        <img class="img-fluid" src="./assets/img/competition/sage.png" alt="sage logo">
+                    </label>
+                    <input class="product-comparison__radio" type="radio" name="selector" id="zenefits">
+                    <label for="zenefits" class="product-comparison__selector" role="button">
+                        <img class="img-fluid" src="./assets/img/competition/zenefits.png" alt="zenefits logo">
+                    </label>
+                    <input class="product-comparison__radio" type="radio" name="selector" id="oracle">
+                    <label for="oracle" class="product-comparison__selector" role="button">
+                        <img class="img-fluid" src="./assets/img/competition/oracle.png" alt="oracle logo">
+                    </label>
+                </div>
+
+                <div class="col-lg-10">
+                    <!-- the rival images -->
+                    <div class="row mb-4">
+                        <div class="offset-md-2 col-6 col-md-5 text-center">
+                            <img src="./assets/img/seamlessHR-logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-6 col-md-5">
+                            <img src="./assets/img/competition/sap.png" alt="" class="mx-auto img-fluid rival-info"
+                                data-competitor="sap">
+                            <img src="./assets/img/competition/gusto.png" alt="" class="mx-auto img-fluid rival-info"
+                                data-competitor="gusto">
+                            <img src="./assets/img/competition/sage.png" alt="" class="mx-auto img-fluid rival-info"
+                                data-competitor="sage">
+                            <img src="./assets/img/competition/zenefits.png" alt="" class="mx-auto img-fluid rival-info"
+                                data-competitor="zenefits">
+                            <img src="./assets/img/competition/oracle.png" alt="" class="mx-auto img-fluid rival-info"
+                                data-competitor="oracle">
+                        </div>
+                    </div>
+
+                    <!-- the comparison content -->
+                    <div class="product-comparison__information">
+                        <div class="comparison-points">
+                            <p class="d-none d-md-flex">End-to-end HR</p>
+                            <p class="text-16px">SeamlessHR is an all-in-one software built with a full focus on HR.
+                                It's like an ERP for HR.</p>
+                            <p class="text-16px rival-info" data-competitor="gusto">Gusto works best if you're a
+                                small-sized
+                                business with US-only presence and you have a thing for expensive software.</p>
+                        </div>
+                        <div class="comparison-points">
+                            <p class="d-none d-md-flex">Ease of use</p>
+                            <p class="text-16px">SeamlessHR is simple, intuitive; delights employees and makes HR look
+                                forward to their next tasks.</p>
+                            <p class="text-16px rival-info" data-competitor="gusto">Gusto is easy to use, but the price
+                                tag it
+                                comes with makes you feel like you lost more than you benefited.</p>
+                        </div>
+                        <div class="comparison-points">
+                            <p class="d-none d-md-flex">Payroll localisation</p>
+                            <p class="text-16px">SeamlessHR takes a Pan-African approach towards Payroll.
+                                Already
+                                localised to many African countries. Also includes in-bult tools for you to customise
+                                your Payroll module to fit your company.</p>
+                            <p class="text-16px rival-info" data-competitor="gusto">"Question: ""[Gusto,] Do you offer
+                                international payroll?"" Gusto: ""No, we can only process payroll for employees in the
+                                US."" https://gusto.com/product/faq"</p>
+                        </div>
+                        <div class="comparison-points">
+                            <p class="d-none d-md-flex">Customisation</p>
+                            <p class="text-16px">Customisation is at the very core of how we build at SeamlessHR.
+                                SeamlessHR comes with in-built user-friendly tools but if you find that you still have
+                                unique needs, you can always talk to us to discuss a customisation.</p>
+                            <p class="text-16px rival-info" data-competitor="gusto">Customisations aren't available on
+                                Gusto. You
+                                have to adjust your HR to fit the software.</p>
+                        </div>
+                        <div class="comparison-points">
+                            <p class="d-none d-md-flex">Service</p>
+                            <p class="text-16px">SeamlessHR offers simple, context-driven, heart-to-heart support
+                                directly to the users on your HR team. It's the kind of support that takes the words
+                                right out of your mouth.</p>
+                            <p class="text-16px rival-info" data-competitor="gusto">Gusto is already expensive for most
+                                businesses.
+                                But then you need another subscription
+                                fee to access HR-context support.</p>
+                        </div>
+                        <div class="comparison-points">
+                            <p class="d-none d-md-flex">Pricing</p>
+                            <p class="text-16px">We believe every business should be able to afford good HR software.
+                                Transparent, no-surprises pricing that lets you manage your costs as you grow.</p>
+                            <p class="text-16px rival-info" data-competitor="gusto">Gusto can cost you up over $100,000
+                                per year
+                                plus add-ons if you have 200 staff.</p>
+                        </div>
+                        <div class="comparison-points">
+                            <p class="d-none d-md-flex">Setup experience</p>
+                            <p class="text-16px">SeamlessHR has an intuitive self sign-up experience to help you get
+                                things rolling. You can also request help from the Onboarding team if you need further
+                                assistance.</p>
+                            <p class="text-16px rival-info" data-competitor="gusto">Gusto has a good setup experience.
+                                But for what
+                                it costs, anyone would expect more.</p>
+                        </div>
+                        <div class="comparison-points">
+                            <p class="d-none d-md-flex">Integrations</p>
+                            <p class="text-16px">SeamlessHR has a growing library of integrations to help your employees
+                                get more productive ranging from Calendars to bank account payments via Payroll.</p>
+                            <p class="text-16px rival-info" data-competitor="gusto">Gusto has a marketplace of
+                                integrations and
+                                apps but they're literally additional straws into your business's pockets.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="FAQ" class="padding-y-normal">
+        <div class="container">
+            <h2 class="text-center">Your questions answered</h2>
+            <p class="text-center mb-5">Pricing related questions. <a href="#">View others</a></p>
+
+            <ul class="FAQ__list py-5">
+                <li class="FAQ__item">
+                    <input type="radio" name="FAQs" id="question01">
+                    <label for="question01" class="question">Need major software integrations?</label>
+                    <p class="answer">Manual payroll involves a lot of manual crunching that takes up time that
+                        could be better utilised in other business functions. Our automated payroll system will
+                        easily perform all types of payroll calculations, from salary, bonuses, prorated payments,
+                        and raises, to deductions and more.</p>
+                    <hr>
+                </li>
+                <li class="FAQ__item">
+                    <input type="radio" name="FAQs" id="question02">
+                    <label for="question02" class="question">If you have more than 500 staff, need
+                        major software
+                        integrations or have other peculiarities?</label>
+                    <p class="answer">Manual payroll involves a lot of manual crunching that takes up time that
+                        could be better utilised in other business functions. Our automated payroll system will
+                        easily perform all types of payroll calculations, from salary, bonuses, prorated payments,
+                        and raises, to deductions and more.</p>
+                    <hr>
+                </li>
+                <li class="FAQ__item">
+                    <input type="radio" name="FAQs" id="question03">
+                    <label for="question03" class="question">Software integrations or have other peculiarities If you
+                        have more than 500 staff, need major, If you have more than 50000 staff, need?</label>
+                    <p class="answer">Manual payroll involves a lot of manual crunching that takes up time that
+                        could be better utilised in other business functions. Our automated payroll system will
+                        easily perform all types of payroll calculations, from salary, bonuses, prorated payments,
+                        and raises, to deductions and more.</p>
+                    <hr>
+                </li>
+                <li class="FAQ__item">
+                    <input type="radio" name="FAQs" id="question04">
+                    <label for="question04" class="question">If you have more than 500 staff, need
+                        major software
+                        integrations or have other peculiarities?</label>
+                    <p class="answer">Manual payroll involves a lot of manual crunching that takes up time that
+                        could be better utilised in other business functions. Our automated payroll system will
+                        easily perform all types of payroll calculations, from salary, bonuses, prorated payments,
+                        and raises, to deductions and more.</p>
+                    <hr>
+                </li>
+            </ul>
+
+            <a href="#" class="d-block text-center">Learn More <img src="./assets/img/arrow.svg" alt=""
+                    class="img-fluid ml-2"></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__top row mb-5">
+            <div class="d-none d-xl-block col-xl-3">
+                <img class="img-fluid" src="./assets/img/footer-left.png" alt="">
+            </div>
+            <div class="mx-5 mx-xl-0 my-5 my-xl-0 footer__text col-xl-6 d-flex align-items-center
+                justify-content-around text-center text-sm-left">
+                <h3 class="text-white">All-in-one HR Software.<br><span class="mt-3 footer__text--blue">Streamline
+                        your HR </span></h3>
+                <a href="#" class="mt-4 mt-sm-0 footer__button btn btn-success">Get Started</a>
+            </div>
+            <div class="d-none d-xl-block col-xl-3">
+                <img class="footer__image img-fluid" src="./assets/img/footer-right.png" alt="">
+            </div>
+        </div>
+
+        <div class="footer__middle container">
+            <div class="row pb-5">
+                <div class="col-xl-3 col-md-6">
+                    <h6 class="footer__title my-5">solution</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Core HR</li>
+                        <li class="footer__list-item">Payroll</li>
+                        <li class="footer__list-item">Performance management</li>
+                        <li class="footer__list-item">Recruitment management</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <h6 class="footer__title my-5">more</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Onboarding</li>
+                        <li class="footer__list-item">HRIS</li>
+                        <li class="footer__list-item">Employee self-service</li>
+                        <li class="footer__list-item">Leave management</li>
+                        <li class="footer__list-item">Disciplinary management</li>
+                        <li class="footer__list-item">Requisition, travel & procurement</li>
+                        <li class="footer__list-item">Advanced report & analytics</li>
+                        <li class="footer__list-item">Time & attendance</li>
+                        <li class="footer__list-item">Exit management</li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <h6 class="footer__title my-5">company</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">About us</li>
+                        <li class="footer__list-item">Why SeamlessHR</li>
+                        <li class="footer__list-item">Customer stories</li>
+                        <li class="footer__list-item">Careers</li>
+                        <li class="footer__list-item">Press</li>
+                        <li class="footer__list-item">Partners</li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-md-6">
+                    <h6 class="footer__title my-5">resources</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Blog</li>
+                        <li class="footer__list-item">E-books</li>
+                        <li class="footer__list-item">Guides and tutorials</li>
+                        <li class="footer__list-item">Insights</li>
+                        <li class="footer__list-item">FAQs</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom py-5 container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-4  mb-5 mb-lg-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                            <img src="./assets/img/seamlessHR-logo-footer.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <img src="./assets/img/facebook.svg" alt="facebook" class="img-fluid mr-2">
+                            <img src="./assets/img/linkedin.svg" alt="linkedin" class="img-fluid mr-2">
+                            <img src="./assets/img/twitter.svg" alt="twitter" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <p class="footer__address">65c, L'Monarch Towers, Opebi, Ikeja, Lagos <br>+234 (809) 0643 874.
+                        hello@seamlesshr.com</p>
+                </div>
+                <div class="col-lg-4 ml-auto">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                            <p class="text-white">Terms of service</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="text-white">Privacy & Security</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="./assets/navbar.js"></script>
+</body>
+
+</html>
