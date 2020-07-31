@@ -126,6 +126,14 @@
 }
 
 //font sizes
+.text-15px {
+  font-size: 15px;
+
+  * {
+    font-size: 15px !important;
+  }
+}
+
 .text-16px {
   font-size: 16px;
 
@@ -158,14 +166,39 @@
   }
 }
 
+//letter-spacing
+.letter-3px {
+  letter-spacing: 3px;
+}
+
+.line-1point5 {
+  line-height: 1.5
+}
+
 //width
 .maxwidth-558px {
   max-width: 558px
 }
 
+.maxwidth-420px {
+  max-width: 420px
+}
+
 //backgrounds
 .blue-bg {
   background: #F4F7FB;
+}
+
+.lightblue-bg {
+  background: #D8E4F1;
+}
+
+.grey-bg {
+  background: #f9fafb;
+}
+
+.white-bg {
+  background: #fff;
 }
 
 //buttons

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let links = document.querySelectorAll(".nav-link");
+  let links = document.querySelectorAll(".nav-link, .platform-item");
+
   let currentPage = window.location.pathname.split("/")[1];
 
   let rivalInfo = document.querySelectorAll(".rival-info");
@@ -49,9 +50,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   comparison();
   setActive();
-  randomiseFeature();
 
-  document
-    .querySelector(".product-comparison__selector-grid")
-    .addEventListener("click", comparison);
+  if (currentPage === "core-hr") {
+    randomiseFeature();
+  }
+
+  if (currentPage === "pricing") {
+    document
+      .querySelector(".product-comparison__selector-grid")
+      .addEventListener("click", comparison);
+  }
 });
