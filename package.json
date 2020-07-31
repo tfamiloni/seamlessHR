@@ -1,0 +1,19 @@
+{
+  "name": "seamlesshr",
+  "version": "1.0.0",
+  "description": "website for seamlesshr",
+  "main": "index.js",
+  "scripts": {
+    "push": "git push origin master && git push bitbucket develop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoxadomokai/seamlessHR.git"
+  },
+  "author": "Shox Adomokai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shoxadomokai/seamlessHR/issues"
+  },
+  "homepage": "https://github.com/shoxadomokai/seamlessHR#readme"
+}
