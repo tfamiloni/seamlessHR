@@ -1238,6 +1238,11 @@ body {
   box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
   border-radius: 20px;
 
+  @media (max-width: 764.98px) {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
   .price__wrapper {
     padding: 0;
     height: 683px;
@@ -1267,8 +1272,9 @@ body {
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 764.98px) {
         border-radius: 20px;
+        box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
       }
 
       .price__band {
@@ -1295,8 +1301,9 @@ body {
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 764.98px) {
         border-radius: 20px;
+        box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
       }
 
       .price__band {

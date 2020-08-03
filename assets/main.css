@@ -1269,6 +1269,14 @@ body .font-family-circular {
   border-radius: 20px;
 }
 
+@media (max-width: 764.98px) {
+  .price {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .price .price__wrapper {
   padding: 0;
   height: 683px;
@@ -1300,9 +1308,11 @@ body .font-family-circular {
   background: #d8e4f1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 764.98px) {
   .price .price__wrapper.core-price {
     border-radius: 20px;
+    -webkit-box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
+            box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
   }
 }
 
@@ -1328,9 +1338,11 @@ body .font-family-circular {
   background: #d8f1d9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 764.98px) {
   .price .price__wrapper.premium-price {
     border-radius: 20px;
+    -webkit-box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
+            box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
   }
 }
 
