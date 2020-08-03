@@ -48,14 +48,14 @@ document.addEventListener("DOMContentLoaded", () => {
     featureInputs[randomNumber].checked = true;
   };
 
-  comparison();
   setActive();
 
-  if (currentPage === "core-hr") {
+  if (currentPage === "core-hr.html") {
     randomiseFeature();
   }
 
-  if (currentPage === "pricing") {
+  if (currentPage === "pricing.html") {
+    comparison();
     document
       .querySelector(".product-comparison__selector-grid")
       .addEventListener("click", comparison);
