@@ -21,7 +21,7 @@ $Circular: 'Circular';
 
 
 body {
-    font-family: Circular Std;
+    font-family: $Circular;
     overflow-x: hidden;
 
     p {
@@ -51,7 +51,8 @@ body {
     .h3,
     .h4,
     .h5,
-    .h6 {
+    .h6,
+    .font-family-circular {
         font-family: $Circular;
     }
 
@@ -228,86 +229,6 @@ body {
             background-position-x: left;
             background-position-y: 70%;
             background-repeat: no-repeat;
-        }
-
-        .price {
-            .price__wrapper {
-                padding: 0;
-                height: 683px;
-                box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
-
-                .header,
-                .price__features {
-                    padding: 31.94px 41.6px;
-                }
-
-                .price__band {
-                    padding: 20.61px 41.87px;
-
-                    p {
-                        line-height: 23px;
-                    }
-                }
-
-                &.core-price {
-                    background: #1E5083;
-                    border-radius: 20px 0px 0px 20px;
-
-                    @media (max-width: 768px) {
-                        border-radius: 20px;
-                    }
-
-                    .price__band {
-                        background: white;
-                    }
-
-                    .price__features {
-                        .price__feature::before {
-                            content: url(./img/tick-white.svg);
-                            margin-right: 10px;
-                        }
-                    }
-                }
-
-                &.premium-price {
-                    background: #133252;
-                    border-radius: 0px 20px 20px 0px;
-
-                    @media (max-width: 768px) {
-                        border-radius: 20px;
-                    }
-
-                    .price__band {
-                        background: #D8F1D9;
-                    }
-
-                    .price__features {
-                        .price__feature::before {
-                            content: url(./img/tick-green.svg);
-                            margin-right: 10px;
-                        }
-
-                        .price__feature:first-of-type::before {
-                            visibility: hidden;
-                        }
-                    }
-                }
-
-                .price__features {
-                    list-style-type: none;
-
-                    .price__feature {
-                        font-family: $Circular;
-                        text-indent: -1em;
-
-                        &:not(:last-of-type) {
-                            margin-bottom: 15px;
-                        }
-                    }
-                }
-
-
-            }
         }
     }
 
@@ -572,28 +493,7 @@ body {
             color: #454545;
         }
 
-        .info__button {
-            color: #296DB3;
-            display: inline-flex;
-            // font-size: 18px;
-            align-items: center;
 
-            &:hover {
-                .arrow {
-                    margin-left: 20px;
-                }
-            }
-
-            .arrow {
-                width: 15.53px;
-                height: 10.69px;
-                margin-left: 15px;
-                transition: 0.2s all ease;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-image: url(./img/arrow.svg);
-            }
-        }
     }
 }
 
@@ -1094,16 +994,16 @@ body {
             background: url(./img/contact/map.jpg);
             background-size: cover;
         }
+    }
+}
 
-        .form__inputs {
-            padding: 37px 56px;
+.form__inputs {
+    padding: 37px 56px;
 
-            .form-control {
-                border: 1px solid #9DBCDC;
-                border-radius: 3px;
-                min-height: 40px;
-            }
-        }
+    .form-control {
+        border: 1px solid #9DBCDC;
+        border-radius: 3px;
+        min-height: 40px;
     }
 }
 
@@ -1215,6 +1115,46 @@ body {
     }
 }
 
+#plan-details {
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #D8E4F1;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
+    border-radius: 10px;
+}
+
+#productQty {
+    width: 69px;
+    height: 46.92px;
+    border: 1px solid #9DBCDC;
+    border-radius: 3px;
+}
+
+#summaryOfPurchase {
+    .card {
+        border: 1px solid #D8E4F1;
+        border-radius: 20px;
+        padding: 40px 30px;
+
+        ul {
+            list-style-type: none;
+        }
+    }
+}
+
+.add-in-product {
+    padding: 23px 30px;
+    border-radius: 10px;
+
+    input[type="number"] {
+        width: 87px;
+        height: 47px;
+        border: 1px solid #9DBCDC;
+        border-radius: 3px;
+    }
+}
+
 //components
 .platform-box {
     padding: 29px 34px;
@@ -1319,5 +1259,154 @@ body {
             width: 56px;
             height: 56px;
         }
+    }
+}
+
+.price {
+    box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
+    border-radius: 20px;
+
+    .price__wrapper {
+        padding: 0;
+        height: 683px;
+
+
+        .header,
+        .price__features {
+            padding: 31.94px 41.6px;
+        }
+
+        .price__band {
+            padding: 20.61px 41.87px;
+
+            p {
+                line-height: 23px;
+            }
+        }
+
+        &.core-price {
+            background: #1E5083;
+            border-radius: 20px 0px 0px 20px;
+
+            &.light-core {
+                background: #F4F7FB;
+
+                .price__band {
+                    background: #D8E4F1;
+                }
+            }
+
+            @media (max-width: 768px) {
+                border-radius: 20px;
+            }
+
+            .price__band {
+                background: white;
+            }
+
+            .price__features {
+                .price__feature::before {
+                    content: url(./img/tick-white.svg);
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &.premium-price {
+            background: #133252;
+            border-radius: 0px 20px 20px 0px;
+
+            &.light-premium {
+                background: #F4FBF4;
+
+                .price__band {
+                    background: #D8F1D9;
+                }
+            }
+
+            @media (max-width: 768px) {
+                border-radius: 20px;
+            }
+
+            .price__band {
+                background: #D8F1D9;
+            }
+
+            .price__features {
+                .price__feature::before {
+                    content: url(./img/tick-green.svg);
+                    margin-right: 10px;
+                }
+
+                .price__feature:first-of-type::before {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .price__features {
+            list-style-type: none;
+
+            .price__feature {
+                font-family: $Circular;
+                text-indent: -1em;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+
+    }
+}
+
+//sign up page
+
+.sign-up-bg {
+    background: url(./img/sign-up/curve.svg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.verify-bg {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url(./img/verify-email/curve.svg) no-repeat;
+        background-size: contain;
+        background-position: top center;
+        z-index: -1;
+    }
+}
+
+.add-company-bg {
+    background: url(./img/add-company-details/curve.svg) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.sign-up-pricing-bg {
+    background: url(./img/add-company-details/curve.svg) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.add-ons-bg {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url(./img/add-ons/curve.svg) no-repeat;
+        background-size: contain;
+        background-position: top center;
+        z-index: -1;
     }
 }

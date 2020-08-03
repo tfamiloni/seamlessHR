@@ -4,7 +4,7 @@
   "description": "website for seamlesshr",
   "main": "index.js",
   "scripts": {
-    "push": "git push origin master && git push bitbucket develop"
+    "push": "git push origin master && git checkout marketing && git rebase master && git push bitbucket marketing && git checkout master"
   },
   "repository": {
     "type": "git",

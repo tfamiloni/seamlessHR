@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add Company Details</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../assets/utility.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="add-company-bg">
+        <div class="container text-center">
+            <a href="../index.html"><img src="../assets/img/seamlessHR-logo.svg" alt="" class="py-5 mb-4 img-fluid"></a>
+            <h2 class="mt-4 font-weight-bold text-blue">Congratulations, let’s get started</h2>
+            <p class="mt-1 mx-auto maxwidth-558px">Setup your company information</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="./pricing.html" id="sign-up__form" class="col-lg-6 mx-auto" novalidate>
+                <div class="form__inputs">
+                    <div class="row">
+                        <!-- company name -->
+                        <div class="col-md-12 form-group mb-4">
+                            <label for="company" class="text-18px">Company name</label>
+                            <input name="company" type="text" class="font-weight-normal form-control" required
+                                placeholder="Sankore Enterprises">
+                        </div>
+                        <!-- Location -->
+                        <div class="col-md-6 form-group mb-4">
+                            <label for="location" class="text-18px">Location</label>
+                            <div class="select-wrapper">
+                                <select class="font-weight-normal form-control seamless-select" name="location" id="">
+                                    <option value="null"></option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- number of staff -->
+                        <div class="col-md-6 form-group mb-4">
+                            <label for="number of staff" class="text-18px">Number of staff</label>
+                            <div class="select-wrapper">
+                                <select class="font-weight-normal form-control seamless-select" name="number of staff"
+                                    id="">
+                                    <option value="null"></option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- address -->
+                        <div class="col-md-12 form-group mb-4">
+                            <label for="address" class="text-18px">Address</label>
+                            <input name="address" type="text" class="font-weight-normal form-control" required>
+                        </div>
+                        <!-- website -->
+                        <div class="col-md-12 form-group mb-4">
+                            <label for="website" class="text-18px">Website URL</label>
+                            <input name="website" type="text" class="font-weight-normal form-control" required
+                                placeholder="">
+                        </div>
+                        <div class="col-md-12 form-group mb-4">
+                            <label for="industry" class="text-18px">Industry field</label>
+                            <input name="industry" type="password" class="font-weight-normal form-control" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="mt-4 mb-5 btn button btn-primary btn-block">Continue</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="col-xl-5 col-md-8 mx-auto mb-5">
+                <div class="col-10 col-xs-6 col-md-6 mx-auto mb-4">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <img src="../assets/img/sign-up/linkedin.svg" alt="linkedin logo" class="img-fluid">
+                        <img src="../assets/img/sign-up/facebook.svg" alt="facebook logo" class="img-fluid">
+                        <img src="../assets/img/sign-up/twitter.svg" alt="twitter logo" class="img-fluid">
+                        <img src="../assets/img/sign-up/instagram.svg" alt="instagram logo" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-12 col-xs-11 col-md-9 mx-auto mt-4">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="#" class="text-13px text-lightgrey">Terms of Service</a>
+                        <a href="#" class="text-13px text-lightgrey">Privacy policy</a>
+                        <a href="#" class="text-13px text-lightgrey">FAQs</a>
+                        <a href="#" class="text-13px text-lightgrey">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdlivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="../assets/navbar.js"></script>
+</body>
+
+</html>
