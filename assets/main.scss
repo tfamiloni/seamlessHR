@@ -1299,6 +1299,7 @@ body {
 
       &.light-core {
         background: #f4f7fb;
+        min-height: 721.733px;
 
         .price__band {
           background: #d8e4f1;
@@ -1333,6 +1334,7 @@ body {
 
       &.light-premium {
         background: #f4fbf4;
+        min-height: 721.733px;
 
         .price__band {
           background: #d8f1d9;
@@ -1379,11 +1381,6 @@ body {
         }
       }
     }
-  }
-
-  .price__row {
-    display: grid;
-    grid-template-columns: 394px 1fr;
   }
 }
 
