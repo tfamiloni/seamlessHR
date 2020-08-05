@@ -35,24 +35,19 @@
 }
 
 body {
-  font-family: "Circular";
-  overflow-x: hidden;
-  color: #454545 !important;
-}
-
-body p {
-  font-weight: 300;
-}
-
-body p,
-body a,
-body li {
-  font-size: 18px;
   font-family: "Avenir";
+  overflow-x: hidden;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 body a {
   color: #296db3;
+}
+
+body label {
+  font-weight: 500;
 }
 
 body h1,
@@ -71,14 +66,13 @@ body .font-family-circular {
   font-family: "Circular";
 }
 
-body .font-family-avenir,
-body span {
+body .font-family-avenir {
   font-family: "Avenir";
 }
 
 body h1,
 body .h1 {
-  font-size: 48px !important;
+  font-size: 3rem;
 }
 
 .navigation {

@@ -38,23 +38,18 @@ $Avenir: "Avenir";
 $Circular: "Circular";
 
 body {
-  font-family: $Circular;
+  font-family: $Avenir;
   overflow-x: hidden;
-  color: #454545 !important;
-
-  p {
-    font-weight: 300;
-  }
-
-  p,
-  a,
-  li {
-    font-size: 18px;
-    font-family: $Avenir;
-  }
+  color: #454545;
+  font-size: 18px;
+  font-weight: 300;
 
   a {
     color: #296db3;
+  }
+
+  label {
+    font-weight: 500;
   }
 
   h1,
@@ -73,14 +68,13 @@ body {
     font-family: $Circular;
   }
 
-  .font-family-avenir,
-  span {
+  .font-family-avenir {
     font-family: $Avenir;
   }
 
   h1,
   .h1 {
-    font-size: 48px !important;
+    font-size: 3rem;
   }
 }
 
