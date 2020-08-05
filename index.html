@@ -25,10 +25,12 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header class="navigation">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container px-4 px-lg-0">
+
+        <nav class="navbar navbar-expand-lg navbar-light px-3">
+            <div class="container">
                 <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./assets/img/seamlessHR-logo.svg"
-                        alt=""></a>
+                        alt="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,7 +39,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-md-4 mr-0">
                             <input type="checkbox" name="platformDropdownMenuLink" id="platformDropdownMenuLink">
-                            <label class="nav-link dropdown-toggle" for="platformDropdownMenuLink"
+                            <label class="nav-link dropdown-toggle mb-0" for="platformDropdownMenuLink"
                                 id="platformDropdownMenuLabel" aria-haspopup="true" aria-expanded="false"
                                 role="button">Platforms</label>
                             <div class="platform-menu" aria-labelledby="platformDropdownMenuLink">
@@ -176,25 +178,25 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     <section class="hero home-hero pt-5 pb-5">
         <div class="row">
-            <div class="col-lg-5 hero__text pr-5 pt-5 padding-left-normal mb-5">
+            <div class="col-xl-6 hero__text pr-5 pt-5 padding-left-normal mb-5">
                 <h1 class="hero__title mt-5">All-in-one HR software to streamline your HR.</h1>
-                <p class="mt-4 lead hero__description">Grow your business efficiently with our modern end-to-end HR
-                    management system that
-                    leaves nothing
-                    out of the picture, from hire to retire.</p>
+                <p class="mt-4 lead hero__description text-lightgrey">Grow your business efficiently with our modern
+                    end-to-end HR
+                    management system that leaves nothing out of the picture, from hire to retire.</p>
                 <a href="#" class="hero__button btn btn-success btn-lg mt-4">Get Started</a>
             </div>
-            <div class="col-lg-7 text-right">
+            <div class="col-xl-6 text-right">
                 <img src="./assets/img/hero-image.svg" alt="hero-image" class="img-fluid ">
             </div>
         </div>
     </section>
 
-    <section class="services mt-5 container px-5 px-lg-0">
+    <section class="services mt-5 container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12 mb-5 mb-md-0">
                 <div class="services__image">
@@ -233,7 +235,7 @@
                 <p class="mt-3 text-lightgrey">I also need some copy here the will explain the heading about as a
                     sub-explainer something</p>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 mb-5 mb-md-0">
+            <div class="col-lg-4 col-md-6 col-12">
                 <div class="services__image">
                     <svg width="83" height="83" viewBox="0 0 83 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="41.5" cy="41.5" r="41.5" fill="#FDE7CB" />
@@ -252,59 +254,74 @@
         </div>
     </section>
 
-    <main class="info-section ">
-        <div class="row info margin-y-large">
-            <div class="col-lg-6 info__image-wrapper">
-                <img src="./assets/img/core-hr.png" alt="" class="img-fluid info__image margin-left-normal">
+    <main class="info-section">
+        <div class="container">
+
+            <!-- core-hr -->
+            <div class="row margin-y-normal info">
+                <div class="col-xl-6 info__image-wrapper">
+                    <img src="./assets/img/index/core-hr.png" alt="" class="pt-4 img-fluid info__image">
+                </div>
+                <div class="offset-xl-1 col-xl-5 pt-5 mb-5">
+                    <span class="text-15px text-uppercase letter-3px text-blue">CORE HR</span>
+                    <h1 class="info__title mt-3 mt-lg-4">Manage HR data. Automate HR processes.</h1>
+                    <p class="info__desc mt-4 mb-5">All those monotonous HR tasks that take endless hours? They now go
+                        into
+                        a streamlined workflow based on your predefined rules. Stay on top of everything: onboarding,
+                        requisitions, leave and more.</p>
+                    <a href="#" class="h6 arrow__link">Learn More </a>
+                </div>
             </div>
-            <div class="offset-lg-1 col-lg-5 pl-5 pt-5 padding-right-normal mb-5">
-                <span class="text-15px text-uppercase letter-3px text-blue">CORE HR</span>
-                <h1 class="info__title mt-3 mt-lg-4">Manage HR data. Automate HR processes.</h1>
-                <p class="info__desc mt-4 mb-5">All those monotonous HR tasks that take endless hours? They now go into
-                    a streamlined workflow based on your predefined rules. Stay on top of everything: onboarding,
-                    requisitions, leave and more.</p>
-                <a href="#" class="h6 arrow__link">Learn More </a>
+
+            <div class="row margin-y-normal info">
+                <div class="col-xl-5 pt-5 mb-5">
+                    <span class="text-15px text-uppercase letter-3px text-blue">Payroll Management</span>
+                    <h1 class="info__title mt-3 mt-lg-4">Take a break from all the maths. Run payroll in
+                        minutes.</h1>
+                    <p class="info__desc mt-4 mb-5">Say goodbye to running payroll manually on those complicated
+                        spreadsheets. Run payroll, make approved payments and stay compliant - all in one move.
+                    </p>
+                    <a href="#" class="h6 arrow__link">Learn More</a>
+                </div>
+                <div class="offset-xl-1 col-xl-6 info__image-wrapper mb-5 mb-lg-0">
+                    <img src="./assets/img/index/payroll.svg" alt="" class="img-fluid info__image">
+                </div>
             </div>
+
+            <div class="row margin-y-normal info">
+                <div class="col-xl-6 info__image-wrapper">
+                    <img src="./assets/img/index/performance.png" alt="" class="img-fluid info__image">
+                </div>
+                <div class="offset-xl-1 col-xl-5 pt-5 mb-5">
+                    <span class="text-15px text-uppercase letter-3px text-blue">Performance Management</span>
+                    <h1 class="info__title mt-3 mt-lg-4">Track goals. Enable a performance-driven culture.</h1>
+                    <p class="info__desc mt-4 mb-5">Whether OKR or Balanced Scorecard, empower line managers and
+                        direct reports with the needed tools to drive a rich performance culture and meet company
+                        objectives</p>
+                    <a href="#" class="h6 arrow__link">Learn More</a>
+                </div>
+            </div>
+
+            <div class="row margin-top-normal mb-5 info">
+                <div class="col-xl-5 pt-5 mb-5">
+                    <span class="text-15px text-uppercase letter-3px text-blue">Recruitment Management</span>
+                    <h1 class="info__title mt-3 mt-lg-4">Hire right. Grow faster
+                    </h1>
+                    <p class="info__desc mt-4 mb-5">Meet your business goals by hiring the right talent at the
+                        right time.
+                        Manage job applications in quick moves and track them along the recruiment pipeline
+                        effortlessly.
+                    </p>
+                    <a href="#" class="h6 arrow__link">Learn More</a>
+                </div>
+                <div class="offset-xl-1 col-xl-6 info__image-wrapper">
+                    <img src="./assets/img/index/recruitment-management.png" alt="" class="img-fluid info__image">
+                </div>
+            </div>
+
         </div>
-        <div class="row margin-y-large info">
-            <div class="col-lg-5 pr-5 pt-5 padding-left-normal mb-5">
-                <span class="text-15px text-uppercase letter-3px text-blue">Payroll Management</span>
-                <h1 class="info__title mt-3 mt-lg-4">Take a break from all the maths. Run payroll in minutes.</h1>
-                <p class="info__desc mt-4 mb-5">Say goodbye to running payroll manually on those complicated
-                    spreadsheets. Run payroll, make approved payments and stay compliant - all in one move.</p>
-                <a href="#" class="h6 arrow__link">Learn More</a>
-            </div>
-            <div class="col-lg-7 info__image-wrapper mb-5 mb-lg-0">
-                <img src="./assets/img/payroll-management.png" alt="" class="img-fluid info__image margin-right-normal">
-            </div>
-        </div>
-        <div class="row margin-y-large info">
-            <div class="col-lg-6 info__image-wrapper">
-                <img src="./assets/img/performance-management.png" alt=""
-                    class="img-fluid info__image margin-left-normal">
-            </div>
-            <div class="offset-lg-1 col-lg-5 pl-5 pt-5 padding-right-normal mb-5">
-                <span class="text-15px text-uppercase letter-3px text-blue">Performance Management</span>
-                <h1 class="info__title mt-3 mt-lg-4">Track goals. Enable a performance-driven culture.</h1>
-                <p class="info__desc mt-4 mb-5">Whether OKR or Balanced Scorecard, empower line managers and direct
-                    reports with the needed tools to drive a rich performance culture and meet company objectives</p>
-                <a href="#" class="h6 arrow__link">Learn More</a>
-            </div>
-        </div>
-        <div class="row margin-y-large info">
-            <div class="col-lg-5 pr-5 pt-5 padding-left-normal mb-5">
-                <span class="text-15px text-uppercase letter-3px text-blue">Recruitment Management</span>
-                <h1 class="info__title mt-3 mt-lg-4">Hire right. Grow faster
-                </h1>
-                <p class="info__desc mt-4 mb-5">Meet your business goals by hiring the right talent at the right time.
-                    Manage job applications in quick moves and track them along the recruiment pipeline effortlessly.
-                </p>
-                <a href="#" class="h6 arrow__link">Learn More</a>
-            </div>
-            <div class="col-lg-7 info__image-wrapper">
-                <img src="./assets/img/recruitment-management.png" alt="" class="img-fluid info__image">
-            </div>
-        </div>
+
+
     </main>
 
     <section class="simple-bg simple padding-top-normal">
@@ -324,11 +341,9 @@
                             <h3 class="mb-3">
                                 Be remote-ready.
                             </h3>
-                            <p class="mb-5">Whether they're working remotely or not, our tools are built to encourage
-                                your
-                                team
-                                to
-                                focus on what matters the most - the actual work.</p>
+                            <p class="mb-5 text-16px text-lightgrey">Whether they're working remotely or not, our tools
+                                are built to encourage
+                                your team to focus on what matters the most - the actual work.</p>
                         </div>
                         <img src="./assets/img/remote-ready.svg" alt="" class="simple__image img-fluid">
                     </div>
@@ -341,9 +356,9 @@
                             <h3 class="mb-3">
                                 Stay productive<br>on-the-go.
                             </h3>
-                            <p class="mb-5">Stay productive wherever you are with our easy-intuitive Android and iOS
-                                mobile
-                                apps</p>
+                            <p class="mb-5 text-16px text-lightgrey">Stay productive wherever you are with our
+                                easy-intuitive Android and iOS
+                                mobile apps</p>
                         </div>
                         <img src="./assets/img/stay-productive.svg" alt="" class="simple__image img-fluid">
                     </div>
@@ -356,7 +371,8 @@
                             <h3 class="mb-3">
                                 HR is serious business.
                             </h3>
-                            <p class="mb-5">We take your data security seriously. We're GDPR-compliant and
+                            <p class="mb-5 text-16px text-lightgrey">We take your data security seriously. We're
+                                GDPR-compliant and
                                 ISO-certified.
                                 You wouldn't take half-measures with your data. Neither would we.</p>
                         </div>
@@ -371,7 +387,8 @@
                             <h3 class="mb-3">
                                 The freedom you've always wanted.
                             </h3>
-                            <p class="mb-5">Stay nimble and agile. Access your cloud HR account from anywhere - across
+                            <p class="mb-5 text-16px text-lightgrey">Stay nimble and agile. Access your cloud HR account
+                                from anywhere - across
                                 multiple devices.</p>
                         </div>
                         <img src="./assets/img/freedom.svg" alt="" class="simple__image img-fluid">
@@ -385,7 +402,8 @@
                             <h3 class="mb-3">
                                 All the Support you need.
                             </h3>
-                            <p class="mb-5">SeamlessHR is like shopping at a mall: simple enough for you to find your
+                            <p class="mb-5 text-16px text-lightgrey">SeamlessHR is like shopping at a mall: simple
+                                enough for you to find your
                                 way
                                 around. But sometimes you have a quick question and don't want to be stuck with a bot.
                             </p>
@@ -401,7 +419,8 @@
                             <h3 class="mb-3">
                                 Get a headstart with HR tools & resources.
                             </h3>
-                            <p class="mb-5">Exclusive access to our library of HR tools and resources: HR training
+                            <p class="mb-5 text-16px text-lightgrey">Exclusive access to our library of HR tools and
+                                resources: HR training
                                 videos,
                                 templates, checklists and more. Dig in.</p>
                         </div>
@@ -425,7 +444,8 @@
 
                     <div class="col-md-8 order-3 order-md-2">
                         <article class="review">
-                            <p class="mb-5">"We can now manage our entire HR processes on one platform, saving us tonnes
+                            <p class="mb-5 text-lightgrey">"We can now manage our entire HR processes on one platform,
+                                saving us tonnes
                                 of
                                 back-and-forths via email and about 50% of time spent on mundane tasks."</p>
                             <p class="mb-3">Name of Dude Designation, <br> Dude’s company</p>
@@ -475,7 +495,7 @@
 
     <section class="clients padding-y-normal container text-center">
         <div class="clients__text mb-5 mx-auto">
-            <h2 class="mb-5 clients__title">That said, you are in good company
+            <h2 class="mb-4 clients__title">That said, you are in good company
             </h2>
             <p>I also need some copy here the will explain the heading about as a sub-explainer something</p>
         </div>
@@ -503,7 +523,7 @@
     </section>
 
     <footer class="footer">
-        <div class="footer__top row mb-5">
+        <div class="footer__top row">
             <div class="d-none d-xl-block col-xl-3">
                 <img class="img-fluid" src="./assets/img/footer-left.png" alt="">
             </div>
@@ -518,7 +538,7 @@
             </div>
         </div>
 
-        <div class="footer__middle container">
+        <div class="footer__middle container pt-2">
             <div class="row pb-5">
                 <div class="col-xl-3 col-md-6">
                     <h6 class="footer__title my-5">solution</h6>
@@ -569,13 +589,11 @@
         </div>
 
         <div class="footer__bottom py-5 container">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-4  mb-5 mb-lg-0">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <img src="./assets/img/seamlessHR-logo-footer.svg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-6">
+            <div class="row d-flex align-items-end">
+                <div class="col-xl-4  mb-5 mb-xl-0">
+                    <div class="row d-flex align-items-center flex-wrap">
+                        <img src="./assets/img/seamlessHR-logo-footer.svg" alt="" class="img-fluid mr-5">
+                        <div class="">
                             <img src="./assets/img/facebook.svg" alt="facebook" class="img-fluid mr-2">
                             <img src="./assets/img/linkedin.svg" alt="linkedin" class="img-fluid mr-2">
                             <img src="./assets/img/twitter.svg" alt="twitter" class="img-fluid">
@@ -583,17 +601,18 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <p class="footer__address">65c, L'Monarch Towers, Opebi, Ikeja, Lagos <br>+234 (809) 0643 874.
+                <div class="col-xl-4 mb-5 mb-xl-0">
+                    <p class="footer__address mb-xl-0">65c, L'Monarch Towers, Opebi, Ikeja, Lagos <br>+234 (809) 0643
+                        874.
                         hello@seamlesshr.com</p>
                 </div>
-                <div class="col-lg-4 ml-auto">
+                <div class="col-xl-4 ml-auto">
                     <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <p class="text-white">Terms of service</p>
+                        <div class="col-6 text-xl-right">
+                            <p class="text-white mb-xl-0">Terms of service</p>
                         </div>
-                        <div class="col-6">
-                            <p class="text-white">Privacy & Security</p>
+                        <div class="col-6 text-xl-right">
+                            <p class="text-white mb-xl-0">Privacy & Security</p>
                         </div>
                     </div>
 

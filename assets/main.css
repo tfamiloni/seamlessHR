@@ -1,28 +1,46 @@
 @font-face {
   font-family: Avenir;
+  src: url(./fonts/AvenirLTStd-Light.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/AvenirLTStd-Book.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
   src: url(./fonts/AvenirLTStd-Roman.otf);
-  font-weight: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url(./fonts/CircularStd-Book.otf);
+  font-weight: 400;
 }
 
 @font-face {
   font-family: Circular;
   src: url(./fonts/CircularStd-Medium.otf);
-  font-weight: normal;
+  font-weight: 500;
 }
 
 @font-face {
   font-family: Circular;
   src: url(./fonts/CircularStd-Bold.otf);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 body {
   font-family: "Circular";
   overflow-x: hidden;
+  color: #454545 !important;
 }
 
 body p {
-  color: #454545;
   font-weight: 300;
 }
 
@@ -53,6 +71,16 @@ body .font-family-circular {
   font-family: "Circular";
 }
 
+body .font-family-avenir,
+body span {
+  font-family: "Avenir";
+}
+
+body h1,
+body .h1 {
+  font-size: 48px !important;
+}
+
 .navigation {
   position: -webkit-sticky;
   position: sticky;
@@ -69,14 +97,10 @@ body .font-family-circular {
 .navigation .navbar .nav-item a,
 .navigation .navbar .nav-item label {
   font-size: 1rem;
+  font-weight: 500;
 }
 
-.navigation .navbar .nav-item a:hover,
-.navigation .navbar .nav-item label:hover {
-  color: #29b32f;
-}
-
-.navigation .navbar .nav-item .nav-link.active {
+.navigation .navbar .nav-item .nav-link.active, .navigation .navbar .nav-item .nav-link:hover {
   color: #29b32f;
 }
 
@@ -105,6 +129,7 @@ body .font-family-circular {
   width: 100vw;
   background: white;
   left: 0;
+  top: 75px;
   max-height: 670px;
   overflow-y: scroll;
   -webkit-box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
@@ -202,6 +227,10 @@ body .font-family-circular {
   position: relative;
 }
 
+.hero .card {
+  border: none;
+}
+
 .hero.home-hero {
   background-image: url(./img/hero-mask.svg);
 }
@@ -261,7 +290,7 @@ body .font-family-circular {
 }
 
 .hero.payroll-hero {
-  background: url(./img/payroll/swoosh.svg);
+  background: url(./img/payroll/curve.svg);
   background-size: cover;
   background-position: bottom center;
 }
@@ -293,7 +322,7 @@ body .font-family-circular {
 }
 
 .hero.performance-hero {
-  background: url(./img/performance/swoosh.svg);
+  background: url(./img/performance/curve.svg);
   background-size: cover;
   background-position: bottom center;
 }
@@ -441,24 +470,24 @@ body .font-family-circular {
 .info-section .info:nth-of-type(odd) .info__image-wrapper::after {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  left: 0;
+  left: -34%;
 }
 
 .info-section .info:nth-of-type(even) .info__image-wrapper::after {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  right: 0;
+  right: -34%;
 }
 
 .info-section .info:first-child .info__image-wrapper::after {
-  top: 7%;
+  top: -2%;
   height: 100%;
-  width: 90%;
+  width: 110%;
 }
 
 .info-section .info:last-child .info__image-wrapper::after {
   top: -10%;
-  height: 120%;
+  height: 100%;
 }
 
 .info-section .info .info__image-wrapper {
@@ -469,10 +498,10 @@ body .font-family-circular {
   content: "";
   background: #d8e4f1;
   position: absolute;
-  width: 80%;
-  height: 90%;
-  top: 20%;
   z-index: -1;
+  width: 110%;
+  height: 85%;
+  top: 13%;
 }
 
 .info-section .info .info__subtitle {
@@ -622,7 +651,7 @@ body .font-family-circular {
 }
 
 .footer .footer__top {
-  border-bottom: 2px solid #1e5083;
+  border-bottom: 1px solid #1e5083;
 }
 
 .footer .footer__top .footer__text {
@@ -648,7 +677,7 @@ body .font-family-circular {
 }
 
 .footer .footer__middle {
-  border-bottom: 2px solid #1e5083;
+  border-bottom: 1px solid rgba(30, 80, 131, 0.5);
 }
 
 .footer .footer__middle .footer__title {
@@ -669,7 +698,7 @@ body .font-family-circular {
 }
 
 .footer .footer__middle .footer__list .footer__list-item:not(:last-of-type) {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 
 .footer .footer__bottom .footer__address {
@@ -981,10 +1010,11 @@ body .font-family-circular {
   overflow: hidden;
 }
 
-#contact .contact-form .form__map {
+#contact .contact-form .contact__map {
   height: 45vh;
   background: url(./img/contact/map.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .form__inputs {
@@ -1145,6 +1175,7 @@ body .font-family-circular {
   height: 47px;
   border: 1px solid #9dbcdc;
   border-radius: 3px;
+  font-size: 18px;
 }
 
 .platform-box {
@@ -1263,12 +1294,6 @@ body .font-family-circular {
   height: 56px;
 }
 
-.price {
-  -webkit-box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
-          box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
-  border-radius: 20px;
-}
-
 @media (max-width: 764.98px) {
   .price {
     border-radius: 0;
@@ -1279,7 +1304,7 @@ body .font-family-circular {
 
 .price .price__wrapper {
   padding: 0;
-  height: 683px;
+  padding-bottom: 40px;
 }
 
 .price .price__wrapper .header,
@@ -1308,7 +1333,14 @@ body .font-family-circular {
   background: #d8e4f1;
 }
 
-@media (max-width: 764.98px) {
+@media (max-width: 991.98px) {
+  .price .price__wrapper.core-price.light-core {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media (max-width: 991.98px) {
   .price .price__wrapper.core-price {
     border-radius: 20px;
     -webkit-box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
@@ -1320,9 +1352,13 @@ body .font-family-circular {
   background: white;
 }
 
+.price .price__wrapper.core-price .price__features {
+  list-style-image: url(./img/tick-white.svg);
+}
+
 .price .price__wrapper.core-price .price__features .price__feature::before {
-  content: url(./img/tick-white.svg);
-  margin-right: 10px;
+  content: "";
+  margin-right: 23px;
 }
 
 .price .price__wrapper.premium-price {
@@ -1338,7 +1374,14 @@ body .font-family-circular {
   background: #d8f1d9;
 }
 
-@media (max-width: 764.98px) {
+@media (max-width: 991.98px) {
+  .price .price__wrapper.premium-price.light-premium {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media (max-width: 991.98px) {
   .price .price__wrapper.premium-price {
     border-radius: 20px;
     -webkit-box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
@@ -1350,9 +1393,13 @@ body .font-family-circular {
   background: #d8f1d9;
 }
 
-.price .price__wrapper.premium-price .price__features .price__feature::before {
-  content: url(./img/tick-green.svg);
-  margin-right: 10px;
+.price .price__wrapper.premium-price .price__features {
+  list-style-image: url(./img/tick-green.svg);
+}
+
+.price .price__wrapper.premium-price .price__features li.price__feature::before {
+  content: "";
+  margin-right: 23px;
 }
 
 .price .price__wrapper.premium-price .price__features .price__feature:first-of-type::before {
@@ -1361,15 +1408,22 @@ body .font-family-circular {
 
 .price .price__wrapper .price__features {
   list-style-type: none;
+  list-style-position: inside;
 }
 
 .price .price__wrapper .price__features .price__feature {
   font-family: "Circular";
-  text-indent: -1em;
 }
 
 .price .price__wrapper .price__features .price__feature:not(:last-of-type) {
   margin-bottom: 15px;
+}
+
+.price .price__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 394px 1fr;
+      grid-template-columns: 394px 1fr;
 }
 
 .sign-up-bg {
@@ -1391,14 +1445,21 @@ body .font-family-circular {
   z-index: -1;
 }
 
-.add-company-bg {
+.add-company-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: url(./img/add-company-details/curve.svg) no-repeat;
-  background-size: cover;
-  background-position: bottom center;
+  background-size: contain;
+  background-position-x: center;
+  z-index: -1;
 }
 
 .sign-up-pricing-bg {
-  background: url(./img/add-company-details/curve.svg) no-repeat;
+  background: url(./img/sign-up-pricing/curve.svg) no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
@@ -1411,6 +1472,19 @@ body .font-family-circular {
   width: 100vw;
   height: 100vh;
   background: url(./img/add-ons/curve.svg) no-repeat;
+  background-size: contain;
+  background-position: top center;
+  z-index: -1;
+}
+
+.payment-summary-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(./img/payment-summary/curve.svg) no-repeat;
   background-size: contain;
   background-position: top center;
   z-index: -1;

@@ -60,4 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
       .querySelector(".product-comparison__selector-grid")
       .addEventListener("click", comparison);
   }
+
+  const showTopFooter = [
+    "index.html",
+    "pricing.html",
+    "performance.html",
+    "recruitment.html"
+  ];
+
+  if (!showTopFooter.includes(currentPage)) {
+    document.querySelector(".footer__top").classList.add("d-none");
+  }
 });

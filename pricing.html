@@ -25,10 +25,12 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header class="navigation">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container px-4 px-lg-0">
+
+        <nav class="navbar navbar-expand-lg navbar-light px-3">
+            <div class="container">
                 <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./assets/img/seamlessHR-logo.svg"
-                        alt=""></a>
+                        alt="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,7 +39,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-md-4 mr-0">
                             <input type="checkbox" name="platformDropdownMenuLink" id="platformDropdownMenuLink">
-                            <label class="nav-link dropdown-toggle" for="platformDropdownMenuLink"
+                            <label class="nav-link dropdown-toggle mb-0" for="platformDropdownMenuLink"
                                 id="platformDropdownMenuLabel" aria-haspopup="true" aria-expanded="false"
                                 role="button">Platforms</label>
                             <div class="platform-menu" aria-labelledby="platformDropdownMenuLink">
@@ -176,29 +178,30 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     <main class="hero pricing-hero pt-xl-5 pb-5">
         <div class="container">
             <div class="row pt-5">
-                <div class="col-xl-5 hero__text pr-5 pt-xl-5 mb-5">
-                    <h1 class="hero__title mt-5">Choose a plan that is right for your business.</h1>
-                    <p class="mt-4 lead hero__description">Quis ea aliquip labore magna labore sit. Voluptate nulla
-                        nostrud veniam consectetur commodo est elit.</p>
-                    <a href="#" class="hero__button btn btn-success btn-lg mt-4 mb-4">Get Started</a>
+                <div class="col-xl-4 hero__text mb-5">
+                    <h2 class="text-36px text-blue mt-5">Choose a plan that is right for your business.</h2>
+                    <p class="mt-4 font-weight-light">HRMS that is easy to set up and scales with you through every
+                        stage of your business.</p>
+                    <a href="#" class="hero__button btn btn-success btn-lg mt-4 mb-5">Get Started</a>
                     <br>
-                    <a href="#">Compare SeamlessHR with other solutions</a>
+                    <a href="#" class="text-decoration-underline">Compare SeamlessHR with other solutions</a>
                 </div>
-                <div class="col-xl-7 price px-4 px-sm-0">
-                    <div class="row">
-                        <div class="col-md-6 price__wrapper core-price mb-5 mb-md-0">
+                <div class="col-xl-8 price">
+                    <div class="row pl-lg-3 ">
+                        <div class="col-lg-6 price__wrapper core-price mb-5 mb-lg-0 mx-3 mx-lg-0">
                             <div class="header">
                                 <h2 class="text-lightblue">Core HR</h2>
                                 <p class="text-white">Get a hold of your HR Operations</p>
                             </div>
-                            <div class="price__band d-flex">
-                                <h1 class="text-blueprimary mr-4 align-items-center">$5</h1>
-                                <p class="text-dark">per employee <br> monthly</p>
+                            <div class="price__band d-flex align-items-center">
+                                <h1 class="text-blueprimary mr-4 mb-3 mb-md-0">$5</h1>
+                                <p class="mb-0 font-weight-bold">per employee <br> monthly</p>
                             </div>
                             <ul class="price__features text-white">
                                 <li class="price__feature">HR information management</li>
@@ -211,14 +214,15 @@
                                 <li class="price__feature">Mobile Apps</li>
                             </ul>
                         </div>
-                        <div class="col-md-6 price__wrapper premium-price">
+
+                        <div class="col-lg-6 price__wrapper premium-price mx-3 mx-lg-0">
                             <div class="header">
                                 <h2 class="text-lightgreen">Premium HR</h2>
                                 <p class="text-white text-18px">Do more than just HR</p>
                             </div>
-                            <div class="price__band d-flex">
-                                <h1 class="text-green mr-4 align-items-center">$9</h1>
-                                <p class="text-dark">per employee <br> monthly</p>
+                            <div class="price__band d-flex align-items-center">
+                                <h1 class="text-green mr-4 mb-3 mb-md-0">$9</h1>
+                                <p class="mb-0 font-weight-bold">per employee <br> monthly</p>
                             </div>
                             <ul class="price__features text-white">
                                 <li class="price__feature">Everything in Core HR with</li>
@@ -487,7 +491,7 @@
     </section>
 
     <footer class="footer">
-        <div class="footer__top row mb-5">
+        <div class="footer__top row">
             <div class="d-none d-xl-block col-xl-3">
                 <img class="img-fluid" src="./assets/img/footer-left.png" alt="">
             </div>
@@ -502,7 +506,7 @@
             </div>
         </div>
 
-        <div class="footer__middle container">
+        <div class="footer__middle container pt-2">
             <div class="row pb-5">
                 <div class="col-xl-3 col-md-6">
                     <h6 class="footer__title my-5">solution</h6>
@@ -553,13 +557,11 @@
         </div>
 
         <div class="footer__bottom py-5 container">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-4  mb-5 mb-lg-0">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <img src="./assets/img/seamlessHR-logo-footer.svg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-6">
+            <div class="row d-flex align-items-end">
+                <div class="col-xl-4  mb-5 mb-xl-0">
+                    <div class="row d-flex align-items-center flex-wrap">
+                        <img src="./assets/img/seamlessHR-logo-footer.svg" alt="" class="img-fluid mr-5">
+                        <div class="">
                             <img src="./assets/img/facebook.svg" alt="facebook" class="img-fluid mr-2">
                             <img src="./assets/img/linkedin.svg" alt="linkedin" class="img-fluid mr-2">
                             <img src="./assets/img/twitter.svg" alt="twitter" class="img-fluid">
@@ -567,17 +569,18 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <p class="footer__address">65c, L'Monarch Towers, Opebi, Ikeja, Lagos <br>+234 (809) 0643 874.
+                <div class="col-xl-4 mb-5 mb-xl-0">
+                    <p class="footer__address mb-xl-0">65c, L'Monarch Towers, Opebi, Ikeja, Lagos <br>+234 (809) 0643
+                        874.
                         hello@seamlesshr.com</p>
                 </div>
-                <div class="col-lg-4 ml-auto">
+                <div class="col-xl-4 ml-auto">
                     <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <p class="text-white">Terms of service</p>
+                        <div class="col-6 text-xl-right">
+                            <p class="text-white mb-xl-0">Terms of service</p>
                         </div>
-                        <div class="col-6">
-                            <p class="text-white">Privacy & Security</p>
+                        <div class="col-6 text-xl-right">
+                            <p class="text-white mb-xl-0">Privacy & Security</p>
                         </div>
                     </div>
 

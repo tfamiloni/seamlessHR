@@ -25,10 +25,12 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header class="navigation">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container px-4 px-lg-0">
+
+        <nav class="navbar navbar-expand-lg navbar-light px-3">
+            <div class="container">
                 <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./assets/img/seamlessHR-logo.svg"
-                        alt=""></a>
+                        alt="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,7 +39,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mr-md-4 mr-0">
                             <input type="checkbox" name="platformDropdownMenuLink" id="platformDropdownMenuLink">
-                            <label class="nav-link dropdown-toggle" for="platformDropdownMenuLink"
+                            <label class="nav-link dropdown-toggle mb-0" for="platformDropdownMenuLink"
                                 id="platformDropdownMenuLabel" aria-haspopup="true" aria-expanded="false"
                                 role="button">Platforms</label>
                             <div class="platform-menu" aria-labelledby="platformDropdownMenuLink">
@@ -176,13 +178,14 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     <section class="hero contact-hero pt-5">
         <div class="container">
-            <div class="row pt-5">
+            <div class="row">
                 <div class="col-lg-8 mb-5 mb-lg-0">
-                    <h1 class="text-blue mt-5">Choose a plan that is right for your business.</h1>
+                    <h1 class="text-blue mt-5">The Core HR Platform</h1>
                     <p class="mt-4">SeamlessHR lets you focus on strategic HR by helping you
                         automate much of your employee lifecycle processes - from hiring through to exit.</p>
                 </div>
@@ -193,32 +196,35 @@
         </div>
     </section>
 
-    <div class="carousel padding-left-normal mb-5">
-        <input checked type="radio" name="feature" id="human-resource-information">
-        <label for="human-resource-information" class="carousel__item" role="button">
-            <img src="./assets/img/carousel/human-resource-information.svg" alt="" class="img-fluid carousel__icon">
-            <p class="mb-0">Human Resource Information</p>
-        </label>
-        <input type="radio" name="feature" id="employee-onboarding" role="button">
-        <label for="employee-onboarding" class="carousel__item"> <img
-                src="./assets/img/carousel/employee-onboarding.svg" alt="" class="img-fluid carousel__icon">
-            <p class="mb-0">Employee Onboarding</p>
-        </label>
-        <input type="radio" name="feature" id="leave-management" role="button">
-        <label for="leave-management" class="carousel__item"> <img src="./assets/img/carousel/leave-management.svg"
-                alt="" class="img-fluid carousel__icon">
-            <p class="mb-0">Leave Management</p>
-        </label>
-        <input type="radio" name="feature" id="disciplinary-management" role="button">
-        <label for="disciplinary-management" class="carousel__item"> <img
-                src="./assets/img/carousel/disciplinary-management.svg" alt="" class="img-fluid carousel__icon">
-            <p class="mb-0">Disciplinary Management</p>
-        </label>
-        <input type="radio" name="feature" id="requisition-travel-procurements" role="button">
-        <label for="requisition-travel-procurements" class="carousel__item"> <img
-                src="./assets/img/carousel/requisition-travel-procurements.svg" alt="" class="img-fluid carousel__icon">
-            <p class="mb-0">Requisition, Travel & Procurements</p>
-        </label>
+    <div class="carousel mb-5">
+        <div class="container d-flex">
+            <input checked type="radio" name="feature" id="human-resource-information">
+            <label for="human-resource-information" class="carousel__item" role="button">
+                <img src="./assets/img/carousel/human-resource-information.svg" alt="" class="img-fluid carousel__icon">
+                <p class="mb-0">Human Resource Information</p>
+            </label>
+            <input type="radio" name="feature" id="employee-onboarding" role="button">
+            <label for="employee-onboarding" class="carousel__item"> <img
+                    src="./assets/img/carousel/employee-onboarding.svg" alt="" class="img-fluid carousel__icon">
+                <p class="mb-0">Employee Onboarding</p>
+            </label>
+            <input type="radio" name="feature" id="leave-management" role="button">
+            <label for="leave-management" class="carousel__item"> <img src="./assets/img/carousel/leave-management.svg"
+                    alt="" class="img-fluid carousel__icon">
+                <p class="mb-0">Leave Management</p>
+            </label>
+            <input type="radio" name="feature" id="disciplinary-management" role="button">
+            <label for="disciplinary-management" class="carousel__item"> <img
+                    src="./assets/img/carousel/disciplinary-management.svg" alt="" class="img-fluid carousel__icon">
+                <p class="mb-0">Disciplinary Management</p>
+            </label>
+            <input type="radio" name="feature" id="requisition-travel-procurements" role="button">
+            <label for="requisition-travel-procurements" class="carousel__item"> <img
+                    src="./assets/img/carousel/requisition-travel-procurements.svg" alt=""
+                    class="img-fluid carousel__icon">
+                <p class="mb-0">Requisition, Travel & Procurements</p>
+            </label>
+        </div>
     </div>
 
     <main class="margin-bottom-normal" id="features">
@@ -239,30 +245,38 @@
                 </div>
             </div>
 
-            <ul class="row flex-nowrap features__list padding-left-normal">
-                <li class="col-11 col-lg-7 features__item">
-                    <div class="features__media mb-4">
-                        <div class="circle"></div>
-                    </div>
-                    <h2>Paperless onboarding</h2>
-                    <p class="maxwidth-558px">Simplify your onboarding process with an entirely paperless and flexible
-                        workflow</p>
-                </li>
-                <li class="col-11 col-lg-7 features__item">
-                    <div class="features__media mb-4">
-                    </div>
-                    <h2>Controlled employee access</h2>
-                    <p class="maxwidth-558px">Choose what HR data fields employees have permissions to update or not.
-                    </p>
-                </li>
+            <ul class="row flex-nowrap features__list">
+                <div class="container d-flex pl-0">
+                    <li class="col-11 col-lg-7 features__item pl-0">
+                        <div class="features__media mb-4">
+                            <div class="circle"></div>
+                        </div>
+                        <h2>Paperless onboarding</h2>
+                        <p class="maxwidth-558px">Simplify your onboarding process with an entirely
+                            paperless and
+                            flexible
+                            workflow</p>
+                    </li>
+                    <li class="col-11 col-lg-7 features__item">
+                        <div class="features__media mb-4">
+                        </div>
+                        <h2>Controlled employee access</h2>
+                        <p class="maxwidth-558px">Choose what HR data fields employees have
+                            permissions to update or
+                            not.
+                        </p>
+                    </li>
+                </div>
             </ul>
+
         </section>
     </main>
 
 
-    <footer class="footer">
 
-        <section class="padding-y-normal" id="evenMoreJuice">
+    <footer class="footer pt-4">
+
+        <section class="pt-5" id="evenMoreJuice">
             <div class="container">
                 <h2 class="text-white">Even more juice.</h2>
                 <p class="maxwidth-558px mb-5 text-white">You can choose to add more options to your core or premium
@@ -303,7 +317,7 @@
 
         </section>
 
-        <div class="footer__middle container">
+        <div class="footer__middle container pt-4">
             <div class="row pb-5">
                 <div class="col-xl-3 col-md-6">
                     <h6 class="footer__title my-5">solution</h6>
@@ -354,13 +368,11 @@
         </div>
 
         <div class="footer__bottom py-5 container">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-4  mb-5 mb-lg-0">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <img src="./assets/img/seamlessHR-logo-footer.svg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-6">
+            <div class="row d-flex align-items-end">
+                <div class="col-xl-4  mb-5 mb-xl-0">
+                    <div class="row d-flex align-items-center flex-wrap">
+                        <img src="./assets/img/seamlessHR-logo-footer.svg" alt="" class="img-fluid mr-5">
+                        <div class="">
                             <img src="./assets/img/facebook.svg" alt="facebook" class="img-fluid mr-2">
                             <img src="./assets/img/linkedin.svg" alt="linkedin" class="img-fluid mr-2">
                             <img src="./assets/img/twitter.svg" alt="twitter" class="img-fluid">
@@ -368,17 +380,18 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <p class="footer__address">65c, L'Monarch Towers, Opebi, Ikeja, Lagos <br>+234 (809) 0643 874.
+                <div class="col-xl-4 mb-5 mb-xl-0">
+                    <p class="footer__address mb-xl-0">65c, L'Monarch Towers, Opebi, Ikeja, Lagos <br>+234 (809) 0643
+                        874.
                         hello@seamlesshr.com</p>
                 </div>
-                <div class="col-lg-4 ml-auto">
+                <div class="col-xl-4 ml-auto">
                     <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <p class="text-white">Terms of service</p>
+                        <div class="col-6 text-xl-right">
+                            <p class="text-white mb-xl-0">Terms of service</p>
                         </div>
-                        <div class="col-6">
-                            <p class="text-white">Privacy & Security</p>
+                        <div class="col-6 text-xl-right">
+                            <p class="text-white mb-xl-0">Privacy & Security</p>
                         </div>
                     </div>
 
