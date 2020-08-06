@@ -38,7 +38,7 @@ body {
   font-family: "Avenir";
   overflow-x: hidden;
   color: #454545;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
 }
 
@@ -75,6 +75,31 @@ body .h1 {
   font-size: 3rem;
 }
 
+body h2,
+body .h2 {
+  font-size: 2.25rem;
+}
+
+body h3,
+body .h3 {
+  font-size: 2rem;
+}
+
+body h4,
+body .h4 {
+  font-size: 1.75rem;
+}
+
+body h5,
+body .h5 {
+  font-size: 1.5rem;
+}
+
+body h6,
+body .h6 {
+  font-size: 1.125rem;
+}
+
 .navigation {
   position: -webkit-sticky;
   position: sticky;
@@ -86,6 +111,10 @@ body .h1 {
 .navigation .navbar {
   min-height: 75px;
   padding: 0;
+}
+
+.navigation .navbar .nav-item {
+  font-weight: 500;
 }
 
 .navigation .navbar .nav-item a,
@@ -207,7 +236,7 @@ body .h1 {
   -webkit-box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
           box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
   border-radius: 10px;
-  top: 60px;
+  top: 58px;
 }
 
 .navigation .navbar .dropdown-menu a {
@@ -448,17 +477,83 @@ body .h1 {
   }
 }
 
-.hero .hero__text .hero__title {
-  color: #1e5083;
-  font-weight: bold;
+.hero.about-hero {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #fff), color-stop(75%, #f4f7fb));
+  background: linear-gradient(to bottom, #fff 75%, #f4f7fb 75%);
 }
 
-.hero .hero__text .hero__button {
-  font-weight: 500;
-  padding: 18px 53px;
-  -webkit-box-shadow: 0px 9px 30px rgba(19, 50, 82, 0.2);
-          box-shadow: 0px 9px 30px rgba(19, 50, 82, 0.2);
-  border-radius: 5px;
+.hero.about-hero .image-wrapper {
+  -webkit-box-shadow: 0px 0px 115px rgba(19, 50, 82, 0.1);
+          box-shadow: 0px 0px 115px rgba(19, 50, 82, 0.1);
+  border-radius: 10px 0 0 10px;
+  padding: 39px 33px;
+  padding-right: 0px;
+  background: white;
+  margin-right: -13.5vw;
+}
+
+.hero.about-hero .image-wrapper img {
+  width: 100%;
+}
+
+.hero.customer-stories-hero .image-wrapper {
+  padding-right: 0px;
+  background: white;
+  margin-right: -10vw;
+}
+
+.hero.customer-stories-hero .image-wrapper img {
+  width: 100%;
+}
+
+.hero.careers-hero .plane-wrapper {
+  width: 25%;
+  position: absolute;
+  right: 10%;
+  top: 110%;
+}
+
+.hero.careers-hero .image-bg {
+  position: relative;
+}
+
+.hero.careers-hero .image-bg::before, .hero.careers-hero .image-bg::after {
+  content: "";
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.hero.careers-hero .image-bg::before {
+  background: #9ddca0;
+  -webkit-transform: translateY(-50%) rotate(7.71deg);
+          transform: translateY(-50%) rotate(7.71deg);
+  height: 88.6073298429%;
+  width: 88.60901114%;
+}
+
+.hero.careers-hero .image-bg::after {
+  left: 100%;
+  top: 52%;
+  background: #296db3;
+  -webkit-transform: translate(-100%, -50%) rotate(-4.88deg);
+          transform: translate(-100%, -50%) rotate(-4.88deg);
+  height: 96.0628272251%;
+  width: 96.0634200137%;
+}
+
+.hero.careers-hero .image-bg .video {
+  -webkit-box-shadow: 0px 25px 115px rgba(19, 50, 82, 0.1);
+          box-shadow: 0px 25px 115px rgba(19, 50, 82, 0.1);
+  border-radius: 10px;
+}
+
+.hero.careers-hero .image-bg .plane {
+  position: absolute;
+  left: 89.42%;
+  top: 41.67%;
 }
 
 .info-section .info:nth-of-type(odd) .info__image-wrapper::after {
@@ -1011,14 +1106,44 @@ body .h1 {
   background-position: center;
 }
 
-.form__inputs {
-  padding: 37px 56px;
+#customer-stories-reviews {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(78%, #133252), color-stop(78%, transparent));
+  background: linear-gradient(to bottom, #133252 78%, transparent 78%);
 }
 
-.form__inputs .form-control {
-  border: 1px solid #9dbcdc;
-  border-radius: 3px;
-  min-height: 40px;
+#customer-stories-reviews .review__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-bottom: 118px;
+}
+
+#customer-stories-reviews .review__list::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  display: none;
+}
+
+#customer-stories-reviews .review__list .review__item {
+  min-width: 605px;
+  height: 438px;
+  background: #ffffff;
+  border: 1px solid #d8e4f1;
+  -webkit-box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
+          box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
+  border-radius: 10px;
+  padding: 47px 50px 53.96px 52px;
+  margin-right: 40px;
+}
+
+#customer-stories-reviews .video {
+  background: white;
+  -webkit-box-shadow: 0px 25px 115px rgba(19, 50, 82, 0.2);
+          box-shadow: 0px 25px 115px rgba(19, 50, 82, 0.2);
+  border-radius: 10px;
 }
 
 #payroll-features .features__grid {
@@ -1157,6 +1282,160 @@ body .h1 {
 
 #summaryOfPurchase .card ul {
   list-style-type: none;
+}
+
+#aboutUsValue {
+  background: url(./img/about-us/value-curve.svg) no-repeat left;
+  background-position-y: -60px;
+  background-size: contain;
+}
+
+#aboutUsValue .row .image-wrapper {
+  -webkit-box-shadow: 0px 0px 115px rgba(19, 50, 82, 0.1);
+          box-shadow: 0px 0px 115px rgba(19, 50, 82, 0.1);
+  background: white;
+  padding: 39px 33px;
+}
+
+#aboutUsValue .row .image-wrapper img {
+  width: 100%;
+}
+
+#aboutUsValue .row:first-of-type .image-wrapper {
+  border-radius: 0 10px 10px 0;
+  padding-left: 0px;
+  margin-left: -10vw;
+}
+
+#aboutUsValue .row:nth-of-type(2) .image-wrapper {
+  border-radius: 10px 0 0 10px;
+  padding-right: 0px;
+  margin-right: -10vw;
+}
+
+#coreValues .values__list {
+  list-style-type: none;
+}
+
+#coreValues .values__list .values__item {
+  min-width: 400px;
+  width: 400px;
+  height: 300px;
+  -webkit-box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
+          box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 130px 41px 20px 41px;
+  position: relative;
+}
+
+#coreValues .values__list .values__item .values__image {
+  position: absolute;
+  top: 32.41px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 0;
+}
+
+#coreValues .values__list .values__item h4,
+#coreValues .values__list .values__item p {
+  z-index: 1;
+  position: relative;
+}
+
+#coreValues .values__list .values__item.candor {
+  background: #F4F7FB;
+  border: 1px solid #9DBCDC;
+}
+
+#coreValues .values__list .values__item.candor h4 {
+  color: #133252;
+}
+
+#coreValues .values__list .values__item.candor p {
+  color: #1E5083;
+}
+
+#coreValues .values__list .values__item.selflessness {
+  background: #F9F3FA;
+  opacity: 0.8;
+  border: 1px solid #D099D5;
+}
+
+#coreValues .values__list .values__item.selflessness h4 {
+  color: #460F4B;
+}
+
+#coreValues .values__list .values__item.selflessness p {
+  color: #701778;
+}
+
+#coreValues .values__list .values__item.thirst {
+  background: #F4FBF4;
+  border: 1px solid #9DDCA0;
+}
+
+#coreValues .values__list .values__item.thirst h4 {
+  color: #135216;
+}
+
+#coreValues .values__list .values__item.thirst p {
+  color: #1E8323;
+}
+
+#coreValues .values__list .values__item.communication {
+  background: #F5F6FB;
+  border: 1px solid #A7AFDD;
+}
+
+#coreValues .values__list .values__item.communication h4 {
+  color: #1D2553;
+}
+
+#coreValues .values__list .values__item.communication p {
+  color: #2E3B84;
+}
+
+#coreValues .values__list #plane-3 {
+  position: absolute;
+  width: 11%;
+  z-index: 10;
+  left: 75vw;
+  margin-top: -25.64px;
+}
+
+#plane-4 {
+  position: absolute;
+  left: 30%;
+}
+
+#jobOpenings {
+  background: url(./img/careers/curve.svg) no-repeat top center;
+  background-size: cover;
+}
+
+#jobOpenings .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 1fr);
+  grid-gap: 50px;
+}
+
+@media (min-width: 300px) {
+  #jobOpenings .grid {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+#jobOpenings .grid .card {
+  padding: 18px 45px 45px 45px;
+  border: 1px solid #D8E4F1;
+  -webkit-box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
+          box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
+  border-radius: 5px;
 }
 
 .add-in-product {

@@ -64,11 +64,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const showTopFooter = [
     "index.html",
     "pricing.html",
-    "performance.html",
-    "recruitment.html"
+    "performance-management.html",
+    "recruitment-management.html"
+  ];
+
+  const platformSubMenus = [
+    "core-hr.html",
+    "performance-management.html",
+    "recruitment-management.html",
+    "payroll-management.html"
   ];
 
   if (!showTopFooter.includes(currentPage)) {
     document.querySelector(".footer__top").classList.add("d-none");
+  }
+
+  if (platformSubMenus.includes(currentPage)) {
+    document
+      .getElementById("platformDropdownMenuLabel")
+      .classList.add("active");
   }
 });
