@@ -49,6 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   setActive();
+  comparison();
+  document
+    .querySelector(".product-comparison__selector-grid")
+    .addEventListener("click", comparison);
 
   if (currentPage === "core-hr.html") {
     randomiseFeature();
