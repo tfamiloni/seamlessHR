@@ -556,6 +556,10 @@ body .h6 {
   top: 41.67%;
 }
 
+.hero.faq-hero {
+  background: linear-gradient(82.5deg, #effcef -0.25%, #eef5ff 64.5%);
+}
+
 .info-section .info:nth-of-type(odd) .info__image-wrapper::after {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1345,8 +1349,8 @@ body .h6 {
 }
 
 #coreValues .values__list .values__item.candor {
-  background: #F4F7FB;
-  border: 1px solid #9DBCDC;
+  background: #f4f7fb;
+  border: 1px solid #9dbcdc;
 }
 
 #coreValues .values__list .values__item.candor h4 {
@@ -1354,17 +1358,17 @@ body .h6 {
 }
 
 #coreValues .values__list .values__item.candor p {
-  color: #1E5083;
+  color: #1e5083;
 }
 
 #coreValues .values__list .values__item.selflessness {
-  background: #F9F3FA;
+  background: #f9f3fa;
   opacity: 0.8;
-  border: 1px solid #D099D5;
+  border: 1px solid #d099d5;
 }
 
 #coreValues .values__list .values__item.selflessness h4 {
-  color: #460F4B;
+  color: #460f4b;
 }
 
 #coreValues .values__list .values__item.selflessness p {
@@ -1372,8 +1376,8 @@ body .h6 {
 }
 
 #coreValues .values__list .values__item.thirst {
-  background: #F4FBF4;
-  border: 1px solid #9DDCA0;
+  background: #f4fbf4;
+  border: 1px solid #9ddca0;
 }
 
 #coreValues .values__list .values__item.thirst h4 {
@@ -1381,20 +1385,20 @@ body .h6 {
 }
 
 #coreValues .values__list .values__item.thirst p {
-  color: #1E8323;
+  color: #1e8323;
 }
 
 #coreValues .values__list .values__item.communication {
-  background: #F5F6FB;
-  border: 1px solid #A7AFDD;
+  background: #f5f6fb;
+  border: 1px solid #a7afdd;
 }
 
 #coreValues .values__list .values__item.communication h4 {
-  color: #1D2553;
+  color: #1d2553;
 }
 
 #coreValues .values__list .values__item.communication p {
-  color: #2E3B84;
+  color: #2e3b84;
 }
 
 #coreValues .values__list #plane-3 {
@@ -1432,7 +1436,7 @@ body .h6 {
 
 #jobOpenings .grid .card {
   padding: 18px 45px 45px 45px;
-  border: 1px solid #D8E4F1;
+  border: 1px solid #d8e4f1;
   -webkit-box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
           box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
   border-radius: 5px;

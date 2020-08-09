@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   let links = document.querySelectorAll(".nav-link, .platform-item");
 
-  let currentPage = window.location.pathname.split("/")[1];
+  let currentPage = window.location.pathname.split("/").pop();
 
   let rivalInfo = document.querySelectorAll(".rival-info");
   let productSelectors = document.querySelectorAll(
@@ -49,10 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   setActive();
-  comparison();
-  document
-    .querySelector(".product-comparison__selector-grid")
-    .addEventListener("click", comparison);
 
   if (currentPage === "core-hr.html") {
     randomiseFeature();
