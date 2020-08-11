@@ -121,7 +121,7 @@ body .h6 {
 
 .navigation .navbar .nav-item a.nav-link,
 .navigation .navbar .nav-item label.nav-link {
-  color: #454545 !important;
+  color: #454545;
   font-weight: 500;
 }
 
@@ -175,6 +175,23 @@ body .h6 {
   }
 }
 
+.navigation .navbar .platform-menu .platform-menu__close {
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.navigation .navbar .platform-menu .platform-menu__close svg {
+  fill: #9DBCDC;
+  -webkit-transition: 0.3s fill linear;
+  transition: 0.3s fill linear;
+}
+
+.navigation .navbar .platform-menu .platform-menu__close:hover svg {
+  fill: #1E5083;
+}
+
 .navigation .navbar .platform-menu .platform-grid {
   -ms-grid-columns: (minmax(299.34px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(299.34px, 1fr));
@@ -195,12 +212,20 @@ body .h6 {
   position: relative;
 }
 
+.navigation .navbar .platform-menu .platform-grid .platform-item:hover {
+  text-decoration: none;
+}
+
+.navigation .navbar .platform-menu .platform-grid .platform-item:hover .platform-item__heading {
+  color: #29b32f;
+}
+
 .navigation .navbar .platform-menu .platform-grid .platform-item.active {
   background: #29b32f;
 }
 
-.navigation .navbar .platform-menu .platform-grid .platform-item.active h6,
-.navigation .navbar .platform-menu .platform-grid .platform-item.active p {
+.navigation .navbar .platform-menu .platform-grid .platform-item.active .platform-item__heading,
+.navigation .navbar .platform-menu .platform-grid .platform-item.active .platform-item__text {
   color: white;
 }
 
@@ -219,10 +244,14 @@ body .h6 {
 
 .navigation .navbar .platform-menu .platform-grid .platform-item .platform-item__heading {
   font-size: 18px;
+  color: #1E5083;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
 }
 
 .navigation .navbar .platform-menu .platform-grid .platform-item .platform-item__text {
   font-size: 14px;
+  color: #454545;
 }
 
 .navigation .navbar .platform-menu .platform-menu__link {
@@ -290,13 +319,6 @@ body .h6 {
 .hero.pricing-hero::after {
   background: url(./img/pricing-hero-right.png);
   background-position: top right;
-  background-repeat: no-repeat;
-}
-
-.hero.pricing-hero::before {
-  background: url(./img/pricing-hero-left.png);
-  background-position-x: left;
-  background-position-y: 70%;
   background-repeat: no-repeat;
 }
 
@@ -1122,9 +1144,7 @@ body .h6 {
 
 #contact .contact-form .contact__map {
   height: 45vh;
-  background: url(./img/contact/map.jpg);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
 }
 
 #customer-stories-reviews {

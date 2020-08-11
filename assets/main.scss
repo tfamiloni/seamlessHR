@@ -121,7 +121,7 @@ body {
         font-weight: 500;
 
         &.nav-link {
-          color: #454545 !important;
+          color: #454545;
           font-weight: 500;
 
           &.active,
@@ -169,6 +169,24 @@ body {
         transform: translateY(-100vh);
       }
 
+      .platform-menu__close {
+        height: 30px;
+        width: 30px;
+        overflow: hidden;
+        cursor: pointer;
+
+        svg {
+          fill: #9DBCDC;
+          transition: 0.3s fill linear;
+        }
+
+        &:hover {
+          svg {
+            fill: #1E5083;
+          }
+        }
+      }
+
       .platform-grid {
         grid-template-columns: repeat(auto-fill, minmax(299.34px, 1fr));
         grid-gap: 17.55px;
@@ -184,11 +202,19 @@ body {
           padding: 36px 31.2px;
           position: relative;
 
+          &:hover {
+            text-decoration: none;
+
+            .platform-item__heading {
+              color: #29b32f;
+            }
+          }
+
           &.active {
             background: #29b32f;
 
-            h6,
-            p {
+            .platform-item__heading,
+            .platform-item__text {
               color: white;
             }
           }
@@ -208,10 +234,13 @@ body {
 
           .platform-item__heading {
             font-size: 18px;
+            color: #1E5083;
+            transition: 0.2s all ease;
           }
 
           .platform-item__text {
             font-size: 14px;
+            color: #454545;
           }
         }
       }
@@ -282,12 +311,12 @@ body {
       background-repeat: no-repeat;
     }
 
-    &::before {
-      background: url(./img/pricing-hero-left.png);
-      background-position-x: left;
-      background-position-y: 70%;
-      background-repeat: no-repeat;
-    }
+    // &::before {
+    //   background: url(./img/pricing-hero-left.png);
+    //   background-position-x: left;
+    //   background-position-y: 70%;
+    //   background-repeat: no-repeat;
+    // }
   }
 
   &.contact-hero {
@@ -1099,9 +1128,7 @@ body {
 
     .contact__map {
       height: 45vh;
-      background: url(./img/contact/map.jpg);
-      background-size: cover;
-      background-position: center;
+      overflow: hidden;
     }
   }
 }
