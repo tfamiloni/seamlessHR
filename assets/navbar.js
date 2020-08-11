@@ -75,6 +75,23 @@ document.addEventListener("DOMContentLoaded", () => {
     "payroll-management.html"
   ];
 
+  const companySubMenus = [
+    "about.html",
+    "careers.html",
+    "customer-stories.html",
+    "why-seamless.html",
+    "press.html",
+    "partners.html"
+  ];
+
+  const resourcesSubMenus = [
+    "FAQ.html",
+    "insights.html",
+    "guides-tutorials.html",
+    "ebooks.html",
+    "blog.html"
+  ];
+
   if (!showTopFooter.includes(currentPage)) {
     document.querySelector(".footer__top").classList.add("d-none");
   }
@@ -82,6 +99,16 @@ document.addEventListener("DOMContentLoaded", () => {
   if (platformSubMenus.includes(currentPage)) {
     document
       .getElementById("platformDropdownMenuLabel")
+      .classList.add("active");
+  }
+
+  if (companySubMenus.includes(currentPage)) {
+    document.getElementById("companyDropdownLink").classList.add("active");
+  }
+
+  if (resourcesSubMenus.includes(currentPage)) {
+    document
+      .getElementById("resourcesDropdownMenuLink")
       .classList.add("active");
   }
 });

@@ -114,31 +114,34 @@ body {
     padding: 0;
 
     .nav-item {
-      font-weight: 500;
 
       a,
       label {
         font-size: 1rem;
         font-weight: 500;
-      }
 
-      .nav-link {
-        &.active,
-        &:hover {
-          color: #29b32f;
+        &.nav-link {
+          color: #454545 !important;
+          font-weight: 500;
+
+          &.active,
+          &:hover {
+            color: #29b32f;
+          }
         }
       }
+
     }
 
     #platformDropdownMenuLink {
       display: none;
       cursor: pointer;
 
-      &:checked ~ label {
+      &:checked~label {
         color: #29b32f;
       }
 
-      &:checked ~ .platform-menu {
+      &:checked~.platform-menu {
         transform: translateY(0);
         visibility: visible;
       }
@@ -247,7 +250,14 @@ body {
   }
 
   &.home-hero {
-    background-image: url(./img/hero-mask.svg);
+    background: url(./img/hero-mask.svg) no-repeat center center;
+    background-size: cover;
+
+    .home-hero__image {
+      // margin-right: -9.7vw;
+      transform-origin: left center;
+      transform: scale(1.3);
+    }
   }
 
   &.pricing-hero {
@@ -532,6 +542,7 @@ body {
 
   &.faq-hero {
     background: linear-gradient(82.5deg, #effcef -0.25%, #eef5ff 64.5%);
+    border-bottom: 1px solid #D8E4F1;
   }
 }
 
@@ -877,7 +888,7 @@ body {
       visibility: hidden;
       display: none;
 
-      &:checked + .product-comparison__selector {
+      &:checked+.product-comparison__selector {
         background: #f4f7fb;
         border: 1px solid #9dbcdc;
       }
@@ -952,6 +963,10 @@ body {
 #FAQ {
   background: #f4f7fb;
 
+  &.tab-content {
+    background: #FFFFFF;
+  }
+
   .FAQ__list {
     max-width: 840px;
     margin: auto;
@@ -979,12 +994,12 @@ body {
         visibility: hidden;
         display: none;
 
-        &:checked ~ .answer {
+        &:checked~.answer {
           height: auto;
           overflow: unset;
         }
 
-        &:checked ~ .question {
+        &:checked~.question {
           color: #296db3;
         }
       }
@@ -1499,7 +1514,7 @@ body {
     display: none;
     visibility: hidden;
 
-    &:checked + .carousel__item {
+    &:checked+.carousel__item {
       height: 111px;
       margin-top: 0px;
       box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
@@ -1531,8 +1546,10 @@ body {
 }
 
 .price {
-  //   box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
-  //   border-radius: 20px;
+
+  &.price-shadow {
+    filter: drop-shadow(0px 20px 55px rgba(19, 50, 82, 0.25))
+  }
 
   @media (max-width: 764.98px) {
     border-radius: 0;
