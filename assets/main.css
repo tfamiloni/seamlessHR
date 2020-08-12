@@ -426,21 +426,20 @@ body .h6 {
 
 .hero.recruitment-hero .card .magnet-rectangle {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 73.78px;
   height: 91.18px;
-  background: #d8e4f1;
   -webkit-box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
           box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
   border-radius: 5px;
 }
 
 .hero.recruitment-hero .card .magnet-rectangle:first-of-type {
+  background: #F4F7FB;
   -webkit-transform: matrix(0.87, -0.49, 0.49, 0.87, 0, 0);
           transform: matrix(0.87, -0.49, 0.49, 0.87, 0, 0);
   left: -7%;
   top: -30px;
+  opacity: 1;
 }
 
 .hero.recruitment-hero .card .magnet-rectangle:nth-of-type(2) {
@@ -448,6 +447,7 @@ body .h6 {
           transform: matrix(0.97, -0.25, 0.25, 0.97, 0, 0);
   left: 10%;
   top: -3%;
+  background: #F9F3FA;
 }
 
 .hero.recruitment-hero .card .magnet-rectangle:last-of-type {
@@ -455,6 +455,7 @@ body .h6 {
           transform: matrix(0.59, -0.81, 0.81, 0.58, 0, 0);
   top: 25%;
   left: 0%;
+  background: #F4FBF4;
 }
 
 @media (min-width: 992px) {
