@@ -759,6 +759,15 @@ body .h6 {
   position: absolute;
   background: #fbcb8c;
   border-radius: 20px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.details .detail .detail__image.aos-animate::before {
   -webkit-transform: rotate(-7.5deg);
           transform: rotate(-7.5deg);
 }
@@ -775,6 +784,9 @@ body .h6 {
   height: 82%;
   position: absolute;
   background: #9dbcdc;
+}
+
+.details .detail:nth-of-type(even) .detail__image.aos-animate::before {
   -webkit-transform: rotate(7.5deg);
           transform: rotate(7.5deg);
 }

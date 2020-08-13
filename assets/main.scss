@@ -753,6 +753,12 @@ body {
         position: absolute;
         background: #fbcb8c;
         border-radius: 20px;
+        transform: rotate(0deg);
+        transition: 0.5s all ease;
+        transition-delay: 1s;
+      }
+
+      &.aos-animate::before {
         transform: rotate(-7.5deg);
       }
     }
@@ -775,6 +781,9 @@ body {
           height: 82%;
           position: absolute;
           background: #9dbcdc;
+        }
+
+        &.aos-animate::before {
           transform: rotate(7.5deg);
         }
       }
