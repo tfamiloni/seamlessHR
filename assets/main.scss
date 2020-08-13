@@ -217,18 +217,23 @@ body {
             .platform-item__text {
               color: white;
             }
+
+            .platform-item__badge {
+              background: white;
+              color: #29b32f;
+            }
+
           }
 
           .platform-item__badge {
             right: 10.34px;
             top: 9px;
             position: absolute;
-            background: #d8e4f1;
-            opacity: 0.6;
+            background: rgba($color: #d8e4f1, $alpha: 0.6);
             border-radius: 3px;
             font-size: 10px;
             letter-spacing: 2px;
-            color: #9dbcdc;
+            color: #9DBCDC;
             padding: 3px 8px;
           }
 
@@ -412,11 +417,8 @@ body {
 
       .magnet-rectangle {
         position: absolute;
-        // left: 0;
-        // top: 0;
         width: 73.78px;
         height: 91.18px;
-        // background: #d8e4f1;
         box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
         border-radius: 5px;
 
@@ -481,6 +483,10 @@ body {
             left: -10%;
           }
         }
+      }
+
+      .hero__image {
+        width: 100%;
       }
     }
 

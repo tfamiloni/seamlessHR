@@ -229,16 +229,20 @@ body .h6 {
   color: white;
 }
 
+.navigation .navbar .platform-menu .platform-grid .platform-item.active .platform-item__badge {
+  background: white;
+  color: #29b32f;
+}
+
 .navigation .navbar .platform-menu .platform-grid .platform-item .platform-item__badge {
   right: 10.34px;
   top: 9px;
   position: absolute;
-  background: #d8e4f1;
-  opacity: 0.6;
+  background: rgba(216, 228, 241, 0.6);
   border-radius: 3px;
   font-size: 10px;
   letter-spacing: 2px;
-  color: #9dbcdc;
+  color: #9DBCDC;
   padding: 3px 8px;
 }
 
@@ -498,6 +502,10 @@ body .h6 {
     top: 25%;
     left: -10%;
   }
+}
+
+.hero.recruitment-hero .card .hero__image {
+  width: 100%;
 }
 
 .hero.recruitment-hero .floating-image {
