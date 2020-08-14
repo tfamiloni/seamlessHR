@@ -16,6 +16,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/utility.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="grey-bg">
@@ -272,14 +273,14 @@
 
             <!-- Agile Collaboration. -->
             <div class="detail row d-flex align-items-center b-5">
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
                     <h1 class="mb-4">Agile Collaboration.</h1>
                     <p class="mb-5">Merge modern leadership style with transparent goal setting and agile planning
                         cycles to encourage focus and work together to achieve and even surpass shared goals.</p>
                 </div>
                 <div class="offset-lg-1 col-lg-6">
-                    <div class="detail__image">
-                        <img src="./assets/img/payroll/image.svg" alt="" class="img-fluid">
+                    <div class="detail__image" data-aos="slide-up">
+                        <img src="./assets/img/performance/agile-full.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -287,13 +288,14 @@
             <!-- Continuous engagement. -->
             <div class="detail row d-flex align-items-center py-5">
                 <div class="col-lg-6 order-2 order-lg-1">
-                    <div class="detail__image">
-                        <img src="./assets/img/payroll/image.svg" alt="" class="img-fluid">
+                    <div class="detail__image" data-aos="slide-up">
+                        <img src="./assets/img/performance/engagement-full.png" alt="" class="img-fluid">
                     </div>
 
                 </div>
 
-                <div class="offset-lg-1 col-lg-5 order-1 order-lg-2">
+                <div class="offset-lg-1 col-lg-5 order-1 order-lg-2" data-aos="fade-right"
+                    data-aos-easing="ease-out-cubic" data-aos-delay="1000">
                     <h1 class="mb-4">Continuous engagement</h1>
                     <p class="mb-5">Performance is improved when there is feedback. Create a culture of honest
                         conversation and feedback while build­ing healthy rela­tion­ships.</p>
@@ -303,14 +305,14 @@
 
             <!-- Autonomous teams. -->
             <div class="detail row d-flex align-items-center py-5">
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-delay="1000">
                     <h1 class="mb-4">Autonomous teams.</h1>
                     <p class="mb-5">Empower your employees to take ownership of their work as they contribute to the big
                         picture.</p>
                 </div>
                 <div class="offset-lg-1 col-lg-6">
-                    <div class="detail__image">
-                        <img src="./assets/img/payroll/image.svg" alt="" class="img-fluid">
+                    <div class="detail__image" data-aos="slide-up">
+                        <img src="./assets/img/performance/autonomous-full.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -318,13 +320,14 @@
             <!-- Productive remote working. -->
             <div class="detail row d-flex align-items-center py-5">
                 <div class="col-lg-6 order-2 order-lg-1">
-                    <div class="detail__image">
-                        <img src="./assets/img/payroll/image.svg" alt="" class="img-fluid">
+                    <div class="detail__image" data-aos="slide-up">
+                        <img src="./assets/img/performance/productive-full.png" alt="" class="img-fluid">
                     </div>
 
                 </div>
 
-                <div class="offset-lg-1 col-lg-5 order-1 order-lg-2">
+                <div class="offset-lg-1 col-lg-5 order-1 order-lg-2" data-aos="fade-right"
+                    data-aos-easing="ease-out-cubic" data-aos-delay="1000">
                     <h1 class="mb-4">Productive remote working.</h1>
                     <p class="mb-5">Easily provide remote teams with clarity on goals and priorities; keep them
                         productive and motivated with regular engagement.</p>
@@ -488,6 +491,12 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
     <script src="./assets/navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        })
+    </script>
 </body>
 
 </html>

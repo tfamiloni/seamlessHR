@@ -745,8 +745,8 @@ body .h6 {
 .details .detail .detail__image img {
   position: relative;
   z-index: 1;
-  -webkit-box-shadow: 0px 15px 25px rgba(19, 50, 82, 0.1);
-          box-shadow: 0px 15px 25px rgba(19, 50, 82, 0.1);
+  -webkit-filter: drop-shadow(0px 15px 25px rgba(19, 50, 82, 0.1));
+          filter: drop-shadow(0px 15px 25px rgba(19, 50, 82, 0.1));
   border-radius: 10px;
 }
 
