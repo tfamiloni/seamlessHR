@@ -183,13 +183,13 @@ body .h6 {
 }
 
 .navigation .navbar .platform-menu .platform-menu__close svg {
-  fill: #9DBCDC;
+  fill: #9dbcdc;
   -webkit-transition: 0.3s fill linear;
   transition: 0.3s fill linear;
 }
 
 .navigation .navbar .platform-menu .platform-menu__close:hover svg {
-  fill: #1E5083;
+  fill: #1e5083;
 }
 
 .navigation .navbar .platform-menu .platform-grid {
@@ -242,13 +242,13 @@ body .h6 {
   border-radius: 3px;
   font-size: 10px;
   letter-spacing: 2px;
-  color: #9DBCDC;
+  color: #9dbcdc;
   padding: 3px 8px;
 }
 
 .navigation .navbar .platform-menu .platform-grid .platform-item .platform-item__heading {
   font-size: 18px;
-  color: #1E5083;
+  color: #1e5083;
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
@@ -291,8 +291,12 @@ body .h6 {
   border: none;
 }
 
+.hero .hero__image {
+  width: 100%;
+}
+
 .hero.home-hero {
-  background: url(./img/hero-mask.svg) no-repeat center center;
+  background: url(./img/index/hero-bg.svg) no-repeat center center;
   background-size: cover;
 }
 
@@ -378,7 +382,7 @@ body .h6 {
 
 @media (min-width: 1200px) {
   .hero.payroll-hero .floating-image {
-    margin-top: -145px;
+    margin-top: -125px;
   }
 }
 
@@ -407,12 +411,12 @@ body .h6 {
 
 @media (min-width: 1200px) {
   .hero.performance-hero .floating-image {
-    margin-top: -125px;
+    margin-top: -115px;
   }
 }
 
 .hero.recruitment-hero {
-  background: url(./img/performance/swoosh.svg);
+  background: url(./img/recruitment/curve.svg);
   background-size: cover;
   background-position: bottom center;
   padding-top: 63px;
@@ -438,7 +442,7 @@ body .h6 {
 }
 
 .hero.recruitment-hero .card .magnet-rectangle:first-of-type {
-  background: #F4F7FB;
+  background: #f4f7fb;
   -webkit-transform: matrix(0.87, -0.49, 0.49, 0.87, 0, 0);
           transform: matrix(0.87, -0.49, 0.49, 0.87, 0, 0);
   left: -7%;
@@ -451,7 +455,7 @@ body .h6 {
           transform: matrix(0.97, -0.25, 0.25, 0.97, 0, 0);
   left: 10%;
   top: -3%;
-  background: #F9F3FA;
+  background: #f9f3fa;
 }
 
 .hero.recruitment-hero .card .magnet-rectangle:last-of-type {
@@ -459,7 +463,7 @@ body .h6 {
           transform: matrix(0.59, -0.81, 0.81, 0.58, 0, 0);
   top: 25%;
   left: 0%;
-  background: #F4FBF4;
+  background: #f4fbf4;
 }
 
 @media (min-width: 992px) {
@@ -502,10 +506,6 @@ body .h6 {
     top: 25%;
     left: -10%;
   }
-}
-
-.hero.recruitment-hero .card .hero__image {
-  width: 100%;
 }
 
 .hero.recruitment-hero .floating-image {
@@ -601,7 +601,7 @@ body .h6 {
 
 .hero.faq-hero {
   background: linear-gradient(82.5deg, #effcef -0.25%, #eef5ff 64.5%);
-  border-bottom: 1px solid #D8E4F1;
+  border-bottom: 1px solid #d8e4f1;
 }
 
 .info-section .info:nth-of-type(odd) .info__image-wrapper::after {
@@ -1025,7 +1025,7 @@ body .h6 {
 }
 
 #FAQ.tab-content {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 #FAQ .FAQ__list {

@@ -7,6 +7,7 @@
 <rect x="31" y="179" width="603" height="253" rx="5" fill="white"/>
 <rect x="31.5" y="179.5" width="602" height="252" rx="4.5" stroke="#D8E4F1"/>
 </g>
+<line x1="61" y1="294.5" x2="605" y2="294.5" stroke="#D8E4F1"/>
 <rect x="147" y="245" width="272" height="5" rx="2.5" fill="#D8E4F1"/>
 <rect x="147" y="258" width="115" height="5" rx="2.5" fill="#D8E4F1"/>
 <rect x="147" y="351" width="306" height="5" rx="2.5" fill="#D8E4F1"/>
