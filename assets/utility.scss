@@ -551,3 +551,18 @@
     }
   }
 }
+
+//images
+.half-width-image {
+  max-width: 100%;
+  height: auto;
+
+  @media (min-width: 992px) {
+    width: 50vw;
+    max-width: unset;
+  }
+}
+
+.blend-multiply {
+  mix-blend-mode: multiply;
+}

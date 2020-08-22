@@ -37,6 +37,10 @@
 $Avenir: "Avenir";
 $Circular: "Circular";
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $Avenir;
   overflow-x: hidden;
@@ -325,9 +329,12 @@ body {
     // }
   }
 
-  &.contact-hero {
+  &.core-hero {
     position: relative;
+    background-color: #f4f7fb;
+    z-index: 1;
 
+    &::after,
     &::before {
       content: "";
       position: absolute;
@@ -336,17 +343,20 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: #f4f7fb url(./img/contact-hero-left.png);
-      background-position: top left;
       background-repeat: no-repeat;
     }
 
-    .contact-hero__image {
-      background: #f4f7fb url(./img/contact-hero-right.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center bottom;
+    &::before {
+      background-image: url(./img/core/contact-hero-left.png);
+      background-position: top left;
+
     }
+
+    &::after {
+      background-image: url(./img/core/contact-hero-right.png);
+      background-position: right bottom;
+    }
+
   }
 
   &.payroll-hero {
@@ -620,7 +630,7 @@ body {
 
       &::after {
         content: "";
-        background: #d8e4f1;
+        background: #E8EFF7;
         position: absolute;
         z-index: -1;
         width: 110%;
@@ -838,6 +848,10 @@ body {
 
       .footer__list-item {
         font-size: 1rem;
+
+        .footer__list-link {
+          color: inherit;
+        }
       }
 
       .footer__list-item:not(:last-of-type) {
@@ -986,16 +1000,15 @@ body {
         width: 100%;
         height: 100%;
         align-items: center;
-        // text-align: justify;
 
         &:first-of-type {
           font-weight: 900;
           text-align: left;
         }
 
-        &:not(:last-of-type) {
-          display: flex;
-        }
+        // &:not(:last-of-type) {
+        //   display: flex;
+        // }
       }
 
       &:nth-of-type(even) {
@@ -1078,53 +1091,117 @@ body {
 }
 
 #features {
-  .features__list {
-    list-style-type: none;
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
+  .features__media {
+    width: 100%;
+    height: 467px;
+    background: #f4f7fb;
+    border: 1px solid #9dbcdc;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
+    border-radius: 10px;
+    position: relative;
 
-    &::-webkit-scrollbar {
-      width: 0px;
-      background: transparent;
-      display: none;
-    }
+    .circle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      left: 22px;
+      top: 20px;
+      background: #d8e4f1;
+      border-radius: 50%;
+      display: inline-block;
 
-    .features__media {
-      width: 100%;
-      height: 467px;
-      background: #f4f7fb;
-      border: 1px solid #9dbcdc;
-      box-sizing: border-box;
-      box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
-      border-radius: 10px;
-      position: relative;
-
-      .circle {
+      &::before,
+      &::after {
+        content: "";
         position: absolute;
         width: 10px;
         height: 10px;
-        left: 22px;
-        top: 20px;
         background: #d8e4f1;
         border-radius: 50%;
-        display: inline-block;
+        margin-left: 15px;
+      }
 
-        &::before,
-        &::after {
-          content: "";
-          position: absolute;
-          width: 10px;
-          height: 10px;
-          background: #d8e4f1;
-          border-radius: 50%;
-          margin-left: 15px;
-        }
+      &::after {
+        margin-left: 30px;
+      }
+    }
+  }
 
-        &::after {
-          margin-left: 30px;
+  .carousel-indicators {
+    position: relative;
+    justify-content: flex-start;
+    padding-left: inherit;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .horizontal-scroll {
+    min-height: 150px;
+    margin-top: calc(-111px / 2);
+    position: relative;
+    z-index: 5;
+
+    .slide__item {
+      min-width: 293px;
+      height: 95px;
+      margin-top: 8px;
+      margin-right: 23px;
+      background: #ffffff;
+      transform-origin: center;
+      border: 1px solid #d8e4f1;
+      box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
+      border-radius: 5px;
+      transition: 0.3s all ease;
+      display: flex;
+      align-items: center;
+      padding: 20px 31px;
+      cursor: pointer;
+
+      &.active {
+        height: 111px;
+        min-width: 291px;
+        width: 291px;
+        margin-top: 0px;
+        box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
+      }
+
+      &:hover {
+        .slide__icon {
+          animation: pulsate-bck 1.5s ease-in-out infinite both;
+
+          @keyframes pulsate-bck {
+            0% {
+              transform: scale(1);
+            }
+
+            50% {
+              transform: scale(0.9);
+            }
+
+            100% {
+              transform: scale(1);
+            }
+          }
+
         }
       }
+
+      .slide__icon {
+        margin-right: 22px;
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+
+  .carousel-container {
+    position: relative;
+
+    .carousel-control {
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
 }
@@ -1468,6 +1545,10 @@ body {
   }
 }
 
+#evenMoreJuice {
+  background: #133252;
+}
+
 .add-in-product {
   padding: 23px 30px;
   border-radius: 10px;
@@ -1539,52 +1620,17 @@ body {
   }
 }
 
-.carousel {
+.horizontal-scroll {
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   scrollbar-width: none;
-  z-index: 10;
-  height: 111px;
-  margin-top: calc(-111px / 2);
+  z-index: 100;
 
   &::-webkit-scrollbar {
     width: 0px;
     background: transparent;
     display: none;
-  }
-
-  input[type="radio"] {
-    display: none;
-    visibility: hidden;
-
-    &:checked+.carousel__item {
-      height: 111px;
-      margin-top: 0px;
-      box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
-    }
-  }
-
-  .carousel__item {
-    min-width: 293px;
-    height: 95px;
-    margin-top: 8px;
-    margin-right: 23px;
-    background: #ffffff;
-    transform-origin: center;
-    border: 1px solid #d8e4f1;
-    box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
-    border-radius: 5px;
-    transition: 0.3s all ease;
-    display: flex;
-    align-items: center;
-    padding: 20px 31px;
-    cursor: pointer;
-
-    .carousel__icon {
-      margin-right: 22px;
-      width: 56px;
-      height: 56px;
-    }
   }
 }
 

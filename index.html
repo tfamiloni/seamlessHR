@@ -157,11 +157,8 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="companyDropdownLink">
                                 <a class="dropdown-item" href="about.html">About Us</a>
-                                <a class="dropdown-item" href="about.html">Why SeamlessHR</a>
                                 <a class="dropdown-item" href="customer-stories.html">Customer Stories</a>
                                 <a class="dropdown-item" href="careers.html">Careers</a>
-                                <a class="dropdown-item" href="about.html">Press</a>
-                                <a class="dropdown-item" href="about.html">Partners</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown mr-md-4 mr-0">
@@ -171,9 +168,6 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="resourcesDropdownMenuLink">
                                 <a class="dropdown-item" href="blog.html">Blog</a>
-                                <a class="dropdown-item" href="#">E-books</a>
-                                <a class="dropdown-item" href="#">Guides & Tutorials</a>
-                                <a class="dropdown-item" href="#">Insights</a>
                                 <a class="dropdown-item" href="FAQ.html">FAQs</a>
                             </div>
                         </li>
@@ -195,7 +189,7 @@
             <div class="row">
                 <div class="col-xl-6 hero__text mb-5">
                     <h1 class="text-blue font-weight-bold">All-in-one HR software to streamline your HR.</h1>
-                    <p class="mt-4 text-secondary">Grow your business efficiently with our modern
+                    <p class="mt-4 text-secondary lead">Grow your business efficiently with our modern
                         end-to-end HR management system that leaves nothing out of the picture, from hire to retire.</p>
                     <a href="#" class="btn btn-success button-large button-shadow mt-4">Get Started</a>
                 </div>
@@ -449,57 +443,104 @@
                     better...
                 </h2>
 
-                <div class="row d-none d-md-flex">
-                    <div class="col-6 col-md-2 mt-5 mb-5 text-right">
-                        <img src="./assets/img/left.svg" role="button" title="previous review" alt="previous review"
-                            class="controls img-fluid">
-                    </div>
-
-                    <div class="col-md-8 order-3 order-md-2">
-                        <article class="review">
-                            <p class="mb-5 text-secondary">"We can now manage our entire HR processes on one platform,
-                                saving us tonnes
-                                of
-                                back-and-forths via email and about 50% of time spent on mundane tasks."</p>
-                            <p class="mb-3">Name of Dude Designation, <br> Dude’s company</p>
-                            <img src="./assets/img/dudes-image.png" alt="" class="img-fluid">
-                        </article>
-                    </div>
-
-                    <div class="col-6 col-md-2 mt-5 order-2 order-md-3 text-left">
-                        <img src="./assets/img/right.svg" role="button" title="next review" alt="next review"
-                            class="controls img-fluid">
-                    </div>
-                </div>
-
-                <div class="row d-md-none">
-                    <div class="controls col-3 mr-auto mb-5">
-                        <img src="./assets/img/left-mobile.svg" alt="" class="img-fluid">
-                        <img src="./assets/img/right-mobile.svg" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="card col-12 text-left py-5">
-                        <div class="card-body">
-                            <div class="row d-flex align-items-center mb-4">
-                                <div class="col-3">
-                                    <img src="./assets/img/review-picture-2.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-9">
-                                    <h5 class="card-title">Esther Howard</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">HR Manager at Sankore</h6>
-                                </div>
-                            </div>
-
-                            <p class="card-text mb-5">“All those monotonous HR tasks that take endless hours? They now
-                                go
-                                into a streamlined workflow based on your predefined rules. Stay on top of everything:
-                                Onboarding, requisitions, leave and more.”</p>
-
-                            <img src="./assets/img/sankore-review.png" alt="" class="text-left img-fluid">
+                <section class="d-none d-md-block">
+                    <div id="reviewCarousel" class="carousel slide row" data-ride="carousel">
+                        <div class="col-md-2">
+                            <a class="" href="#reviewCarousel" role="button" data-slide="prev">
+                                <img src="./assets/img/left.svg" alt="" class="img-fluid">
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </div>
+                        <div class="carousel-inner col-md-8">
+                            <article class="carousel-item active review">
+                                <p class="mb-5 text-secondary">"We can now manage our entire HR
+                                    processes on one platform, saving us tonnes
+                                    of
+                                    back-and-forths via email and about 50% of time spent on
+                                    mundane tasks."</p>
+                                <p class="mb-3">Name of Dude Designation, <br> Dude’s company
+                                </p>
+                                <img src="./assets/img/dudes-image.png" alt="" class="img-fluid">
+                            </article>
+                            <article class="carousel-item review">
+                                <p class="mb-5 text-secondary">"We can now manage our entire HR
+                                    processes on one platform, saving us tonnes of back-and-forths via email and about
+                                    50% of time spent on mundane tasks."</p>
+                                <p class="mb-3">Name of Dudette Designation, <br> Dudette’s company
+                                </p>
+                                <img src="./assets/img/dudes-image.png" alt="" class="img-fluid">
+                            </article>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="" href="#reviewCarousel" role="button" data-slide="next">
+                                <img src="./assets/img/right.svg" alt="" class="img-fluid">
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
+                </section>
 
-                </div>
+
+                <section class="d-md-none">
+                    <div id="reviewCarouselMobile" class="carousel slide" data-ride="carousel">
+                        <div class="controls d-flex mb-3">
+                            <a class="" href="#reviewCarouselMobile" role="button" data-slide="prev">
+                                <img src="./assets/img/left-mobile.svg" aria-hidden="true" alt="" class="img-fluid">
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="" href="#reviewCarouselMobile" role="button" data-slide="next">
+                                <img src="./assets/img/right-mobile.svg" aria-hidden="true" alt="" class="img-fluid">
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="card col-12 text-left py-5 carousel-item active">
+                                <div class="card-body">
+                                    <div class="row d-flex align-items-center mb-4">
+                                        <div class="col-3">
+                                            <img src="./assets/img/review-picture-2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-9">
+                                            <h5 class="card-title">Esther Howard</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">HR Manager at Sankore</h6>
+                                        </div>
+                                    </div>
+
+                                    <p class="card-text mb-5">“All those monotonous HR tasks that take endless hours?
+                                        They now
+                                        go
+                                        into a streamlined workflow based on your predefined rules. Stay on top of
+                                        everything:
+                                        Onboarding, requisitions, leave and more.”</p>
+
+                                    <img src="./assets/img/sankore-review.png" alt="" class="text-left img-fluid">
+                                </div>
+                            </div>
+                            <div class="card col-12 text-left py-5 carousel-item">
+                                <div class="card-body">
+                                    <div class="row d-flex align-items-center mb-4">
+                                        <div class="col-3">
+                                            <img src="./assets/img/review-picture-2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-9">
+                                            <h5 class="card-title">Somebody Else</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">HR Manager at Somewhere</h6>
+                                        </div>
+                                    </div>
+
+                                    <p class="card-text mb-5">“All those monotonous HR tasks that take endless hours?
+                                        They now
+                                        go
+                                        into a streamlined workflow based on your predefined rules. Stay on top of
+                                        everything:
+                                        Onboarding, requisitions, leave and more.”</p>
+
+                                    <img src="./assets/img/sankore-review.png" alt="" class="text-left img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
             </div>
         </div>
@@ -538,16 +579,16 @@
     <footer class="footer">
         <div class="footer__top row">
             <div class="d-none d-xl-block col-xl-3">
-                <img class="img-fluid" src="./assets/img/footer-left.png" alt="">
+                <img class="img-fluid" src="./assets/img/footer-left.svg" alt="">
             </div>
             <div class="mx-5 mx-xl-0 my-5 my-xl-0 footer__text col-xl-6 d-flex align-items-center
                 justify-content-around text-center text-sm-left">
-                <h3 class="text-white">All-in-one HR Software.<br><span class="mt-3 footer__text--blue">Streamline
-                        your HR </span></h3>
+                <h5 class="text-white">All-in-one HR Software.<br><span class="mt-3 footer__text--blue">Streamline
+                        your HR </span></h5>
                 <a href="#" class="mt-4 mt-sm-0 footer__button btn btn-success">Get Started</a>
             </div>
             <div class="d-none d-xl-block col-xl-3">
-                <img class="footer__image img-fluid" src="./assets/img/footer-right.png" alt="">
+                <img class="footer__image img-fluid" src="./assets/img/footer-right.svg" alt="">
             </div>
         </div>
 
@@ -556,45 +597,102 @@
                 <div class="col-xl-3 col-md-6">
                     <h6 class="footer__title my-5">solution</h6>
                     <ul class="footer__list">
-                        <li class="footer__list-item">Core HR</li>
-                        <li class="footer__list-item">Payroll</li>
-                        <li class="footer__list-item">Performance management</li>
-                        <li class="footer__list-item">Recruitment management</li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html"> Core HR</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="payroll-management.html">Payroll</a></li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="performance-management.html">Performance management</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="recruitment-management.html">Recruitment management</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <h6 class="footer__title my-5">more</h6>
                     <ul class="footer__list">
-                        <li class="footer__list-item">Onboarding</li>
-                        <li class="footer__list-item">HRIS</li>
-                        <li class="footer__list-item">Employee self-service</li>
-                        <li class="footer__list-item">Leave management</li>
-                        <li class="footer__list-item">Disciplinary management</li>
-                        <li class="footer__list-item">Requisition, travel & procurement</li>
-                        <li class="footer__list-item">Advanced report & analytics</li>
-                        <li class="footer__list-item">Time & attendance</li>
-                        <li class="footer__list-item">Exit management</li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=0">
+                                Onboarding
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=1">
+                                HRIS
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=5">
+                                Employee self-service
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=2">
+                                Leave management
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=3">
+                                Disciplinary management
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=4">
+                                Requisition, travel & procurement
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=8">
+                                Advanced report & analytics
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=6">
+                                Time & attendance
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=7">
+                                Exit management
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <h6 class="footer__title my-5">company</h6>
                     <ul class="footer__list">
-                        <li class="footer__list-item">About us</li>
-                        <li class="footer__list-item">Why SeamlessHR</li>
-                        <li class="footer__list-item">Customer stories</li>
-                        <li class="footer__list-item">Careers</li>
-                        <li class="footer__list-item">Press</li>
-                        <li class="footer__list-item">Partners</li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="about.html">
+                                About us
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="customer-stories.html">
+                                Customer stories
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="careers.html">
+                                Careers
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-xl-2 col-md-6">
                     <h6 class="footer__title my-5">resources</h6>
                     <ul class="footer__list">
-                        <li class="footer__list-item">Blog</li>
-                        <li class="footer__list-item">E-books</li>
-                        <li class="footer__list-item">Guides and tutorials</li>
-                        <li class="footer__list-item">Insights</li>
-                        <li class="footer__list-item">FAQs</li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="FAQ.html">
+                                FAQs
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -615,21 +713,19 @@
 
                 </div>
                 <div class="col-xl-4 mb-5 mb-xl-0">
-                    <p class="footer__address mb-xl-0 text-center">8, Metalbox Road, Off Acme Road, Ikeja, Lagos<br>+234
-                        (809) 0643
-                        874.
+                    <p class="footer__address mb-xl-0 text-16px">8, Metalbox Road, Off Acme Road, Ikeja, Lagos <br>
+                        +234 (809) 0643 874.
                         hello@seamlesshr.com</p>
                 </div>
                 <div class="col-xl-4 ml-auto">
                     <div class="row d-flex align-items-center">
                         <div class="col-6 text-xl-right">
-                            <p class="text-white mb-xl-0">Terms of service</p>
+                            <p class="text-white mb-xl-0 text-16px">Terms of service</p>
                         </div>
                         <div class="col-6 text-xl-right">
-                            <p class="text-white mb-xl-0">Privacy & Security</p>
+                            <p class="text-white mb-xl-0 text-16px">Privacy & Security</p>
                         </div>
                     </div>
-
                 </div>
             </div>
 

@@ -594,4 +594,20 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+.half-width-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .half-width-image {
+    width: 50vw;
+    max-width: unset;
+  }
+}
+
+.blend-multiply {
+  mix-blend-mode: multiply;
+}
 /*# sourceMappingURL=utility.css.map */

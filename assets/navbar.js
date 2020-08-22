@@ -22,36 +22,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   };
+  setActive();
 
+  let checkedProduct = null;
   const comparison = () => {
     for (let i = 0; i < productSelectors.length; i++) {
       if (productSelectors[i].checked) {
-        for (rival of rivalInfo) {
-          if (
-            productSelectors[i].getAttribute("id") ===
-            rival.getAttribute("data-competitor")
-          ) {
-            rival.classList.add("d-flex");
-          } else {
-            rival.classList.remove("d-flex");
-          }
-        }
+        checkedProduct = productSelectors[i].getAttribute("id");
+        break;
       }
+    }
+
+    for (rival of rivalInfo) {
+      rival.getAttribute("data-competitor") === checkedProduct
+        ? rival.classList.add("d-flex")
+        : rival.classList.remove("d-flex");
     }
   };
 
-  const randomiseFeature = () => {
-    let featureInputs = document.querySelectorAll(
-      '.carousel input[type="radio"]'
-    );
-    let randomNumber = Math.round(Math.random() * featureInputs.length);
-    featureInputs[randomNumber].checked = true;
-  };
-
-  setActive();
-
   if (currentPage === "core-hr.html") {
-    randomiseFeature();
+    // randomiseFeature();
   }
 
   if (currentPage === "pricing.html") {
