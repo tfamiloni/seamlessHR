@@ -16,6 +16,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/utility.css">
+
 </head>
 
 <body>
@@ -186,15 +187,90 @@
 
     <section class="hero home-hero padding-y-normal">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex align-items-center flex-wrap">
                 <div class="col-xl-6 hero__text mb-5">
                     <h1 class="text-blue font-weight-bold">All-in-one HR software to streamline your HR.</h1>
                     <p class="mt-4 text-secondary lead">Grow your business efficiently with our modern
                         end-to-end HR management system that leaves nothing out of the picture, from hire to retire.</p>
                     <a href="#" class="btn btn-success button-large button-shadow mt-4">Get Started</a>
                 </div>
-                <div class="col-xl-6 pt-md-5 pt-lg-0">
-                    <img src="./assets/img/hero-image.svg" alt="hero-image" class="img-fluid home-hero__image">
+                <div class="col-xl-6 pt-md-5 pt-lg-0 ml-auto px-xl-0">
+                    <div class="home-hero-animation d-none d-xl-block ml-auto">
+                        <div class="center-square">
+                            <div class="images">
+                                <img src="./assets/img/index/animations/1.png" alt="" class="image-1">
+                                <img src="./assets/img/index/animations/2.png" alt="" class="image-2">
+                            </div>
+
+                            <!-- onboarding -->
+                            <div class="onboarding-circle">
+                                <img src="./assets/img/index/animations/person.svg" alt="" class="img-fluid">
+                                <div class="text-content">
+                                    <p class="text-center text-white mb-0">Onboarding</p>
+                                </div>
+                            </div>
+
+                            <!-- time and attendance -->
+                            <div class="time-circle">
+                                <img src="./assets/img/index/animations/calendar.svg" alt="" class="img-fluid">
+                                <div class="text-content">
+                                    <p class="text-center text-white mb-0">Time & Attendance</p>
+                                </div>
+                            </div>
+
+                            <!-- analytics and Reporting -->
+                            <div class="analytics-circle">
+                                <img src="./assets/img/index/animations/analytics.svg" alt="" class="img-fluid">
+                                <div class="text-content">
+                                    <p class="text-center text-white mb-0">Analytics & Reporting</p>
+                                </div>
+                            </div>
+
+                            <!-- disciplinary -->
+                            <div class="disciplinary-circle">
+                                <img src="./assets/img/index/animations/law.svg" alt="" class="img-fluid">
+                                <div class="text-content">
+                                    <p class="text-center text-white mb-0">Disciplinary</p>
+                                </div>
+                            </div>
+
+                            <!-- travel and requisition -->
+                            <div class="travel-circle">
+                                <img src="./assets/img/index/animations/plane.svg" alt="" class="img-fluid">
+                                <div class="text-content">
+                                    <p class="text-center text-white mb-0">Travel & Requisitions</p>
+                                </div>
+                            </div>
+
+                            <!-- exit and offboarding -->
+                            <div class="exit-circle">
+                                <img src="./assets/img/index/animations/logout.svg" alt="" class="img-fluid">
+                                <div class="text-content">
+                                    <p class="text-center text-white mb-0">Exit & Off-boarding</p>
+                                </div>
+                            </div>
+
+                            <!-- leaves and holidays -->
+                            <div class="leave-circle">
+                                <img src="./assets/img/index/animations/coconut.svg" alt="" class="img-fluid">
+                                <div class="text-content">
+                                    <p class="text-center text-white mb-0">Leaves & Holidays</p>
+                                </div>
+                            </div>
+
+                            <!-- hris -->
+                            <div class="hris-circle">
+                                <img src="./assets/img/index/animations/finger-print.svg" alt="" class="img-fluid">
+                                <div class="text-content">
+                                    <p class="text-center text-white mb-0">HR Information System</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blue-square"></div>
+                        <div class="purple-square"></div>
+                        <div class="green-square"></div>
+                    </div>
+                    <img src="./assets/img/index/animations/static.svg" alt="" class="d-xl-none img-fluid">
                 </div>
             </div>
         </div>
@@ -741,7 +817,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"
+        integrity="sha512-E1+SnTWyHYoY5MN8wpL0SI4TYbpWN12sHXyEViwbzzEyq6GHxQrPFDzEeUDab4emXcf3Yj41Tht2JZnpo3kjwA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"
+        integrity="sha512-JO6JyFPJupQKZf7icgZkHwuq/rAQxH7COqvEd4WdK52AtHPedwHog05T69pIelI69jVN/zZbW6TuHfH2mS8j/Q=="
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/hover.js"></script>
     <script src="./assets/navbar.js"></script>
+    <script src="./assets/js/animation.js"></script>
 </body>
 
 </html>

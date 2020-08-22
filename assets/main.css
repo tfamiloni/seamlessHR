@@ -304,11 +304,242 @@ body .h6 {
   background-size: cover;
 }
 
-.hero.home-hero .home-hero__image {
-  -webkit-transform-origin: left center;
-          transform-origin: left center;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.hero.home-hero .hero__text {
+  max-width: 540px;
+}
+
+.hero.home-hero .home-hero-animation {
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .hero.home-hero .home-hero-animation {
+    width: 560px;
+    height: 372px;
+  }
+}
+
+.hero.home-hero .home-hero-animation .center-square {
+  position: absolute;
+  background: #172A4D;
+  width: 219px;
+  height: 219px;
+  border-radius: 53px;
+  left: 31.61%;
+  top: 21.77%;
+  z-index: 10;
+  opacity: 0;
+}
+
+.hero.home-hero .home-hero-animation .center-square .images {
+  position: absolute;
+  border-radius: 53px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 181px;
+  height: 181px;
+}
+
+.hero.home-hero .home-hero-animation .center-square .images .image-1,
+.hero.home-hero .home-hero-animation .center-square .images .image-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  display: none;
+  mix-blend-mode: overlay;
+}
+
+.hero.home-hero .home-hero-animation .center-square .onboarding-circle,
+.hero.home-hero .home-hero-animation .center-square .time-circle,
+.hero.home-hero .home-hero-animation .center-square .analytics-circle,
+.hero.home-hero .home-hero-animation .center-square .disciplinary-circle,
+.hero.home-hero .home-hero-animation .center-square .travel-circle,
+.hero.home-hero .home-hero-animation .center-square .exit-circle,
+.hero.home-hero .home-hero-animation .center-square .leave-circle,
+.hero.home-hero .home-hero-animation .center-square .hris-circle {
+  width: 23.26px;
+  height: 23.26px;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.hero.home-hero .home-hero-animation .center-square .onboarding-circle img,
+.hero.home-hero .home-hero-animation .center-square .time-circle img,
+.hero.home-hero .home-hero-animation .center-square .analytics-circle img,
+.hero.home-hero .home-hero-animation .center-square .disciplinary-circle img,
+.hero.home-hero .home-hero-animation .center-square .travel-circle img,
+.hero.home-hero .home-hero-animation .center-square .exit-circle img,
+.hero.home-hero .home-hero-animation .center-square .leave-circle img,
+.hero.home-hero .home-hero-animation .center-square .hris-circle img {
+  opacity: 0;
+}
+
+.hero.home-hero .home-hero-animation .center-square .onboarding-circle .text-content,
+.hero.home-hero .home-hero-animation .center-square .time-circle .text-content,
+.hero.home-hero .home-hero-animation .center-square .analytics-circle .text-content,
+.hero.home-hero .home-hero-animation .center-square .disciplinary-circle .text-content,
+.hero.home-hero .home-hero-animation .center-square .travel-circle .text-content,
+.hero.home-hero .home-hero-animation .center-square .exit-circle .text-content,
+.hero.home-hero .home-hero-animation .center-square .leave-circle .text-content,
+.hero.home-hero .home-hero-animation .center-square .hris-circle .text-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  padding: 20px;
+}
+
+.hero.home-hero .home-hero-animation .center-square .onboarding-circle .text-content p,
+.hero.home-hero .home-hero-animation .center-square .time-circle .text-content p,
+.hero.home-hero .home-hero-animation .center-square .analytics-circle .text-content p,
+.hero.home-hero .home-hero-animation .center-square .disciplinary-circle .text-content p,
+.hero.home-hero .home-hero-animation .center-square .travel-circle .text-content p,
+.hero.home-hero .home-hero-animation .center-square .exit-circle .text-content p,
+.hero.home-hero .home-hero-animation .center-square .leave-circle .text-content p,
+.hero.home-hero .home-hero-animation .center-square .hris-circle .text-content p {
+  font-size: 17px;
+}
+
+.hero.home-hero .home-hero-animation .center-square .onboarding-circle:hover .text-content,
+.hero.home-hero .home-hero-animation .center-square .time-circle:hover .text-content,
+.hero.home-hero .home-hero-animation .center-square .analytics-circle:hover .text-content,
+.hero.home-hero .home-hero-animation .center-square .disciplinary-circle:hover .text-content,
+.hero.home-hero .home-hero-animation .center-square .travel-circle:hover .text-content,
+.hero.home-hero .home-hero-animation .center-square .exit-circle:hover .text-content,
+.hero.home-hero .home-hero-animation .center-square .leave-circle:hover .text-content,
+.hero.home-hero .home-hero-animation .center-square .hris-circle:hover .text-content {
+  opacity: 1;
+}
+
+.hero.home-hero .home-hero-animation .center-square .onboarding-circle {
+  left: 44.22%;
+  top: 11.56%;
+  background: #8DBF57;
+}
+
+.hero.home-hero .home-hero-animation .center-square .onboarding-circle .text-content {
+  background: #701778;
+}
+
+.hero.home-hero .home-hero-animation .center-square .time-circle {
+  left: 20.41%;
+  top: 21.77%;
+  background: #396EAE;
+}
+
+.hero.home-hero .home-hero-animation .center-square .time-circle .text-content {
+  background: #1E8323;
+}
+
+.hero.home-hero .home-hero-animation .center-square .analytics-circle {
+  left: 10.88%;
+  top: 44.22%;
+  background: #CCCCCC;
+}
+
+.hero.home-hero .home-hero-animation .center-square .analytics-circle .text-content {
+  background: #1E5083;
+}
+
+.hero.home-hero .home-hero-animation .center-square .disciplinary-circle {
+  left: 20.41%;
+  top: 68.71%;
+  background: #D2E1EF;
+}
+
+.hero.home-hero .home-hero-animation .center-square .disciplinary-circle .text-content {
+  background: #D07908;
+}
+
+.hero.home-hero .home-hero-animation .center-square .travel-circle {
+  left: 44.22%;
+  top: 78.23%;
+  background: #FFFFFF;
+}
+
+.hero.home-hero .home-hero-animation .center-square .travel-circle .text-content {
+  background: #2E3B84;
+}
+
+.hero.home-hero .home-hero-animation .center-square .exit-circle {
+  left: 68.03%;
+  top: 68.71%;
+  background: #CCCCCC;
+}
+
+.hero.home-hero .home-hero-animation .center-square .exit-circle .text-content {
+  background: #686016;
+}
+
+.hero.home-hero .home-hero-animation .center-square .leave-circle {
+  left: 78.23%;
+  top: 44.22%;
+  background: #EF7438;
+}
+
+.hero.home-hero .home-hero-animation .center-square .leave-circle .text-content {
+  background: #7F5C4C;
+}
+
+.hero.home-hero .home-hero-animation .center-square .hris-circle {
+  left: 68.03%;
+  top: 21.09%;
+  background: #932020;
+}
+
+.hero.home-hero .home-hero-animation .center-square .hris-circle .text-content {
+  background: #932020;
+}
+
+.hero.home-hero .home-hero-animation .blue-square {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: #D8E4F1;
+  border-radius: 28px;
+  top: 65.86%;
+  left: 0%;
+  opacity: 0;
+}
+
+.hero.home-hero .home-hero-animation .purple-square {
+  position: absolute;
+  background: #ECD6EE;
+  width: 106px;
+  height: 106px;
+  border-radius: 26px;
+  left: 81.07%;
+  opacity: 0;
+}
+
+.hero.home-hero .home-hero-animation .green-square {
+  position: absolute;
+  background: #D8F1D9;
+  width: 62px;
+  height: 62px;
+  border-radius: 15px;
+  left: 82.68%;
+  top: 83.33%;
+  opacity: 0;
 }
 
 .hero.pricing-hero {

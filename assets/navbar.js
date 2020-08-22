@@ -40,10 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  if (currentPage === "core-hr.html") {
-    // randomiseFeature();
-  }
-
   if (currentPage === "pricing.html") {
     comparison();
     document

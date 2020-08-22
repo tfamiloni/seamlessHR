@@ -293,9 +293,212 @@ body {
     background: url(./img/index/hero-bg.svg) no-repeat center center;
     background-size: cover;
 
-    .home-hero__image {
-      transform-origin: left center;
-      transform: scale(1.3);
+    .hero__text {
+      max-width: 540px;
+    }
+
+    .home-hero-animation {
+      position: relative;
+
+
+      @media (min-width: 1200px) {
+        width: 560px;
+        height: 372px;
+      }
+
+      .center-square {
+        position: absolute;
+        background: #172A4D;
+        width: 219px;
+        height: 219px;
+        border-radius: 53px;
+        left: 31.61%;
+        top: 21.77%;
+        z-index: 10;
+        opacity: 0;
+
+
+        .images {
+          position: absolute;
+          border-radius: 53px;
+          overflow: hidden;
+          top: 0;
+          left: 0;
+          width: 181px;
+          height: 181px;
+
+          .image-1,
+          .image-2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            display: none;
+            mix-blend-mode: overlay;
+          }
+        }
+
+        .onboarding-circle,
+        .time-circle,
+        .analytics-circle,
+        .disciplinary-circle,
+        .travel-circle,
+        .exit-circle,
+        .leave-circle,
+        .hris-circle {
+          width: 23.26px;
+          height: 23.26px;
+          border-radius: 50%;
+          position: absolute;
+          overflow: hidden;
+          display: grid;
+          place-items: center;
+
+          img {
+            opacity: 0;
+          }
+
+          .text-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 20;
+            display: grid;
+            place-items: center;
+            opacity: 0;
+            padding: 20px;
+
+            p {
+              font-size: 17px;
+            }
+          }
+
+          &:hover {
+            .text-content {
+              opacity: 1;
+            }
+          }
+        }
+
+        .onboarding-circle {
+          left: 44.22%;
+          top: 11.56%;
+          background: #8DBF57;
+
+          .text-content {
+            background: #701778;
+          }
+        }
+
+        .time-circle {
+          left: 20.41%;
+          top: 21.77%;
+          background: #396EAE;
+
+          .text-content {
+            background: #1E8323;
+          }
+        }
+
+        .analytics-circle {
+          left: 10.88%;
+          top: 44.22%;
+          background: #CCCCCC;
+
+          .text-content {
+            background: #1E5083;
+          }
+        }
+
+        .disciplinary-circle {
+          left: 20.41%;
+          top: 68.71%;
+          background: #D2E1EF;
+
+          .text-content {
+            background: #D07908;
+
+          }
+        }
+
+        .travel-circle {
+          left: 44.22%;
+          top: 78.23%;
+          background: #FFFFFF;
+
+          .text-content {
+            background: #2E3B84;
+          }
+        }
+
+        .exit-circle {
+          left: 68.03%;
+          top: 68.71%;
+          background: #CCCCCC;
+
+          .text-content {
+            background: #686016;
+          }
+        }
+
+        .leave-circle {
+          left: 78.23%;
+          top: 44.22%;
+          background: #EF7438;
+
+          .text-content {
+            background: #7F5C4C;
+          }
+        }
+
+        .hris-circle {
+          left: 68.03%;
+          top: 21.09%;
+          background: #932020;
+
+          .text-content {
+            background: #932020;
+          }
+        }
+      }
+
+      .blue-square {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        background: #D8E4F1;
+        border-radius: 28px;
+        top: 65.86%;
+        left: 0%;
+        opacity: 0;
+      }
+
+      .purple-square {
+        position: absolute;
+        background: #ECD6EE;
+        width: 106px;
+        height: 106px;
+        border-radius: 26px;
+        left: 81.07%;
+        opacity: 0;
+      }
+
+      .green-square {
+        position: absolute;
+        background: #D8F1D9;
+        width: 62px;
+        height: 62px;
+        border-radius: 15px;
+        left: 82.68%;
+        top: 83.33%;
+        opacity: 0;
+      }
     }
   }
 
