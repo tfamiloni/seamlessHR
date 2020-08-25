@@ -290,8 +290,12 @@ body {
   }
 
   &.home-hero {
-    background: url(./img/index/hero-bg.svg) no-repeat center center;
+    background: url(./img/index/hero-bg.svg) no-repeat bottom center;
     background-size: cover;
+
+    @media (min-width: 1200px) {
+      background: url(./img/index/hero-bg.svg) no-repeat center center;
+    }
 
     .hero__text {
       max-width: 540px;
@@ -568,30 +572,6 @@ body {
     background: rgba(#d8e4f1, 0.4);
     background: linear-gradient(to bottom, rgba(#d8e4f1, 0.4) 80%, white 80%);
     position: relative;
-
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    &::after {
-      background: url(./img/pricing-hero-right.png);
-      background-position: top right;
-      background-repeat: no-repeat;
-    }
-
-    // &::before {
-    //   background: url(./img/pricing-hero-left.png);
-    //   background-position-x: left;
-    //   background-position-y: 70%;
-    //   background-repeat: no-repeat;
-    // }
   }
 
   &.core-hero {
@@ -628,6 +608,7 @@ body {
     background: url(./img/payroll/curve.svg);
     background-size: cover;
     background-position: bottom center;
+    padding-bottom: 65px;
 
     .card {
       box-shadow: 0px 35px 115px rgba(19, 50, 82, 0.15);
@@ -635,7 +616,7 @@ body {
 
       .card-body {
         padding: 75px 70px;
-        padding-right: 39px;
+        padding-right: 15px;
       }
     }
 
@@ -660,6 +641,7 @@ body {
 
       .card-body {
         padding: 75px 70px;
+        padding-right: 15px;
       }
     }
 
@@ -678,6 +660,7 @@ body {
     background-size: cover;
     background-position: bottom center;
     padding-top: 63px;
+    padding-bottom: 65px;
 
     .card {
       box-shadow: 0px 35px 115px rgba(19, 50, 82, 0.15);
@@ -685,6 +668,7 @@ body {
 
       .card-body {
         padding: 60px 70px;
+        padding-right: 15px;
       }
 
       .magnet-rectangle {
@@ -775,11 +759,24 @@ body {
 
     .image-wrapper {
       box-shadow: 0px 0px 115px rgba(19, 50, 82, 0.1);
-      border-radius: 10px 0 0 10px;
       padding: 39px 33px;
-      padding-right: 0px;
       background: white;
-      margin-right: -13.5vw;
+
+      @media (max-width: 1199.98px) {
+        left: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        max-width: 100vw;
+        position: relative;
+        right: 50%;
+        width: 100vw;
+      }
+
+      @media (min-width: 1200px) {
+        margin-right: -13.5vw;
+        border-radius: 10px 0 0 10px;
+        padding-right: 0px;
+      }
 
       img {
         width: 100%;
@@ -857,6 +854,20 @@ body {
 
 .info-section {
   .info {
+
+    @media (max-width: 1199.98px) {
+      &::before {
+        content: "";
+        height: 100%;
+        width: 100vw;
+        background: linear-gradient(to bottom, #E8EFF7 85%, #fff 75%);
+        position: absolute;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+
     &:nth-of-type(odd) {
       .info__image-wrapper::after {
         border-top-right-radius: 20px;
@@ -889,16 +900,19 @@ body {
     }
 
     .info__image-wrapper {
-      position: relative;
 
-      &::after {
-        content: "";
-        background: #E8EFF7;
-        position: absolute;
-        z-index: -1;
-        width: 110%;
-        height: 85%;
-        top: 13%;
+      @media (min-width: 1200px) {
+        position: relative;
+
+        &::after {
+          content: "";
+          background: #E8EFF7;
+          position: absolute;
+          z-index: -1;
+          width: 110%;
+          height: 85%;
+          top: 13%;
+        }
       }
 
       .info__image {
@@ -1198,15 +1212,24 @@ body {
   }
 
   .product-comparison__selector-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    display: grid;
-    grid-gap: 1em;
 
-    @media (min-width: 768px) {
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: flex;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+      display: none;
+    }
+
+    @media (min-width: 1200px) {
       display: block;
 
       .product-comparison__selector {
         margin-bottom: 20px;
+        min-width: 100%;
+        margin-right: 0px;
       }
     }
 
@@ -1224,11 +1247,12 @@ body {
       border: 1px solid #d8e4f1;
       border-radius: 5px;
       height: 80px;
-      width: 100%;
+      min-width: 237px;
       display: grid;
       place-items: center;
       transition: 0.2s all ease;
       cursor: pointer;
+      margin-right: 16px;
 
       &:hover {
         border: 1px solid #29b32f;
@@ -1293,15 +1317,15 @@ body {
   }
 
   .FAQ__list {
-    max-width: 840px;
-    margin: auto;
+    // max-width: 840px;
+    // margin: auto;
+    padding-left: 0;
     list-style-type: none;
 
     .FAQ__item {
       position: relative;
-      margin-left: 50px;
-      margin-right: 50px;
       text-align: justify;
+      display: flex;
 
       .question {
         max-width: 700px;
@@ -1330,28 +1354,34 @@ body {
       }
 
       &::before {
-        content: "?";
+        content: "";
+        background: url(./img/FAQ/question.svg) no-repeat;
         color: #296db3;
-        position: absolute;
-        left: -80px;
-        display: inline-block;
+        position: relative;
+        display: block;
         font-weight: 900;
         font-size: 24px;
-        line-height: 41px;
         text-align: center;
-        width: 41px;
-        height: 41px;
-        background: #d8e4f1;
+        min-width: 41px;
+        min-height: 41px;
         border-radius: 10px;
+        margin-right: 50px;
       }
 
       &::after {
         content: "+";
-        position: absolute;
+        position: relative;
         top: -5px;
-        right: -60px;
+        // right: -30px;
         font-weight: 900;
         font-size: 24px;
+        margin-left: 50px;
+      }
+
+      @media (min-width: 1200px) {
+        &::after {
+          right: -60px;
+        }
       }
     }
   }
@@ -1553,6 +1583,7 @@ body {
       box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
       border-radius: 5px;
       padding: 20px;
+      background: white;
 
       .img__wrapper {
         min-width: 56px;
@@ -1673,9 +1704,12 @@ body {
 }
 
 #aboutUsValue {
-  background: url(./img/about-us/value-curve.svg) no-repeat left;
-  background-position-y: -60px;
-  background-size: contain;
+
+  @media (min-width: 1200px) {
+    background: url(./img/about-us/value-curve.svg) no-repeat left;
+    background-position-y: -60px;
+    background-size: contain;
+  }
 
   .row {
     .image-wrapper {
