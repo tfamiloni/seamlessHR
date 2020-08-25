@@ -941,6 +941,29 @@ body {
   }
 }
 
+.services {
+  .service {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      &::after {
+        width: 2px;
+        height: 100%;
+        background: #D8E4F1;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 56px;
+        z-index: -1;
+      }
+
+      &:last-of-type {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 .simple {
   &.simple-bg {
     background-image: url(./img/simple-bg.svg);
