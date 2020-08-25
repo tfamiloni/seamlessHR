@@ -4,10 +4,10 @@
 	 viewBox="0 0 1440 1648" style="enable-background:new 0 0 1440 1648;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#SVGID_1_);}
-	.st1{opacity:0.2;}
-	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#9DBCDC;}
+	.st1{display:none;opacity:0.2;}
+	.st2{display:inline;fill-rule:evenodd;clip-rule:evenodd;fill:#9DBCDC;}
 </style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="349.7545" y1="-573.1915" x2="1462.9745" y2="59.5446" gradientTransform="matrix(1 0 0 1 0 1152)">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="349.7545" y1="2221.1917" x2="1462.9745" y2="1588.4554" gradientTransform="matrix(1 0 0 -1 0 2800)">
 	<stop  offset="0" style="stop-color:#F9F3FA"/>
 	<stop  offset="1" style="stop-color:#ECF4FF"/>
 </linearGradient>

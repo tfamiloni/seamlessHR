@@ -312,6 +312,14 @@ body .h6 {
   position: relative;
 }
 
+.hero.home-hero .home-hero-animation svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
 @media (min-width: 1200px) {
   .hero.home-hero .home-hero-animation {
     width: 560px;
@@ -339,6 +347,8 @@ body .h6 {
   left: 0;
   width: 181px;
   height: 181px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .hero.home-hero .home-hero-animation .center-square .images .image-1,
@@ -355,17 +365,63 @@ body .h6 {
   -o-object-position: center;
      object-position: center;
   display: none;
-  mix-blend-mode: overlay;
 }
 
-.hero.home-hero .home-hero-animation .center-square .onboarding-circle,
-.hero.home-hero .home-hero-animation .center-square .time-circle,
-.hero.home-hero .home-hero-animation .center-square .analytics-circle,
-.hero.home-hero .home-hero-animation .center-square .disciplinary-circle,
-.hero.home-hero .home-hero-animation .center-square .travel-circle,
-.hero.home-hero .home-hero-animation .center-square .exit-circle,
-.hero.home-hero .home-hero-animation .center-square .leave-circle,
-.hero.home-hero .home-hero-animation .center-square .hris-circle {
+.hero.home-hero .home-hero-animation .center-square .circles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.hero.home-hero .home-hero-animation .center-square .circles.rotate {
+  -webkit-animation: rotate 60s linear infinite normal forwards;
+          animation: rotate 60s linear infinite normal forwards;
+  z-index: -1;
+}
+
+.hero.home-hero .home-hero-animation .center-square .circles.rotate .circle img,
+.hero.home-hero .home-hero-animation .center-square .circles.rotate .circle .text-content {
+  animation: rotate 60s linear infinite reverse forwards;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.hero.home-hero .home-hero-animation .center-square .circles.rotate:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.hero.home-hero .home-hero-animation .center-square .circles.rotate:hover .circle img,
+.hero.home-hero .home-hero-animation .center-square .circles.rotate:hover .circle .text-content {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.hero.home-hero .home-hero-animation .center-square .circle {
   width: 23.26px;
   height: 23.26px;
   border-radius: 50%;
@@ -374,27 +430,55 @@ body .h6 {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  -webkit-box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
+          box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
 }
 
-.hero.home-hero .home-hero-animation .center-square .onboarding-circle img,
-.hero.home-hero .home-hero-animation .center-square .time-circle img,
-.hero.home-hero .home-hero-animation .center-square .analytics-circle img,
-.hero.home-hero .home-hero-animation .center-square .disciplinary-circle img,
-.hero.home-hero .home-hero-animation .center-square .travel-circle img,
-.hero.home-hero .home-hero-animation .center-square .exit-circle img,
-.hero.home-hero .home-hero-animation .center-square .leave-circle img,
-.hero.home-hero .home-hero-animation .center-square .hris-circle img {
+.hero.home-hero .home-hero-animation .center-square .circle.pulse {
+  -webkit-animation: pulsate-bck 1.5s ease-in-out infinite both;
+          animation: pulsate-bck 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.hero.home-hero .home-hero-animation .center-square .circle.pulse:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.hero.home-hero .home-hero-animation .center-square .circle img {
   opacity: 0;
 }
 
-.hero.home-hero .home-hero-animation .center-square .onboarding-circle .text-content,
-.hero.home-hero .home-hero-animation .center-square .time-circle .text-content,
-.hero.home-hero .home-hero-animation .center-square .analytics-circle .text-content,
-.hero.home-hero .home-hero-animation .center-square .disciplinary-circle .text-content,
-.hero.home-hero .home-hero-animation .center-square .travel-circle .text-content,
-.hero.home-hero .home-hero-animation .center-square .exit-circle .text-content,
-.hero.home-hero .home-hero-animation .center-square .leave-circle .text-content,
-.hero.home-hero .home-hero-animation .center-square .hris-circle .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle .text-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -406,107 +490,95 @@ body .h6 {
   place-items: center;
   opacity: 0;
   padding: 20px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
-.hero.home-hero .home-hero-animation .center-square .onboarding-circle .text-content p,
-.hero.home-hero .home-hero-animation .center-square .time-circle .text-content p,
-.hero.home-hero .home-hero-animation .center-square .analytics-circle .text-content p,
-.hero.home-hero .home-hero-animation .center-square .disciplinary-circle .text-content p,
-.hero.home-hero .home-hero-animation .center-square .travel-circle .text-content p,
-.hero.home-hero .home-hero-animation .center-square .exit-circle .text-content p,
-.hero.home-hero .home-hero-animation .center-square .leave-circle .text-content p,
-.hero.home-hero .home-hero-animation .center-square .hris-circle .text-content p {
+.hero.home-hero .home-hero-animation .center-square .circle .text-content p {
   font-size: 17px;
 }
 
-.hero.home-hero .home-hero-animation .center-square .onboarding-circle:hover .text-content,
-.hero.home-hero .home-hero-animation .center-square .time-circle:hover .text-content,
-.hero.home-hero .home-hero-animation .center-square .analytics-circle:hover .text-content,
-.hero.home-hero .home-hero-animation .center-square .disciplinary-circle:hover .text-content,
-.hero.home-hero .home-hero-animation .center-square .travel-circle:hover .text-content,
-.hero.home-hero .home-hero-animation .center-square .exit-circle:hover .text-content,
-.hero.home-hero .home-hero-animation .center-square .leave-circle:hover .text-content,
-.hero.home-hero .home-hero-animation .center-square .hris-circle:hover .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle:hover .text-content {
   opacity: 1;
 }
 
-.hero.home-hero .home-hero-animation .center-square .onboarding-circle {
+.hero.home-hero .home-hero-animation .center-square .circle.onboarding-circle {
   left: 44.22%;
   top: 11.56%;
   background: #8DBF57;
 }
 
-.hero.home-hero .home-hero-animation .center-square .onboarding-circle .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle.onboarding-circle .text-content {
   background: #701778;
 }
 
-.hero.home-hero .home-hero-animation .center-square .time-circle {
+.hero.home-hero .home-hero-animation .center-square .circle.time-circle {
   left: 20.41%;
   top: 21.77%;
   background: #396EAE;
 }
 
-.hero.home-hero .home-hero-animation .center-square .time-circle .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle.time-circle .text-content {
   background: #1E8323;
 }
 
-.hero.home-hero .home-hero-animation .center-square .analytics-circle {
+.hero.home-hero .home-hero-animation .center-square .circle.analytics-circle {
   left: 10.88%;
   top: 44.22%;
   background: #CCCCCC;
 }
 
-.hero.home-hero .home-hero-animation .center-square .analytics-circle .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle.analytics-circle .text-content {
   background: #1E5083;
 }
 
-.hero.home-hero .home-hero-animation .center-square .disciplinary-circle {
+.hero.home-hero .home-hero-animation .center-square .circle.disciplinary-circle {
   left: 20.41%;
   top: 68.71%;
   background: #D2E1EF;
 }
 
-.hero.home-hero .home-hero-animation .center-square .disciplinary-circle .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle.disciplinary-circle .text-content {
   background: #D07908;
 }
 
-.hero.home-hero .home-hero-animation .center-square .travel-circle {
+.hero.home-hero .home-hero-animation .center-square .circle.travel-circle {
   left: 44.22%;
   top: 78.23%;
   background: #FFFFFF;
 }
 
-.hero.home-hero .home-hero-animation .center-square .travel-circle .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle.travel-circle .text-content {
   background: #2E3B84;
 }
 
-.hero.home-hero .home-hero-animation .center-square .exit-circle {
+.hero.home-hero .home-hero-animation .center-square .circle.exit-circle {
   left: 68.03%;
   top: 68.71%;
   background: #CCCCCC;
 }
 
-.hero.home-hero .home-hero-animation .center-square .exit-circle .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle.exit-circle .text-content {
   background: #686016;
 }
 
-.hero.home-hero .home-hero-animation .center-square .leave-circle {
+.hero.home-hero .home-hero-animation .center-square .circle.leave-circle {
   left: 78.23%;
   top: 44.22%;
   background: #EF7438;
 }
 
-.hero.home-hero .home-hero-animation .center-square .leave-circle .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle.leave-circle .text-content {
   background: #7F5C4C;
 }
 
-.hero.home-hero .home-hero-animation .center-square .hris-circle {
+.hero.home-hero .home-hero-animation .center-square .circle.hris-circle {
   left: 68.03%;
   top: 21.09%;
   background: #932020;
 }
 
-.hero.home-hero .home-hero-animation .center-square .hris-circle .text-content {
+.hero.home-hero .home-hero-animation .center-square .circle.hris-circle .text-content {
   background: #932020;
 }
 
@@ -599,17 +671,14 @@ body .h6 {
 }
 
 .hero.payroll-hero .card {
-  min-height: 511px;
   -webkit-box-shadow: 0px 35px 115px rgba(19, 50, 82, 0.15);
           box-shadow: 0px 35px 115px rgba(19, 50, 82, 0.15);
   border-radius: 10px;
-  background: #ffffff url(./img/payroll/hero-img.svg) no-repeat;
-  background-position: bottom right;
-  background-size: 40%;
 }
 
 .hero.payroll-hero .card .card-body {
   padding: 75px 70px;
+  padding-right: 39px;
 }
 
 .hero.payroll-hero .floating-image {
@@ -631,7 +700,6 @@ body .h6 {
 }
 
 .hero.performance-hero .card {
-  min-height: 511px;
   -webkit-box-shadow: 0px 35px 115px rgba(19, 50, 82, 0.15);
           box-shadow: 0px 35px 115px rgba(19, 50, 82, 0.15);
   border-radius: 10px;
@@ -677,10 +745,13 @@ body .h6 {
   -webkit-box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
           box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
   border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .hero.recruitment-hero .card .magnet-rectangle:first-of-type {
-  background: #f4f7fb;
+  background: #D8E4F1;
   -webkit-transform: matrix(0.87, -0.49, 0.49, 0.87, 0, 0);
           transform: matrix(0.87, -0.49, 0.49, 0.87, 0, 0);
   left: -7%;
@@ -693,7 +764,7 @@ body .h6 {
           transform: matrix(0.97, -0.25, 0.25, 0.97, 0, 0);
   left: 10%;
   top: -3%;
-  background: #f9f3fa;
+  background: #FDE7CB;
 }
 
 .hero.recruitment-hero .card .magnet-rectangle:last-of-type {
@@ -701,7 +772,7 @@ body .h6 {
           transform: matrix(0.59, -0.81, 0.81, 0.58, 0, 0);
   top: 25%;
   left: 0%;
-  background: #f4fbf4;
+  background: #D8F1D9;
 }
 
 @media (min-width: 992px) {
@@ -862,7 +933,7 @@ body .h6 {
 
 .info-section .info:last-child .info__image-wrapper::after {
   top: -10%;
-  height: 100%;
+  height: 112%;
 }
 
 .info-section .info .info__image-wrapper {
@@ -877,6 +948,11 @@ body .h6 {
   width: 110%;
   height: 85%;
   top: 13%;
+}
+
+.info-section .info .info__image-wrapper .info__image {
+  -webkit-filter: drop-shadow(0px 15px 25px rgba(19, 50, 82, 0.1));
+          filter: drop-shadow(0px 15px 25px rgba(19, 50, 82, 0.1));
 }
 
 .info-section .info .info__subtitle {
@@ -1422,21 +1498,6 @@ body .h6 {
           animation: pulsate-bck 1.5s ease-in-out infinite both;
 }
 
-@-webkit-keyframes pulsate-bck {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @keyframes pulsate-bck {
   0% {
     -webkit-transform: scale(1);
@@ -1466,6 +1527,16 @@ body .h6 {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+#features .carousel-container .carousel-control .left,
+#features .carousel-container .carousel-control .right {
+  -webkit-transition: 0.2s opacity linear;
+  transition: 0.2s opacity linear;
+}
+
+#features .carousel-container .carousel-control .disabled {
+  opacity: 0.1;
 }
 
 #contact {

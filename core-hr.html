@@ -185,7 +185,7 @@
     </header>
 
     <section class="hero core-hero py-5">
-        <div class="container">
+        <div class="container py-4">
             <div class="row pb-5">
                 <div class="col-lg-8 mb-5 mb-lg-0">
                     <div class="row mt-5">
@@ -204,7 +204,7 @@
         </div>
     </section>
 
-    <main id="features" class="carousel slide pb-5" data-wrap="false">
+    <main id="features" class="carousel slide pb-5 mb-5" data-wrap="false">
 
         <div class="horizontal-scroll mb-5">
             <div class="container d-flex carousel-indicators">
@@ -603,7 +603,7 @@
 
             <div class="row carousel-control">
                 <div class="col-5">
-                    <a class="" href="#features" role="button" data-slide="prev">
+                    <a class="left" href="#features" role="button" data-slide="prev">
                         <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57">
                             <circle id="Ellipse_1" data-name="Ellipse 1" cx="28.5" cy="28.5" r="28.5" fill="#1e5083"
@@ -616,7 +616,7 @@
                     </a>
                 </div>
                 <div class="col-5">
-                    <a class="" href="#features" role="button" data-slide="next">
+                    <a class="right" href="#features" role="button" data-slide="next">
                         <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                         <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle opacity="0.4" cx="28.5" cy="28.5" r="28.5" fill="#1E5083" />
@@ -682,7 +682,7 @@
                 justify-content-around text-center text-sm-left">
                 <h5 class="text-white">All-in-one HR Software.<br><span class="mt-3 footer__text--blue">Streamline
                         your HR </span></h5>
-                <a href="#" class="mt-4 mt-sm-0 footer__button btn btn-success">Get Started</a>
+                <a href="sign-up/index.html" class="mt-4 mt-sm-0 footer__button btn btn-success">Get Started</a>
             </div>
             <div class="d-none d-xl-block col-xl-3">
                 <img class="footer__image img-fluid" src="./assets/img/footer-right.svg" alt="">
@@ -793,6 +793,24 @@
             document.querySelector('#features').scrollIntoView();
             $('.carousel').carousel(slideIndex)
         }
+
+        const checkitem = () => {
+            var $this;
+            $this = $("#features");
+            if ($("#features .carousel-inner .carousel-item:first").hasClass("active")) {
+                $("#features .left").addClass('disabled');
+                $("#features .right").removeClass('disabled');
+            } else if ($("#features .carousel-inner .carousel-item:last").hasClass("active")) {
+                $("#features .left").removeClass('disabled');
+                $("#features .right").addClass('disabled');;
+            } else {
+                $(".carousel-control a").removeClass('disabled');
+            }
+        };
+
+        checkitem();
+
+        $("#features").on("slid.bs.carousel", "", checkitem);
     </script>
 </body>
 

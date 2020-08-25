@@ -300,6 +300,13 @@ body {
     .home-hero-animation {
       position: relative;
 
+      svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+      }
 
       @media (min-width: 1200px) {
         width: 560px;
@@ -326,6 +333,7 @@ body {
           left: 0;
           width: 181px;
           height: 181px;
+          transform-origin: center;
 
           .image-1,
           .image-2 {
@@ -338,18 +346,48 @@ body {
             object-fit: contain;
             object-position: center;
             display: none;
-            mix-blend-mode: overlay;
           }
         }
 
-        .onboarding-circle,
-        .time-circle,
-        .analytics-circle,
-        .disciplinary-circle,
-        .travel-circle,
-        .exit-circle,
-        .leave-circle,
-        .hris-circle {
+        .circles {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          transform-origin: center;
+
+          &.rotate {
+            animation: rotate 60s linear infinite normal forwards;
+            z-index: -1;
+
+            .circle img,
+            .circle .text-content {
+              animation: rotate 60s linear infinite reverse forwards;
+            }
+
+            @keyframes rotate {
+              from {
+                transform: rotate(0);
+              }
+
+              to {
+                transform: rotate(360deg);
+              }
+            }
+
+            &:hover {
+              animation-play-state: paused;
+
+              .circle img,
+              .circle .text-content {
+                animation-play-state: paused;
+              }
+            }
+          }
+        }
+
+        .circle {
           width: 23.26px;
           height: 23.26px;
           border-radius: 50%;
@@ -357,6 +395,29 @@ body {
           overflow: hidden;
           display: grid;
           place-items: center;
+          box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
+
+          &.pulse {
+            animation: pulsate-bck 1.5s ease-in-out infinite both;
+
+            @keyframes pulsate-bck {
+              0% {
+                transform: scale(1);
+              }
+
+              50% {
+                transform: scale(0.9);
+              }
+
+              100% {
+                transform: scale(1);
+              }
+            }
+
+            &:hover {
+              animation-play-state: paused;
+            }
+          }
 
           img {
             opacity: 0;
@@ -373,6 +434,7 @@ body {
             place-items: center;
             opacity: 0;
             padding: 20px;
+            transition: 0.2s ease-in;
 
             p {
               font-size: 17px;
@@ -384,86 +446,86 @@ body {
               opacity: 1;
             }
           }
-        }
 
-        .onboarding-circle {
-          left: 44.22%;
-          top: 11.56%;
-          background: #8DBF57;
+          &.onboarding-circle {
+            left: 44.22%;
+            top: 11.56%;
+            background: #8DBF57;
 
-          .text-content {
-            background: #701778;
+            .text-content {
+              background: #701778;
+            }
           }
-        }
 
-        .time-circle {
-          left: 20.41%;
-          top: 21.77%;
-          background: #396EAE;
+          &.time-circle {
+            left: 20.41%;
+            top: 21.77%;
+            background: #396EAE;
 
-          .text-content {
-            background: #1E8323;
+            .text-content {
+              background: #1E8323;
+            }
           }
-        }
 
-        .analytics-circle {
-          left: 10.88%;
-          top: 44.22%;
-          background: #CCCCCC;
+          &.analytics-circle {
+            left: 10.88%;
+            top: 44.22%;
+            background: #CCCCCC;
 
-          .text-content {
-            background: #1E5083;
+            .text-content {
+              background: #1E5083;
+            }
           }
-        }
 
-        .disciplinary-circle {
-          left: 20.41%;
-          top: 68.71%;
-          background: #D2E1EF;
+          &.disciplinary-circle {
+            left: 20.41%;
+            top: 68.71%;
+            background: #D2E1EF;
 
-          .text-content {
-            background: #D07908;
+            .text-content {
+              background: #D07908;
 
+            }
           }
-        }
 
-        .travel-circle {
-          left: 44.22%;
-          top: 78.23%;
-          background: #FFFFFF;
+          &.travel-circle {
+            left: 44.22%;
+            top: 78.23%;
+            background: #FFFFFF;
 
-          .text-content {
-            background: #2E3B84;
+            .text-content {
+              background: #2E3B84;
+            }
           }
-        }
 
-        .exit-circle {
-          left: 68.03%;
-          top: 68.71%;
-          background: #CCCCCC;
+          &.exit-circle {
+            left: 68.03%;
+            top: 68.71%;
+            background: #CCCCCC;
 
-          .text-content {
-            background: #686016;
+            .text-content {
+              background: #686016;
+            }
           }
-        }
 
-        .leave-circle {
-          left: 78.23%;
-          top: 44.22%;
-          background: #EF7438;
+          &.leave-circle {
+            left: 78.23%;
+            top: 44.22%;
+            background: #EF7438;
 
-          .text-content {
-            background: #7F5C4C;
+            .text-content {
+              background: #7F5C4C;
+            }
           }
-        }
 
-        .hris-circle {
-          left: 68.03%;
-          top: 21.09%;
-          background: #932020;
-
-          .text-content {
+          &.hris-circle {
+            left: 68.03%;
+            top: 21.09%;
             background: #932020;
+
+            .text-content {
+              background: #932020;
+            }
           }
         }
       }
@@ -568,15 +630,12 @@ body {
     background-position: bottom center;
 
     .card {
-      min-height: 511px;
       box-shadow: 0px 35px 115px rgba(19, 50, 82, 0.15);
       border-radius: 10px;
-      background: #ffffff url(./img/payroll/hero-img.svg) no-repeat;
-      background-position: bottom right;
-      background-size: 40%;
 
       .card-body {
         padding: 75px 70px;
+        padding-right: 39px;
       }
     }
 
@@ -596,7 +655,6 @@ body {
     background-position: bottom center;
 
     .card {
-      min-height: 511px;
       box-shadow: 0px 35px 115px rgba(19, 50, 82, 0.15);
       border-radius: 10px;
 
@@ -635,9 +693,11 @@ body {
         height: 91.18px;
         box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
         border-radius: 5px;
+        display: grid;
+        place-items: center;
 
         &:first-of-type {
-          background: #f4f7fb;
+          background: #D8E4F1;
           transform: matrix(0.87, -0.49, 0.49, 0.87, 0, 0);
           left: -7%;
           top: -30px;
@@ -648,14 +708,14 @@ body {
           transform: matrix(0.97, -0.25, 0.25, 0.97, 0, 0);
           left: 10%;
           top: -3%;
-          background: #f9f3fa;
+          background: #FDE7CB;
         }
 
         &:last-of-type {
           transform: matrix(0.59, -0.81, 0.81, 0.58, 0, 0);
           top: 25%;
           left: 0%;
-          background: #f4fbf4;
+          background: #D8F1D9;
         }
 
         @media (min-width: 992px) {
@@ -824,7 +884,7 @@ body {
     &:last-child {
       .info__image-wrapper::after {
         top: -10%;
-        height: 100%;
+        height: 112%;
       }
     }
 
@@ -839,6 +899,10 @@ body {
         width: 110%;
         height: 85%;
         top: 13%;
+      }
+
+      .info__image {
+        filter: drop-shadow(0px 15px 25px rgba(19, 50, 82, 0.1));
       }
     }
 
@@ -1405,6 +1469,15 @@ body {
       position: absolute;
       right: 0;
       top: 0;
+
+      .left,
+      .right {
+        transition: 0.2s opacity linear;
+      }
+
+      .disabled {
+        opacity: 0.1;
+      }
     }
   }
 }
