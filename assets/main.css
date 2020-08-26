@@ -307,6 +307,7 @@ body .h6 {
 @media (min-width: 1200px) {
   .hero.home-hero {
     background: url(./img/index/hero-bg.svg) no-repeat center center;
+    background-size: cover;
   }
 }
 
@@ -929,8 +930,8 @@ body .h6 {
     content: "";
     height: 100%;
     width: 100vw;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #E8EFF7), color-stop(75%, #fff));
-    background: linear-gradient(to bottom, #E8EFF7 85%, #fff 75%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #E8EFF7), color-stop(85%, #fff));
+    background: linear-gradient(to bottom, #E8EFF7 85%, #fff 85%);
     position: absolute;
     left: 0;
     z-index: -1;
@@ -1672,12 +1673,11 @@ body .h6 {
 
 #payroll-features .features__grid .feature {
   height: 95px;
-  border: 1px solid #d8e4f1;
   -webkit-box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
           box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
   border-radius: 5px;
   padding: 20px;
-  background: white;
+  background: #fff;
 }
 
 #payroll-features .features__grid .feature .img__wrapper {
