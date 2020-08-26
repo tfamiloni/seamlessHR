@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SeamlessHR</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/utility.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="navigation">
+
+        <nav class="navbar navbar-expand-lg navbar-light px-3 py-3 py-xl-0">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./assets/img/seamlessHR-logo.svg"
+                        alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-xl-4 mr-md-2 mr-0">
+                            <input type="checkbox" name="platformDropdownMenuLink" id="platformDropdownMenuLink">
+                            <label class="nav-link dropdown-toggle mb-0" for="platformDropdownMenuLink"
+                                id="platformDropdownMenuLabel" aria-haspopup="true" aria-expanded="false"
+                                role="button">Platforms</label>
+                            <div class="platform-menu" aria-labelledby="platformDropdownMenuLink">
+                                <div class="container py-5">
+                                    <div class="d-flex align-items-center justify-content-between mb-5">
+                                        <h5 class="mb-0">Your end-to-end HR Platform</h5>
+                                        <label class="mb-0 platform-menu__close" for="platformDropdownMenuLink"
+                                            aria-haspopup="true" aria-expanded="false" role="button"
+                                            title="close dropdown">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+                                                <path
+                                                    d="M25 2C12.309534 2 2 12.309534 2 25C2 37.690466 12.309534 48 25 48C37.690466 48 48 37.690466 48 25C48 12.309534 37.690466 2 25 2 z M 25 4C36.609534 4 46 13.390466 46 25C46 36.609534 36.609534 46 25 46C13.390466 46 4 36.609534 4 25C4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969L25 23.585938L17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031L23.585938 25L16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031L25 26.414062L32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969L26.414062 25L33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                    <div class="platform-grid mb-4">
+                                        <a class="platform-item" href="core-hr.html" id="exitManagement">
+                                            <div class="platform-item__badge">CORE</div>
+                                            <h6 class="blue-text platform-item__heading">Exit Management</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                        <a class="platform-item" href="payroll-management.html" id="payrollManagement">
+                                            <h6 class="blue-text platform-item__heading">Payroll Managment</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                        <a class="platform-item" href="performance-management.html"
+                                            id="performanceManagement">
+                                            <h6 class="blue-text platform-item__heading">Performance Management</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                        <a class="platform-item" href="recruitment-management.html"
+                                            id="recruitmentManagement">
+                                            <h6 class="blue-text platform-item__heading">Recruitment Management</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="onboarding">
+                                            <div class="platform-item__badge">CORE</div>
+                                            <h6 class="blue-text platform-item__heading">Onboarding</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="leaveManagement">
+                                            <div class="platform-item__badge">CORE</div>
+                                            <h6 class="blue-text platform-item__heading">Leave Management</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="employeeSelfService">
+                                            <div class="platform-item__badge">CORE</div>
+                                            <h6 class="blue-text platform-item__heading">Employee Self Service</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="HRIS">
+                                            <div class="platform-item__badge">CORE</div>
+                                            <h6 class="blue-text platform-item__heading">HRIS</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="disciplinary">
+                                            <div class="platform-item__badge">CORE</div>
+                                            <h6 class="blue-text platform-item__heading">Disciplinary</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="requisitionTravelProcurements">
+                                            <div class="platform-item__badge">CORE</div>
+                                            <h6 class="blue-text platform-item__heading">Requisition, Travel &
+                                                Procurements</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="advancedReportAnalytics">
+                                            <div class="platform-item__badge">CORE</div>
+                                            <h6 class="blue-text platform-item__heading">Advanced Report & Analytics
+                                            </h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or
+                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                        </a>
+                                        <a class="platform-item" href="core-hr.html" id="timeAttendance">
+                                            <h6 class="blue-text platform-item__heading">Time & Attendance</h6>
+                                            <p class="platform-item__text">You can choose to add more options to your
+                                                core or premium plan. Or choose to purchase these add-ons as standalone
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <a href="contact.html" class="platform-menu__link text-center">Looking for more?
+                                        Contact us</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-xl-4 mr-md-2 mr-0">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown mr-xl-4 mr-md-2 mr-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="companyDropdownLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Company
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="companyDropdownLink">
+                                <a class="dropdown-item" href="about.html">About Us</a>
+                                <a class="dropdown-item" href="customer-stories.html">Customer Stories</a>
+                                <a class="dropdown-item" href="careers.html">Careers</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown mr-xl-4 mr-md-2 mr-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Resources
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="resourcesDropdownMenuLink">
+                                <a class="dropdown-item" href="blog.html">Blog</a>
+                                <a class="dropdown-item" href="FAQ.html">FAQs</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-xl-4 mr-md-2 mr-0">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sign-up/index.html" class="btn button btn-success my-2 my-sm-0">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="padding-y-normal">
+        <div class="container">
+            <div class="maxwidth-1000px mx-auto">
+                <div class="d-flex align-items-end justify-content-between mb-5">
+                    <h1 class="text-12px text-secondary font-weight-normal text-uppercase letter-3px mb-4">Privacy
+                        policy
+                    </h1>
+                    <p class="text-secondary text-16px mb-4">Last updated: May 10, 2020</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-lg-7 col-xl-5">
+                        <h2 class="text-blue font-weight-bold">Your data. How we protect it and what we do with it.</h2>
+                    </div>
+                </div>
+                <ol class="legal-section pt-5 mt-3">
+                    <div class="mb-5">
+                        <p class="font-weight-bold">Introduction</p>
+                        <p class="font-weight-light mt-4">These terms of service contain the terms and conditions under
+                            which you may use the SeamlessHR service offered at seamlesshr.com (the
+                            “Service”).
+                            <br> <br>
+                            These terms of service are made between you, (“the User”, as defined below), and
+                            SeamlessHR.com Limited, (“SeamlessHR”). If you do not
+                            agree to all of these terms, you may not use the service. By signing up for the service on
+                            behalf of a client of SeamlessHR, you confirm that
+                            (a) you are duly authorized to represent the entity, (b) you accept these terms on behalf of
+                            such entity, and (c) any references to “you” in
+                            these terms refer to such entity and all of its employees, consultants and agents. You are
+                            responsible for all activity on the service that
+                            occurs under your account.
+                            <br><br>
+                            These terms are applicable to all persons who use or access the service, in the user’s
+                            capacity or in an individual capacity, including
+                            authorized persons representing the user, employees, or other persons using or accessing the
+                            services (collectively, “Users” and each, a
+                            “User”). If User is agreeing to these terms on behalf of a business or an individual other
+                            than user, the user represents and warrants that it
+                            has the authority to bind that business or individual to these terms, and user’s agreement
+                            to these terms will be treated as the agreement of
+                            such business or individual. In that event, “User” also refers to that business or
+                            individual. By clicking the applicable button to indicate
+                            User’s acceptance of these terms, or by accessing or using the platform, User agrees,
+                            effective as of the date of such action, to be bound by
+                            these terms.
+                        </p>
+                    </div>
+
+                    <li class="font-weight-bold mb-5">
+                        Grant of Usage Right
+                        <p class="font-weight-light mt-4">SeamlessHR hereby grants you a limited, revocable,
+                            non-transferable, non-sublicensable, non-exclusive right to access and use the
+                            cloud-hosted software product and related documentation included in the service and
+                            subsequent modifications and/or enhancements (the
+                            “Software”) via a web browser controlled by you for your internal business use.
+                            <br><br>
+                            Nothing in this agreement obligates SeamlessHR to deliver or make available to you any
+                            customisations, additional functionality, or copies
+                            of computer programs or code from the software to you, in any form. You agree to use the
+                            service only in compliance with all applicable
+                            local, state, national, and international laws, rules and regulations (“Applicable Law”).
+                            <br><br>
+                            You shall have access to use the software based on the tenure of payment made by you for use
+                            of the software. You shall not, and shall not
+                            agree to, and shall not authorize, encourage or permit any third party to:
+                            <ol class="font-weight-light">
+                                <li>reverse engineer, decompile, disassemble or otherwise attempt to discern the source
+                                    code of the components of the software. You
+                                    acknowledge that nothing in this agreement will be construed to grant you any right
+                                    to obtain or use such code. Use the software, nor allow
+                                    software to be used, to provide data management or processing services for third
+                                    parties</li>
+                                <li>
+                                    reproduce all or any portion of the software (except as expressly permitted herein)
+                                    or any accompanying documentation, or modify the
+                                    software;
+                                </li>
+                                <li>
+                                    permit any third party to access and/or use the service, other than the users
+                                    authorized under the agreement;
+                                </li>
+                                <li>
+                                    rent, lease, loan, or sell access to the software to any third party without the
+                                    consent of SeamlessHR whose consent shall not be
+                                    unreasonably withheld; Access the software in order to build or create a derivative,
+                                    competitive service or copy features, functions or
+                                    graphics of the software or;
+                                </li>
+                                <li>
+                                    introduce software or automated agents or scripts to the software so as to produce
+                                    multiple accounts, generate automated searches,
+                                    requests and queries, or to strip or mine data from the services;
+                                </li>
+                                <li>
+                                    commercialize in any way, nor grant access to any third party without a written
+                                    consent from SeamlessHR. You will put all reasonably
+                                    necessary measures in place to ensure there is no breach of security. You will take
+                                    reasonable measures to ensure that SeamlessHR’s
+                                    intellectual property is not infringed via its use of the software from any
+                                    sources/parties within or affiliated with your organization
+                                </li>
+                            </ol>
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Intellectual Property Rights
+                        <p class="font-weight-light mt-4">
+                            SeamlessHR owns and shall retain all rights, title and interest in and to (a) the software
+                            and the service, including
+                            all intellectual property
+                            rights therein, and (b) all transactional and performance data related to your use of the
+                            service. SeamlessHR may
+                            collect, use and disclose all
+                            such transactional and performance data for its business purposes (including software use
+                            optimization and product
+                            marketing) provided
+                            that such use does not reveal your identity, any of your confidential information or any
+                            personally identifiable
+                            information that belongs to
+                            you or your employees.
+                            <br><br>
+                            You retain all right, title and ownership interest in and to your data. SeamlessHR has no
+                            right, title or interest in
+                            any personally identifiable
+                            information contained in or related to your data.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Terms and Termination
+                        <p class="font-weight-light mt-4">
+                            These terms will remain in effect as long as you have an active subscription for the service
+                            (the “Term”). If you are
+                            eligible to use the service
+                            for a free trial period, and do not purchase a subscription before the end of such period,
+                            these terms will expire at
+                            the end of the free trial
+                            period.
+                            <br><br>
+                            Subscriptions purchased by you commence on the start date specified when you complete the
+                            initial payment process and
+                            continue for the
+                            subscription term selected at the time of payment. Subscriptions may renew automatically
+                            upon expiration you opt in for
+                            the option.
+                            <br><br>
+                            You are solely responsible for the proper cancellation of your subscription. You may cancel
+                            your subscription at any
+                            time from within the
+                            software or by emailing support@seamlesshr.com
+                            <br><br>
+                            SeamlessHR may suspend your access to the service and terminate these terms at any time (i)
+                            if you materially breach
+                            these terms (ii) if you
+                            fail to pay for the service. SeamlessHR may suspend your access immediately if you do not
+                            cure such infraction upon
+                            notice via email.
+                            <br><br>
+                            In the event your subscription is terminated, other than in instances where it is terminated
+                            by SeamlessHR for the above
+                            reasons, you will
+                            continue to have the ability to download the information provided, inputted or uploaded to
+                            your account in the
+                            SeamlessHR service by you
+                            or on your behalf (“Data”) for 30 days after the effective date of expiration or termination
+                            of your subscription. After
+                            such a 30-day period or
+                            if your subscription is terminated due to nonpayment or breach of terms, SeamlessHR shall
+                            have no obligation to maintain
+                            any data and
+                            shall thereafter, unless legally prohibited to do so, delete all of your data contained in
+                            the SeamlessHR service.
+                            <br><br>
+                            Otherwise these terms may be terminated by either party, upon giving the other 30 days’
+                            notice via email if (i) the other party commits a
+                            breach of any of its obligations under this agreement; (ii) the other party ceases or
+                            threatens to cease to carry on its business (iii) the other
+                            party goes into liquidation save for the purpose of a genuine amalgamation or
+                            reconstruction; (iv) in the event of a force majeure event that
+                            persists for more than one (1) month; (v) in any event that you consider that SeamlessHR
+                            carries on its business in any manner detrimental to
+                            your corporate existence or reputations; and (vi) in the event of the other party being
+                            prohibited by any law or official requirement from
+                            complying with the terms of this agreement. Upon termination of this agreement, SeamlessHR
+                            shall restrict further access to the use of the
+                            software by you.
+                            <br><br>
+                            The termination of this agreement shall not discharge either party from any obligations or
+                            liability which had already accrued under this
+                            agreement prior to termination. Consequently, SeamlessHR shall be entitled to full payment
+                            for services performed prior to the effective
+                            date of the termination. In the same vein, you shall be entitled to a full refund of any sum
+                            paid for which no services have been rendered as
+                            at the date of termination.
+                            <br><br>
+                            Notwithstanding, the provisions in the clause above, it must be clearly understood by the
+                            parties that certain factors may impact the use of
+                            the software and may result in failure of access including but not limited to: your local
+                            network, firewall, pop-up blocker, your internet
+                            service provider, the public internet, the public switched telephone network and your power
+                            supply. Notwithstanding any provision in this
+                            agreement, SeamlessHR shall take no responsibility for any disruption, interruption or delay
+                            caused by any failure of or inadequacy in any of
+                            these items or any other items over which SeamlessHR has no control. Where the disruption,
+                            interruption or delay is not caused by the
+                            event mentioned above, SeamlessHR shall exercise all reasonable effort to resolve the
+                            disruption, interruption or delay or defect in the
+                            operation of the software as quickly as possible and provide the support required with duel
+                            care and diligence.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Modification of Service or Agreement
+                        <p class="font-weight-light mt-4">
+                            The service may be made available in free or paid versions for different types of accounts.
+                            Not all features and
+                            functionality of the service
+                            may be available in each version or type of account. SeamlessHR reserves the right, in its
+                            sole discretion, to modify,
+                            add, or remove portions
+                            and/or functionality of the service on a temporary or permanent basis, without liability to
+                            you or any third party.
+                            <br><br>
+                            In the event SeamlessHR determines it is necessary to make a material modification to these
+                            terms, you will be notified
+                            of such change via
+                            email and asked to affirmatively agree to such modified version of these terms. Note,
+                            however, that your use of the
+                            service after
+                            modifications to these terms become effective constitutes your binding acceptance of such
+                            changes. You may review the
+                            most current
+                            version of these terms at: https://www.seamlesshr.com/terms.
+                            <br><br>
+                            If you are dissatisfied with the terms of these terms or any modifications to these terms or
+                            the service, you agree that
+                            your sole and
+                            exclusive remedy is to terminate your subscription and discontinue any use of the service.
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Payment Terms
+                        <p class="font-weight-light mt-4">
+                            Your subscription to the service renews automatically for the same term selected upon
+                            initial payment (e.g., month-to-month, annual, etc.).
+                            You may change your subscription term at any time by contacting SeamlessHR using the contact
+                            information section below. If you are
+                            paying by credit or debit card, your card will be charged once a month for monthly
+                            subscriptions. There will be no refunds or credits for
+                            partial months of service.
+                            <br><br>
+                            All fees are exclusive of all taxes or duties imposed by governing authorities. Other than
+                            Value Added Tax which SeamlessHR may be
+                            required to collect from you and remit to appropriate taxing authorities, you are solely
+                            responsible for payment of all such taxes or duties.
+                            <br><br>
+                            SeamlessHR may at any time, upon adequate notice, change the price of your subscription or
+                            any part thereof, or introduce new charges or
+                            fees. If you do not agree to any such price changes, you may cancel your subscription and
+                            stop using the service prior to the
+                            commencement of the renewal subscription period for which the price change applies.
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Support
+                        <p class="font-weight-light mt-4">
+                            SeamlessHR shall: (i) provide you with basic support in connection with your use of the
+                            service at no additional charge,
+                            and with additional
+                            support if purchased separately, (ii) use commercially reasonable efforts to make the
+                            service available 24 hours a day,
+                            7 days a week, except
+                            for: (a) planned downtime (which SeamlessHR shall schedule to the extent practicable after
+                            business hours west african
+                            time), (b) as
+                            necessary to update the service to ensure its security and integrity and (iii) provide the
+                            service only in accordance
+                            with applicable law.
+                            <br><br>
+                            SeamlessHR’s hours for basic support are 9:00 a.m. To 5:00 p.m West African time, on
+                            weekdays, in English language via
+                            online ticketing.
+                            <br><br>
+                            You acknowledge that any support updates provided by SeamlessHR may be necessary for the
+                            proper operation of the
+                            software and
+                            therefore you agree that SeamlessHR can promptly install updates to ensure that your version
+                            of the software remains
+                            supported.
+                            <br><br>
+                            Your support obligations: up to two (2) named representatives designated by your
+                            organisation may contact SeamlessHR to
+                            provide an error
+                            report and request support by any of the following methods: (I) raise a support ticket
+                            online; (ii) send an email to
+                            support@seamlesshr.com;
+                            make a phone call to <a href="tel:+2348167134495">+2348167134495.</a>
+                            <br><br>
+                            SeamlessHR’s support obligations: SeamlessHR will use its best efforts to respond to your
+                            request using all of the above
+                            methods.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Service Level Terms
+                        <p class="font-weight-light mt-4">
+                            SEVERITY DEFINITION EXAMPLE RESPONSE RESOLUTION
+                            <br>
+                            CRITICAL Significant impact on clients systems, resulting in Client’s system being either
+                            down, or functioning at a
+                            significantly reduced
+                            capacity.
+                            Inability to log into the system.
+                            <br>
+                            Server downtime that is not due to system maintenance
+                            <br>
+                            Inability to run payroll.
+                            <br>
+                            Initial response and diagnosis starts within:
+                            <br>
+                            1 hour* of receipt of complaint. Resolution within:
+                            <br>
+                            8 hours after notification.
+                            <br>
+                            In cases where a permanent fix cannot be delivered within 24 hours, a work-around will be
+                            provided in the interim and
+                            the permanent fix will
+                            be delivered within three working days.
+                            <br>
+                            HIGH Significant business impact on a system, resulting in most functionality loss on the
+                            Client's system; the
+                            Software is barely usable.
+                            Inability to use a function that is central to multiple modules on the system, eg,
+                            Paygrades, Contracts, Notifications
+                            etc.
+                            <br>
+                            Error messages while trying to access some functionality.
+                            <br>
+                            Initial response and diagnosis starts within:
+                            <br>
+                            2 hours of receipt of complaint. Resolution within:
+                            <br>
+                            48 hours after notification.
+                            <br>
+                            MEDIUM Some business impact on a system, resulting in some functionality loss on the
+                            Client's system. The Software is
+                            usable, but does
+                            not provide a function in the most convenient or expeditious manner.
+                            Inability to use a function within a module, eg, KPI not saving.
+                            <br>
+                            Initial response and diagnosis starts within:4 hours of receipt of complaint. Resolution
+                            within:
+                            <br>
+                            72 hours after notification.
+                            <br>
+                            LOW For non-production questions including general usage questions, issues related to a non-
+                            production environment,
+                            or feature
+                            requests. There is no impact on the quality, performance or functionality on Client’s
+                            production system.
+                            Grammatical Errors, User interface Distortion and other issues that do not affect the
+                            functionality of the system.
+                            <br>
+                            Initial response and diagnosis starts within:4 hours of receipt of complaint. Resolution
+                            within:
+                            <br>
+                            10 business days after notification.
+
+                            <br><br>
+                            *All working hours only.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        API Fair Usage
+                        <p class="font-weight-light mt-4">
+                            If you integrate with SeamlessHR using our APIs, you must use efficient programming, which
+                            will not cause an excessive
+                            number of requests
+                            to be made in too short a period of time, as-determined solely by SeamlessHR. If this
+                            occurs, SeamlessHR reserves the
+                            right to throttle your
+                            api connections or suspend or terminate your SeamlessHR account.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Publicity
+                        <p class="font-weight-light mt-4">
+                            Unless otherwise agreed to by you and SeamlessHR, during the term, SeamlessHR may disclose
+                            your name as a customer of SeamlessHR and/or subscriber to the service, and you hereby grant
+                            SeamlessHR the right to display your name, company, and logo in SeamlessHR’s marketing
+                            materials and on SeamlessHR’s public website, in each case in accordance with any branding
+                            guidelines that is publicly available to SeamlessHR.
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Warranties and Representations
+                        <p class="font-weight-light mt-4">
+                            SeamlessHR hereby warrants and represents as follows:
+                            <br><br>
+                            Your access to the SeamlessHR software-as-a-Service (SaaS) is guided according to the
+                            specifications contemplated by the
+                            terms of this
+                            agreement.
+                            <br><br>
+                            Its title to and proprietary rights in the software is free and unencumbered and that it has
+                            the right, power and
+                            authority to grant you
+                            subscription to the service upon the terms and conditions of this agreement.
+                            <br><br>
+                            The software in its entirety does not infringe any patent, copyright, trademark or trade
+                            secret or any other
+                            intellectual property rights of any
+                            third party, and does not contain any virus or harmful code.
+                            <br><br>
+                            It will implement and maintain backups, security and business continuity measures, in
+                            accordance with industry best
+                            practices, in order to
+                            maintain the security and integrity of the services and your content.
+                            <br><br>
+                            It will host the software and your content on the cloud. It will use best practice
+                            technology to ensure the safety of
+                            data at all times.
+                            <br><br>
+                            It shall comply with all applicable Federal, State, and Local, Statutes, Laws, Ordinances,
+                            and Regulations relating to
+                            this agreement.
+                            <br><br>
+                            SeamlessHR further represents and warrants as follows: (i) It is a company duly
+                            incorporated, validly existing and in
+                            good standing order
+                            under the laws of the Federal Republic of Nigeria and has full power and authority under its
+                            memorandum and articles of
+                            association or
+                            constitution (by whatever name called) to enter into, execute and perform this agreement;
+                            (ii) it has fulfilled all
+                            conditions and complied with
+                            all legal and procedural requirements and obtained all confirmations, consents, licenses or
+                            registration necessary to
+                            make its obligations
+                            hereunder and this entire agreement legal, valid, binding and enforceable against it; (iii)
+                            there are no actions,
+                            proceedings or claims
+                            pending, or to the knowledge of SeamlessHR threatening SeamlessHR, the adverse determination
+                            of which might have a
+                            materially adverse
+                            effect on its financial condition or impair its ability to perform its obligations
+                            hereunder, or affect the validity or
+                            enforceability of this
+                            agreement.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Limitation of Liability
+                        <p class="font-weight-light mt-4">
+                            SeamlessHR’s entire liability for any claim or loss, damage, or expense from any cause
+                            whatsoever under this agreement, shall in no event
+                            exceed the maintenance and subscription fees actually paid by you for the relevant month
+                            when the loss, damage or expense occurred
+                            provided that where any 3rd party makes claims or suffers any losses as a result of
+                            SeamlessHR’s negligence or breach of its obligations it
+                            shall fully indemnify you against any such 3rd party claims.
+                            <br><br>
+                            You shall be responsible for adopting reasonable measures to ensure accuracy of content and
+                            the process by which it is entered into the
+                            software. You are advised to examine and confirm the results obtained from the software
+                            before relying on it, and to adopt procedures to
+                            identify and correct errors and omissions in content.
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Data Protection
+                        <p class="font-weight-light mt-4">
+                            The parties herein agree to strictly comply with all applicable privacy and data protection
+                            laws, such as Nigeria Data
+                            Protection Regulation
+                            as well as all other applicable regulations and directives in collecting, using, processing,
+                            handling and/or
+                            transferring of any of the
+                            confidential information disclosed by a party in connection with the service, which may
+                            contain any personal data. Each
+                            party agrees to fully
+                            indemnify the other party if there is any breach of any applicable laws in relation to
+                            privacy and data protection laws
+                            by such party.
+                            <br><br>
+                            SeamlessHR shall maintain commercially reasonable administrative, physical, and technical
+                            safeguards for protection of
+                            the service, and the
+                            security of your data. SeamlessHR shall not (a) disclose your data except as compelled by
+                            applicable law or as you
+                            expressly authorize in
+                            writing, or (b) access your data except to provide the service and prevent or address
+                            service or technical problems, or
+                            at your express
+                            request in connection with customer support matters. In the event SeamlessHR is compelled by
+                            applicable law to disclose
+                            your data, we will
+                            provide you with notice thereof, (in advance, if possible) if permitted by applicable law.
+                            <br><br>
+                            You are solely responsible for your data, and all uses of your data that occur through your
+                            account
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Security Breach
+                        <p class="font-weight-light mt-4">
+                            External breach: in the event of a security breach, as defined by applicable law, by anyone
+                            other than your employee,
+                            contractor or agent,
+                            upon discovery of such breach, SeamlessHR will: (a) initiate remedial actions that are in
+                            compliance with applicable law
+                            and consistent with
+                            industry standards; and (b) notify you of the security breach, its nature and scope, the
+                            remedial actions SeamlessHR
+                            will undertake, and the
+                            timeline within which SeamlessHR expects to remedy the breach. You will be responsible for
+                            fulfilling your obligations
+                            under applicable law.
+                            <br><br>
+                            Internal breach: in the event of a security breach, as defined by applicable law, by your
+                            employee, contractor or agent,
+                            or due to your failure
+                            to maintain your systems, network or data in a secure manner, you shall have sole
+                            responsibility for initiating remedial
+                            actions and you shall
+                            notify SeamlessHR immediately of the breach and steps you will take to remedy the breach. In
+                            our sole discretion, we may
+                            take any action,
+                            including suspension of your access to the service, to prevent harm to you, us, the service,
+                            or other third parties. You
+                            waive any right to
+                            make a claim against us for losses you incur that may result from our actions.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Compliance
+                        <p class="font-weight-light mt-4">
+                            Each party shall comply with all applicable laws in connection with its own activities under
+                            these terms. The service
+                            can be configured and
+                            used in ways that do not comply with applicable laws and it is your sole responsibility to
+                            monitor your employees’ use
+                            and your use of the
+                            service to ensure that such use complies with and is in accordance with applicable law. In
+                            no event shall SeamlessHR be
+                            responsible or liable
+                            for your failure to comply with applicable law in connection with your use of the service.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Disclaimers
+                        <p class="font-weight-light mt-4">
+                            SeamlessHR does not provide its customers with legal advice regarding compliance, data
+                            privacy or other relevant
+                            applicable laws in the
+                            jurisdictions in which you use the service, and any statements made by SeamlessHR to you
+                            shall not constitute legal
+                            advice.
+                            <br><br>
+                            You acknowledge that SeamlessHR exercises no control over your specific human resource
+                            practices implemented using the
+                            service or your
+                            decisions as to employment, promotion, advancement, termination, notification, or
+                            compensation of any employee or
+                            authorized user of
+                            the service. In addition, you are responsible for the privacy, collection, use, retention
+                            and processing of your
+                            employees’ data, in compliance
+                            with all applicable laws. SeamlessHR hereby disclaims all liability arising from your
+                            decisions and from harmful data or
+                            code uploaded to the
+                            service by you and/or your employees, contractors or agents.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Waivers & Amendments
+                        <p class="font-weight-light mt-4">
+                            No delay or omission on the part of any of the parties hereto, in exercising any right or
+                            remedy under this agreement shall impair that right or remedy or operate as or be taken to
+                            be a waiver of it, nor shall any waiver by any of the parties hereto, of any such right or
+                            remedy preclude any other or further exercise under this agreement of that or any other
+                            right or remedy. In addition, no variation, amendment or alteration of this agreement shall
+                            be valid unless the same is in writing signed by the
+                            parties hereto.
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Severability
+                        <p class="font-weight-light mt-4">
+                            Any provision of this agreement which is prohibited or unenforceable under Nigerian law
+                            shall be ineffective to the extent of such
+                            prohibition or unenforceability without invalidating the remaining provisions hereof.
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Force Majeure
+                        <p class="font-weight-light mt-4">
+                            Either party shall not be under any liability to the other party for any loss or for any
+                            failure to perform any obligation hereunder due to
+                            causes beyond either party’s control including without limitation industrial disputes of
+                            whatever nature, power loss, telecommunications
+                            failure, acts of god, internet service provider failures or delays, or denial of service
+                            attacks, floods, fires, pandemics, civil unrest, acts of
+                            terror, strikes or other labor problems, or any other cause beyond its reasonable control.
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Non-Transferability
+                        <p class="font-weight-light mt-4">
+                            Neither party shall assign, subcontract, delegate, or otherwise transfer this agreement, or
+                            its rights and obligations herein, without obtaining
+                            the prior written consent of the other party, and any attempted assignment, subcontract,
+                            delegation, or transfer in violation of the foregoing
+                            will be null and void; provided, however, that either party may assign this agreement in
+                            connection with a merger, acquisition,
+                            reorganization or sale of all or substantially all of its assets, or other operation of law,
+                            without any consent of the other party but upon notice
+                            to the other party. This agreement shall be binding upon the parties and their respective
+                            successors and permitted assigns.
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        General Provisions
+                        <p class="font-weight-light mt-4">
+                            These terms encompasses the entire agreement between you and SeamlessHR with respect to the
+                            subject matter hereof and supersedes all
+                            prior representations, agreements and understandings, written or oral. No purchase order or
+                            other form submitted by you will modify,
+                            supersede, add to or in any way vary the terms of these terms.
+                            <br><br>
+                            You may not assign or otherwise transfer any of your rights or obligations under these terms
+                            without SeamlessHR’s prior written consent,
+                            which consent shall not be unreasonably withheld. These terms shall be binding upon and will
+                            insure to the benefit of the parties and their
+                            respective successors and permitted assigns. Any assignment in violation of the foregoing
+                            will be null and void.
+                            <br><br>
+                            No part of these terms is intended or shall be construed as legal advice. SeamlessHR shall
+                            not be liable for any errors or omissions in the
+                            content of these terms or for any actions taken in reliance thereon.
+
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Dispute Resolution and Governing Law
+                        <p class="font-weight-light mt-4">
+                            This agreement shall be governed by and construed according to the laws of the federal
+                            republic of Nigeria.
+                            <br><br>
+                            If any dispute arises under this agreement, the parties agree to first try to resolve the
+                            dispute by mediation at the Lagos Multi-Door Courthouse with the help of a mediator
+                            appointed by the Lagos Multi-door Courthouse.
+                            <br><br>
+                            Any costs and fees other than attorney fees associated with the mediation shall be shared
+                            equally by the parties. If it proves impossible to arrive at a mutually satisfactory
+                            solution through mediation, the parties hereby consent to the jurisdiction of the competent
+                            courts of the federal republic of Nigeria for the purpose of any action or proceeding
+                            brought by either of them in connection with this agreement.
+                        </p>
+                    </li>
+
+                    <li class="font-weight-bold mb-5">
+                        Contact information
+                        <p class="font-weight-light mt-4">
+                            If you have any questions about the service or these terms, you may email us at
+                            <a href="mailto:support@seamlesshr.com">support@seamlesshr.com</a>, or write to us at:
+                            <br><br>
+
+                            SeamlessHR Limited,
+                            <br>
+                            8 Metalbox Road, Ikeja,
+                            <br>
+                            Lagos, Nigeria.
+                            <br><br>
+
+                            AND
+                            <br><br>
+
+                            Legal Counsel to SeamlessHR Limited:
+                            <br>
+                            Tope Adebayo LLP,
+                            <br>
+                            25C Ladoke Akintola Road, Ikeja GRA, Ikeja,
+                            <br>
+                            Lagos, Nigeria.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top row">
+            <div class="d-none d-xl-block col-xl-3">
+                <img class="img-fluid" src="./assets/img/footer-left.svg" alt="">
+            </div>
+            <div class="mx-5 mx-xl-0 my-5 my-xl-0 footer__text col-xl-6 d-flex align-items-center
+                justify-content-around text-center text-sm-left">
+                <h5 class="text-white">All-in-one HR Software.<br><span class="mt-3 footer__text--blue">Streamline
+                        your HR </span></h5>
+                <a href="sign-up/index.html" class="mt-4 mt-sm-0 footer__button btn btn-success">Get Started</a>
+            </div>
+            <div class="d-none d-xl-block col-xl-3">
+                <img class="footer__image img-fluid" src="./assets/img/footer-right.svg" alt="">
+            </div>
+        </div>
+
+        <div class="footer__middle container pt-2">
+            <div class="row pb-5">
+                <div class="col-xl-3 col-md-6">
+                    <h6 class="footer__title my-5">solution</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html"> Core HR</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="payroll-management.html">Payroll</a></li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="performance-management.html">Performance management</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="recruitment-management.html">Recruitment management</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <h6 class="footer__title my-5">more</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=0">
+                                Onboarding
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=1">
+                                HRIS
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=5">
+                                Employee self-service
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=2">
+                                Leave management
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=3">
+                                Disciplinary management
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=4">
+                                Requisition, travel & procurement
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=8">
+                                Advanced report & analytics
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=6">
+                                Time & attendance
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="core-hr.html?feature=7">
+                                Exit management
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <h6 class="footer__title my-5">company</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="about.html">
+                                About us
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="customer-stories.html">
+                                Customer stories
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="careers.html">
+                                Careers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-md-6">
+                    <h6 class="footer__title my-5">resources</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="FAQ.html">
+                                FAQs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom py-5 container">
+            <div class="row d-flex align-items-end">
+                <div class="col-xl-4 mb-5 mb-xl-0">
+                    <div
+                        class="row d-flex align-items-center flex-wrap justify-content-center justify-content-xl-start">
+                        <img src="./assets/img/seamlessHR-logo-footer.svg" alt="" class="img-fluid mr-5">
+                        <div class="">
+                            <img src="./assets/img/facebook.svg" alt="facebook" class="img-fluid mr-2">
+                            <img src="./assets/img/linkedin.svg" alt="linkedin" class="img-fluid mr-2">
+                            <img src="./assets/img/twitter.svg" alt="twitter" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 mb-5 mb-xl-0 mx-auto text-center text-xl-left">
+                    <p class="footer__address mb-xl-0 text-16px">8, Metalbox Road, Off Acme Road, Ikeja, Lagos <br>
+                        +234 (809) 0643 874.
+                        hello@seamlesshr.com</p>
+                </div>
+                <div class="col-xl-4">
+                    <div class="row d-flex align-items-center justify-content-center justify-content-xl-end">
+                        <div class="col-6 text-xl-right text-center">
+                            <a href="terms.html" class="text-white mb-xl-0 text-16px">Terms of service</a>
+                        </div>
+                        <div class="col-6 text-xl-right text-center">
+                            <a href="privacy.html" class="text-white mb-xl-0 text-16px">Privacy & Security</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="./assets/navbar.js"></script>
+</body>
+
+</html>

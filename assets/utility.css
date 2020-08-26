@@ -178,6 +178,14 @@
   color: #9ddca0 !important;
 }
 
+.text-12px {
+  font-size: 12px;
+}
+
+.text-12px * {
+  font-size: 12px !important;
+}
+
 .text-13px {
   font-size: 13px;
 }
@@ -240,6 +248,10 @@
 
 .maxwidth-420px {
   max-width: 420px;
+}
+
+.maxwidth-1000px {
+  max-width: 1000px;
 }
 
 .blue-bg {

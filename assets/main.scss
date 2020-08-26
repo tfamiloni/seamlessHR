@@ -573,8 +573,12 @@ body {
 
   &.pricing-hero {
     background: rgba(#d8e4f1, 0.4);
-    background: linear-gradient(to bottom, rgba(#d8e4f1, 0.4) 80%, white 80%);
+    background: linear-gradient(to bottom, rgba(#d8e4f1, 0.4) 60%, white 60%);
     position: relative;
+
+    @media (min-width: 1200px) {
+      background: linear-gradient(to bottom, rgba(#d8e4f1, 0.4) 80%, white 80%);
+    }
   }
 
   &.core-hero {
@@ -1264,10 +1268,12 @@ body {
 
     @media (min-width: 1200px) {
       display: block;
+      overflow-x: hidden;
 
       .product-comparison__selector {
         margin-bottom: 20px;
-        min-width: 100%;
+        min-width: initial !important;
+        width: 100%;
         margin-right: 0px;
       }
     }
@@ -2174,5 +2180,18 @@ body {
     background-size: contain;
     background-position: top center;
     z-index: -1;
+  }
+}
+
+.legal-section {
+  padding-left: 0;
+
+  li {
+    list-style-position: inside;
+
+    ol {
+      padding-left: 0;
+      list-style-type: lower-roman;
+    }
   }
 }
