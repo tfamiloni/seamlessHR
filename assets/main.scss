@@ -863,7 +863,7 @@ body {
         content: "";
         height: 100%;
         width: 100vw;
-        background: linear-gradient(to bottom, #E8EFF7 85%, #fff 85%);
+        background: linear-gradient(to bottom, #E8EFF7 85%, #fff 85%) no-repeat;
         position: absolute;
         left: 0;
         z-index: -1;
@@ -1042,7 +1042,14 @@ body {
   .clients__grid {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(206.84px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+
+    @media (min-width: 992px) {
+      grid-column-gap: 53px;
+      grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+      grid-row-gap: 96px;
+    }
   }
 }
 
@@ -1107,11 +1114,17 @@ body {
 
 //footer design
 .footer {
-  background: #133252;
+  background-color: #133252;
   background-image: url(./img/footer-bg.svg);
-  background-position: right bottom;
-  background-size: 40%;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 305px;
+
+  @media (min-width: 1200px) {
+    background-position: right bottom;
+    background-size: 40%;
+    background-image: url(./img/footer-bg-xl.svg);
+  }
 
   .footer__top {
     border-bottom: 1px solid #1e5083;

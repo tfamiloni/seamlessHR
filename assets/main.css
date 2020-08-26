@@ -930,8 +930,8 @@ body .h6 {
     content: "";
     height: 100%;
     width: 100vw;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #E8EFF7), color-stop(85%, #fff));
-    background: linear-gradient(to bottom, #E8EFF7 85%, #fff 85%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, #E8EFF7), color-stop(85%, #fff)) no-repeat;
+    background: linear-gradient(to bottom, #E8EFF7 85%, #fff 85%) no-repeat;
     position: absolute;
     left: 0;
     z-index: -1;
@@ -1090,8 +1090,17 @@ body .h6 {
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
-  -ms-grid-columns: (minmax(206.84px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(206.84px, 1fr));
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+@media (min-width: 992px) {
+  .clients .clients__grid {
+    grid-column-gap: 53px;
+    -ms-grid-columns: (minmax(207px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
+    grid-row-gap: 96px;
+  }
 }
 
 .details .detail .detail__image {
@@ -1148,11 +1157,19 @@ body .h6 {
 }
 
 .footer {
-  background: #133252;
+  background-color: #133252;
   background-image: url(./img/footer-bg.svg);
-  background-position: right bottom;
-  background-size: 40%;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 305px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    background-position: right bottom;
+    background-size: 40%;
+    background-image: url(./img/footer-bg-xl.svg);
+  }
 }
 
 .footer .footer__top {
