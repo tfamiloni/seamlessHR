@@ -578,3 +578,17 @@
 .blend-multiply {
   mix-blend-mode: multiply;
 }
+
+.fade-in {
+  animation-name: fadeIn;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
