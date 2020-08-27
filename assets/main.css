@@ -932,7 +932,33 @@ body .h6 {
   border-bottom: 1px solid #d8e4f1;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 767.98px) {
+  .info-section .info::before {
+    content: "";
+    height: 100%;
+    width: 100vw;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #E8EFF7), color-stop(90%, #fff)) no-repeat;
+    background: linear-gradient(to bottom, #E8EFF7 90%, #fff 90%) no-repeat;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .info-section .info::before {
+    content: "";
+    height: 100%;
+    width: 100vw;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #E8EFF7), color-stop(75%, #fff)) no-repeat;
+    background: linear-gradient(to bottom, #E8EFF7 75%, #fff 75%) no-repeat;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .info-section .info::before {
     content: "";
     height: 100%;

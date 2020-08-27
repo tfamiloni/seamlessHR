@@ -862,7 +862,31 @@ body {
 .info-section {
   .info {
 
-    @media (max-width: 1199.98px) {
+    @media (max-width: 767.98px) {
+      &::before {
+        content: "";
+        height: 100%;
+        width: 100vw;
+        background: linear-gradient(to bottom, #E8EFF7 90%, #fff 90%) no-repeat;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      &::before {
+        content: "";
+        height: 100%;
+        width: 100vw;
+        background: linear-gradient(to bottom, #E8EFF7 75%, #fff 75%) no-repeat;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
       &::before {
         content: "";
         height: 100%;
