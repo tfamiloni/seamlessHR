@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shoxadomokai/seamlessHR/issues"
   },
-  "homepage": "https://github.com/shoxadomokai/seamlessHR#readme"
+  "homepage": "https://github.com/shoxadomokai/seamlessHR#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
