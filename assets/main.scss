@@ -81,31 +81,49 @@ body {
   h1,
   .h1 {
     font-size: 3rem;
+    @media(max-width: 768px){
+      font-size:2.25rem;
+    }
   }
 
   h2,
   .h2 {
     font-size: 2.25rem;
+    @media(max-width: 768px){
+      font-size:1.5rem;
+    }
   }
 
   h3,
   .h3 {
     font-size: 2rem;
+    @media(max-width: 768px){
+      font-size:1.25rem;
+    }
   }
 
   h4,
   .h4 {
     font-size: 1.75rem;
+    @media(max-width: 768px){
+      font-size:1.55rem;
+    }
   }
 
   h5,
   .h5 {
     font-size: 1.5rem;
+    @media(max-width: 768px){
+      font-size:1.35rem;
+    }
   }
 
   h6,
   .h6 {
     font-size: 1.125rem;
+    @media(max-width: 768px){
+      font-size:1rem;
+    }
   }
 }
 
@@ -119,6 +137,14 @@ body {
     min-height: 75px;
     padding: 0;
 
+    .navbar-brand{
+      img{
+        @media (max-width:768px) {
+          width: 150px;
+        }
+      }
+    }
+
     .nav-item {
 
       a,
@@ -126,9 +152,22 @@ body {
         font-size: 1rem;
         font-weight: 500;
 
+        .cta_btn{
+          position: absolute;
+          right: 55px;
+          top: 10px;
+        }
+
         &.nav-link {
           color: #454545;
           font-weight: 500;
+
+          @media (min-width: 1025px) {
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 0.1rem;
+            margin-top: 3px;
+          }
 
           &.active,
           &:hover {
@@ -156,6 +195,31 @@ body {
       cursor: pointer;
     }
 
+    .mega-menu{
+      .nav{
+        .nav-link{
+          padding: 0;
+          letter-spacing: normal;
+          &.active{
+            h5{
+              color: #29b32f !important;
+            }
+            background: transparent;
+          }
+          margin-bottom: 15px;
+
+          h5{
+            text-transform: capitalize;
+          }
+          p{
+            text-transform: none;
+            color: rgb(148, 148, 148);
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+
     .platform-menu {
       position: absolute;
       z-index: 10;
@@ -163,7 +227,7 @@ body {
       background: white;
       left: 0;
       top: 75px;
-      max-height: 670px;
+      max-height: calc(100vh - 75px);
       overflow-y: scroll;
       box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
       transition: 0.2s all linear;
@@ -198,9 +262,10 @@ body {
         display: grid;
 
         .platform-item {
-          background: #f4f7fb;
-          border: 1px solid #d8e4f1;
-          box-shadow: 0px 2px 4px rgba(30, 80, 131, 0.1);
+          background: #ffffff;
+          // border: 1px solid #d8e4f1;
+          box-shadow: 0px 4px 7px rgba(30, 80, 131, 0.07);
+          transition: all ease-in 0.2s;
           border-radius: 5px;
           overflow: hidden;
           height: 191px;
@@ -208,7 +273,10 @@ body {
           position: relative;
 
           &:hover {
-            text-decoration: none;
+          box-shadow: 0px 4px 15px rgba(30, 80, 131, 0.07);
+          transform: translateY(-3px);
+          transition: all ease-in 0.2s;
+          text-decoration: none;
 
             .platform-item__heading {
               color: #29b32f;
@@ -249,7 +317,7 @@ body {
 
           .platform-item__text {
             font-size: 14px;
-            color: #454545;
+            color: #747474;
           }
         }
       }
@@ -302,6 +370,9 @@ body {
 
     .hero__text {
       max-width: 540px;
+      @media (min-width: 1251px) {
+        margin-top: -1rem;
+      }
     }
 
     .home-hero-animation {
@@ -624,6 +695,10 @@ body {
       .card-body {
         padding: 75px 70px;
         padding-right: 15px;
+
+        @media(max-width: 992px) {
+          padding: 45px 50px;
+        }
       }
     }
 
@@ -649,6 +724,10 @@ body {
       .card-body {
         padding: 75px 70px;
         padding-right: 15px;
+
+        @media(max-width: 992px) {
+          padding: 45px 50px;
+        }
       }
     }
 
@@ -676,6 +755,10 @@ body {
       .card-body {
         padding: 60px 70px;
         padding-right: 15px;
+
+        @media(max-width: 992px) {
+          padding: 45px 50px;
+        }
       }
 
       .magnet-rectangle {
@@ -904,6 +987,7 @@ body {
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         left: -34%;
+        animation-delay: 2000ms;
       }
     }
 
