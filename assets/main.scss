@@ -1541,11 +1541,11 @@ body {
         margin-left: 50px;
       }
 
-      @media (min-width: 1200px) {
-        &::after {
-          right: -60px;
-        }
-      }
+      // @media (min-width: 1200px) {
+      //   &::after {
+      //     right: -60px;
+      //   }
+      // }
     }
   }
 }
