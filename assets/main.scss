@@ -350,6 +350,10 @@ body {
 
       a {
         color: #296db3;
+        &:active{
+          background-color: #296db3;
+          color: #ffffff;
+        }
       }
     }
   }
