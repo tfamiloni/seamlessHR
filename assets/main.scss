@@ -1944,7 +1944,6 @@ body {
 
       &.selflessness {
         background: #f9f3fa;
-        opacity: 0.8;
         border: 1px solid #d099d5;
 
         h4 {
@@ -1953,6 +1952,45 @@ body {
 
         p {
           color: #701778;
+        }
+      }
+
+      &.innovation {
+        background: #FCF4F4;
+        border: 1px solid #E69E9E;
+
+        h4 {
+          color: #5C1414;
+        }
+
+        p {
+          color: #932020;
+        }
+      }
+
+      &.excellence {
+        background: #FFFAF5;
+        border: 1px solid #FBCB8C;
+
+        h4 {
+          color: #8F5305;
+        }
+
+        p {
+          color: #D07908;
+        }
+      }
+
+      &.judgement {
+        background: #F5F5F5;
+        border: 1px solid #AAAAAA;
+
+        h4 {
+          color: #454545;
+        }
+
+        p {
+          color: #454545;
         }
       }
 
@@ -2344,5 +2382,20 @@ body {
   *{
     position: relative;
     z-index: 1;
+  }
+}
+
+.img-dir{
+  filter: grayscale(1);
+  transition: all ease-in 0.2s;
+  &:hover{
+    filter: grayscale(0);
+    transition: all ease-in 0.2s;
+    transform: scale(1.05);
+  }
+  &:active{
+    filter: grayscale(0);
+    transition: all ease-in 0.2s;
+    transform: scale(1);
   }
 }
