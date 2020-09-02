@@ -139,11 +139,11 @@ body {
     min-height: 75px;
     padding: 0;
 
-    @media (max-width:768px) {
+    @media (max-width:991px) {
       .cta_btn{
         position: absolute;
         right: 65px;
-        top: 10px;
+        top: 17px;
       }
   
       .mobile_menu_trigger{
@@ -153,10 +153,18 @@ body {
       }
     }
 
+    @media (max-width:576px) {
+      .cta_btn{
+        top: 10px;
+      }
+    }
+
     .navbar-brand{
       img{
-        @media (max-width:768px) {
+        @media (max-width:991px) {
           width: 150px;
+          position: fixed;
+          top: 26px;
         }
       }
     }
