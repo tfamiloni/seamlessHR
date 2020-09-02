@@ -49,6 +49,7 @@ body {
   color: #454545;
   font-size: 1.125rem;
   font-weight: 300;
+  padding-top: 75px;
 
   a {
     color: #296db3;
@@ -128,14 +129,29 @@ body {
 }
 
 .navigation {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 100;
   background-color: #fff;
 
   .navbar {
     min-height: 75px;
     padding: 0;
+
+    @media (max-width:768px) {
+      .cta_btn{
+        position: absolute;
+        right: 65px;
+        top: 10px;
+      }
+  
+      .mobile_menu_trigger{
+        position: absolute;
+        top: 18px;
+        right: 20px;
+      }
+    }
 
     .navbar-brand{
       img{
@@ -151,12 +167,6 @@ body {
       label {
         font-size: 1rem;
         font-weight: 500;
-
-        .cta_btn{
-          position: absolute;
-          right: 55px;
-          top: 10px;
-        }
 
         &.nav-link {
           color: #454545;
@@ -1720,7 +1730,8 @@ body {
   }
 }
 
-#payroll-features {
+#payroll-features,
+.payroll-features {
   .features__grid {
     display: grid;
     grid-gap: 10px;
@@ -2301,5 +2312,37 @@ body {
       padding-left: 0;
       list-style-type: lower-roman;
     }
+  }
+}
+
+// 
+.tabloid{
+  position: relative;
+  overflow: hidden;
+
+  .tab-pane{
+    &>p,h4{
+      color: #ffffff;
+    }
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: #1e4f82;
+    height: 230px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    @media (max-width: 992px) {
+      height: 500px;
+    }
+  }
+
+  *{
+    position: relative;
+    z-index: 1;
   }
 }
