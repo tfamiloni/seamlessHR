@@ -516,7 +516,7 @@
     box-shadow: 0px 25px 115px rgba(19, 50, 82, 0.2);
     border-radius: 10px;
     min-height: 78px;
-    padding: 25px 35px 25px 95px;
+    padding: 10px 30px 10px 75px;
 
     &::placeholder {
       color: #777;
@@ -534,7 +534,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 35px;
+    margin-left: 25px;
     cursor: pointer;
   }
 }

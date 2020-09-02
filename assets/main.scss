@@ -165,6 +165,7 @@ body {
           width: 150px;
           position: fixed;
           top: 26px;
+          left: 20px;
         }
       }
     }
@@ -698,8 +699,10 @@ body {
     }
 
     &::after {
-      background-image: url(./img/core/contact-hero-right.png);
-      background-position: right bottom;
+      @media(min-width:1024px){
+        background-image: url(./img/core/contact-hero-right.png);
+        background-position: right bottom;
+      }
     }
 
   }
@@ -1540,11 +1543,11 @@ body {
         min-width: 41px;
         min-height: 41px;
         border-radius: 10px;
-        margin-right: 50px;
+        margin-right: 25px;
       }
 
       &::after {
-        content: "+";
+        // content: "+";
         position: relative;
         top: -5px;
         // right: -30px;
