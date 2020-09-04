@@ -73,6 +73,7 @@ body {
   .h6,
   .font-family-circular {
     font-family: $Circular;
+    font-weight: bold;
   }
 
   .font-family-avenir {
@@ -718,7 +719,7 @@ body {
       border-radius: 10px;
 
       .card-body {
-        padding: 75px 70px;
+        padding: 65px 70px;
         padding-right: 15px;
 
         @media(max-width: 992px) {
@@ -747,7 +748,7 @@ body {
       border-radius: 10px;
 
       .card-body {
-        padding: 75px 70px;
+        padding: 60px 70px;
         padding-right: 15px;
 
         @media(max-width: 992px) {
@@ -1502,7 +1503,7 @@ body {
 
     .FAQ__item {
       position: relative;
-      text-align: justify;
+      @media(min-width: 1024px){text-align: justify;}
       display: flex;
 
       .question {
