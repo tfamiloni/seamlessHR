@@ -9,13 +9,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About Us</title>
+    <title>About - SeamlessHR</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/utility.css">
+    <link href="./assets/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -116,23 +116,17 @@
                                                             <!-- <div class="platform-item__badge">CORE</div> -->
                                                             <h6 class="blue-text platform-item__heading arrow__link">Requisition, Travel &
                                                                 Procurements</h6>
-                                                            <p class="platform-item__text">You can choose to add more options to your
-                                                                core or
-                                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                                            <p class="platform-item__text">Track, verify and approve all activities linked to employees’ requests. No more delays in paying your employees for work related travel expenses. </p>
                                                         </a>
                                                         <a class="platform-item" href="core-hr.html?feature=8" id="advancedReportAnalytics">
                                                             <!-- <div class="platform-item__badge">CORE</div> -->
                                                             <h6 class="blue-text platform-item__heading arrow__link">Advanced Report & Analytics
                                                             </h6>
-                                                            <p class="platform-item__text">You can choose to add more options to your
-                                                                core or
-                                                                premium plan. Or choose to purchase these add-ons as standalone</p>
+                                                            <p class="platform-item__text">Capitalize on unrestricted access to comprehensive data to make strategic decisions. Collect and analyze data to improve workforce strategies.</p>
                                                         </a>
                                                         <a class="platform-item" href="core-hr.html?feature=6" id="timeAttendance">
                                                             <h6 class="blue-text platform-item__heading arrow__link">Time & Attendance</h6>
-                                                            <p class="platform-item__text">You can choose to add more options to your
-                                                                core or premium plan. Or choose to purchase these add-ons as standalone
-                                                            </p>
+                                                            <p class="platform-item__text">Track work hours of staff automatically, and improve payroll accuracy with biometric and payroll integrations.</p>
                                                         </a>
                                                     </div>
                                                     <div class="pt-5">
@@ -204,6 +198,12 @@
         </nav>
 
     </header>
+
+    <style>
+        [data-toggle="modal"]{
+            cursor: default;
+        }
+    </style>
 
     <section class="hero about-hero pt-5 pb-5 pb-md-1">
         <div class="container">
@@ -346,55 +346,55 @@
             <div class="row mt-5">
 
                 <div class="col-6 col-lg-4 col-xl-3 mb-5">
-                    <a href="#biographModal" id="dir-kolapo" data-who="dir-kolapo" data-target="#biographModal" data-toggle="modal"><img src="./assets/img/directors/kolapo.png" alt="" class="img-dir img-fluid"></a>
+                    <a href="#biographModal_" id="dir-kolapo" data-who="dir-kolapo" data-target="#biographModal_" data-toggle="modal"><img src="./assets/img/directors/kolapo.png" alt="" class="img-dir img-fluid"></a>
                     <p class="font-weight-bold mt-4 mb-0">Dr. Kolapo Omidire</p>
                     <p>Chairman of the Board</p>
                 </div>
 
                 <div class="col-6 col-lg-4 col-xl-3 mb-5">
-                    <a href="#biographModal" id="dir-okeleji" data-who="dir-okeleji" data-target="#biographModal" data-toggle="modal"><img src="./assets/img/directors/okeleji.png" alt="" class="img-dir img-fluid"></a>
+                    <a href="#biographModal_" id="dir-okeleji" data-who="dir-okeleji" data-target="#biographModal_" data-toggle="modal"><img src="./assets/img/directors/okeleji.png" alt="" class="img-dir img-fluid"></a>
                     <p class="font-weight-bold mt-4 mb-0">Dr. Emmanuel Okeleji</p>
                     <p>Co-Founder, CEO</p>
                 </div>
 
                 <div class="col-6 col-lg-4 col-xl-3 mb-5">
-                    <a href="#biographModal" id="dir-osunlana" data-who="dir-osunlana" data-target="#biographModal" data-toggle="modal"><img src="./assets/img/directors/osunlana.png" alt="" class="img-dir img-fluid"/></a>
+                    <a href="#biographModal_" id="dir-osunlana" data-who="dir-osunlana" data-target="#biographModal_" data-toggle="modal"><img src="./assets/img/directors/osunlana.png" alt="" class="img-dir img-fluid"/></a>
                     <p class="font-weight-bold mt-4 mb-0">Deji Lana</p>
                     <p>Co-Founder, CTO</p>
                 </div>
 
                 <div class="col-6 col-lg-4 col-xl-3 mb-5">
-                    <a href="#biographModal" id="dir-rasheed" data-who="dir-rasheed" data-target="#biographModal" data-toggle="modal"><img src="./assets/img/directors/rasheed.png" alt="" class="img-dir img-fluid"/></a>
+                    <a href="#biographModal_" id="dir-rasheed" data-who="dir-rasheed" data-target="#biographModal_" data-toggle="modal"><img src="./assets/img/directors/rasheed.png" alt="" class="img-dir img-fluid"/></a>
                     <p class="font-weight-bold mt-4 mb-0">Rasheed Olaoluwa</p>
                     <p>Executive Director, Axxela</p>
                 </div>
 
                 <div class="col-6 col-lg-4 col-xl-3 mb-5">
-                    <a href="#biographModal" id="dir-willie" data-who="dir-willie" data-target="#biographModal" data-toggle="modal"><img src="./assets/img/directors/willie.png" alt="" class="img-dir img-fluid"/></a>
+                    <a href="#biographModal_" id="dir-willie" data-who="dir-willie" data-target="#biographModal_" data-toggle="modal"><img src="./assets/img/directors/willie.png" alt="" class="img-dir img-fluid"/></a>
                     <p class="font-weight-bold mt-4 mb-0">Professor Willie Siyanbola</p>
                     <p>Non Executive Director</p>
                 </div>
 
                 <div class="col-6 col-lg-4 col-xl-3 mb-5">
-                    <a href="#biographModal" id="dir-victor" data-who="dir-victor" data-target="#biographModal" data-toggle="modal"><img src="./assets/img/directors/victor.png" alt="" class="img-dir img-fluid"/></a>
+                    <a href="#biographModal_" id="dir-victor" data-who="dir-victor" data-target="#biographModal_" data-toggle="modal"><img src="./assets/img/directors/victor.png" alt="" class="img-dir img-fluid"/></a>
                     <p class="font-weight-bold mt-4 mb-0">Victor Adebayo</p>
                     <p>Non Executive Director</p>
                 </div>
 
                 <div class="col-6 col-lg-4 col-xl-3 mb-5">
-                    <a href="#biographModal" id="dir-bolaji" data-who="dir-bolaji" data-target="#biographModal" data-toggle="modal"><img src="./assets/img/directors/bolaji.png" alt="" class="img-dir img-fluid"/></a>
+                    <a href="#biographModal_" id="dir-bolaji" data-who="dir-bolaji" data-target="#biographModal_" data-toggle="modal"><img src="./assets/img/directors/bolaji.png" alt="" class="img-dir img-fluid"/></a>
                     <p class="font-weight-bold mt-4 mb-0">Mobolaji Adeoye</p>
                     <p>Non Executive Director</p>
                 </div>
 
                 <div class="col-6 col-lg-4 col-xl-3 mb-5">
-                    <a href="#biographModal" id="dir-rob" data-who="dir-rob" data-target="#biographModal" data-toggle="modal"><img src="./assets/img/directors/rob.png" alt="" class="img-dir img-fluid"/></a>
+                    <a href="#biographModal_" id="dir-rob" data-who="dir-rob" data-target="#biographModal_" data-toggle="modal"><img src="./assets/img/directors/rob.png" alt="" class="img-dir img-fluid"/></a>
                     <p class="font-weight-bold mt-4 mb-0">Rob Eloff</p>
                     <p>Non Executive Director</p>
                 </div>
 
                 <div class="col-6 col-lg-4 col-xl-3 mb-5">
-                    <a href="#biographModal" id="dir-mike" data-who="dir-mike" data-target="#biographModal" data-toggle="modal"><img src="./assets/img/directors/mike.png" alt="" class="img-dir img-fluid"/></a>
+                    <a href="#biographModal_" id="dir-mike" data-who="dir-mike" data-target="#biographModal_" data-toggle="modal"><img src="./assets/img/directors/mike.png" alt="" class="img-dir img-fluid"/></a>
                     <p class="font-weight-bold mt-4 mb-0">Mike Mompi</p>
                     <p>Non Executive Director</p>
                 </div>
