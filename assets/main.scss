@@ -92,7 +92,7 @@ body {
   .h2 {
     font-size: 2.25rem;
     @media(max-width: 768px){
-      font-size:1.5rem;
+      font-size:1.75rem;
     }
   }
 
@@ -1494,9 +1494,9 @@ body {
           text-align: left;
         }
 
-        // &:not(:last-of-type) {
-        //   display: flex;
-        // }
+        @media (max-width: 992px) {
+          padding: 15px;
+        }
       }
 
       &:nth-of-type(even) {
@@ -2230,10 +2230,18 @@ body {
     .header,
     .price__features {
       padding: 31.94px 41.6px;
+
+      @media (max-width: 992px) {
+        padding: 20px 25px;
+      }
     }
 
     .price__band {
       padding: 20.61px 41.87px;
+
+      @media (max-width: 992px) {
+        padding: 15px 20px;
+      }
 
       p {
         line-height: 23px;
@@ -2260,6 +2268,7 @@ body {
       @media (max-width: 991.98px) {
         border-radius: 20px;
         box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
+        max-width: 535px;
       }
 
       .price__band {
@@ -2271,7 +2280,7 @@ body {
 
         .price__feature::before {
           content: "";
-          margin-right: 23px;
+          margin-right: 15px;
         }
       }
     }
@@ -2296,6 +2305,7 @@ body {
       @media (max-width: 991.98px) {
         border-radius: 20px;
         box-shadow: 0px 20px 55px rgba(19, 50, 82, 0.25);
+        max-width: 535px;
       }
 
       .price__band {
@@ -2307,7 +2317,7 @@ body {
 
         li.price__feature::before {
           content: "";
-          margin-right: 23px;
+          margin-right: 15px;
         }
 
         .price__feature:first-of-type::before {
