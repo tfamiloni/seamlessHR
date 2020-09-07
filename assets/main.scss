@@ -718,7 +718,7 @@ body {
     }
 
     &::after {
-      @media(min-width:1024px){
+      @media(min-width:1200px){
         background-image: url(./img/core/contact-hero-right.png);
         background-position: right bottom;
       }
